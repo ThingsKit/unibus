@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CHBusStopViewController.h"
 
-@interface CHMainViewViewController : UIViewController
+@interface CHMainViewViewController : UIViewController <UIScrollViewDelegate, CHBusStopViewControllerDelegate>
 
 @end

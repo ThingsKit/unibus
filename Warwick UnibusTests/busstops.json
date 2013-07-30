@@ -1,0 +1,409 @@
+
+[
+    {
+		"name": "Gibbet Hill (down)",
+		"latitude": "52.3738806",
+		"longitude": "-1.5529374"
+	},
+	{
+		"name": "Chesford Crossroads (down)",
+		"latitude": "52.3271469",
+		"longitude": "-1.5584627"
+	},
+	{
+		"name": "Quality Hotel (down)",
+		"latitude": "52.3252913",
+		"longitude": "-1.5545587"
+	},
+	{
+		"name": "Leamington Rugby Club (down)",
+		"latitude": "52.3192845",
+		"longitude": "-1.5439627"
+	},
+	{
+		"name": "Blackdown Crossroads (down)",
+		"latitude": "52.3130022",
+		"longitude": "-1.539696"
+	},
+	{
+		"name": "Northumberland Road (down)",
+		"latitude": "52.3029085",
+		"longitude": "-1.5369586"
+	},
+	{
+		"name": "Woodcote Road (down)",
+		"latitude": "52.3003882",
+		"longitude": "-1.5362223"
+	},
+	{
+		"name": "Opp. Arnold Lodge School (down)",
+		"latitude": "52.2969775",
+		"longitude": "-1.5355098"
+	},
+	{
+		"name": "Trinity Street (down)",
+		"latitude": "52.2952598",
+		"longitude": "-1.5352494"
+	},
+	{
+		"name": "Upper Parade (down)",
+		"latitude": "52.2926065",
+		"longitude": "-1.5358183"
+	},
+	{
+		"name": "Regent Hotel (down)",
+		"latitude": "52.2900079",
+		"longitude": "-1.5353623"
+	},
+	{
+		"name": "Parish Church (down)",
+		"latitude": "52.2859817",
+		"longitude": "-1.5330155"
+	},
+	{
+		"name": "Kelsey's (down/up)",
+		"latitude": "52.2839676",
+		"longitude": "-1.5330877"
+	},
+	{
+		"name": "Claremont Road (down)",
+		"latitude": "52.2796783",
+		"longitude": "-1.5340353"
+	},
+	{
+		"name": "Wheatsheaf (down)",
+		"latitude": "52.2778411",
+		"longitude": "-1.5335464"
+	},
+	{
+		"name": "St Helen's Road (Bottom)",
+		"latitude": "52.2764133",
+		"longitude": "-1.5324709"
+	},
+	{
+		"name": "Grosevnor Road (up)",
+		"latitude": "52.2764593",
+		"longitude": "-1.5278628"
+	},
+	{
+		"name": "Prospect Road (up)",
+		"latitude": "52.2763789",
+		"longitude": "-1.5215784"
+	},
+	{
+		"name": "Berrington Road (up)",
+		"latitude": "52.2790752",
+		"longitude": "-1.5191337"
+	},
+	{
+		"name": "Crabtree Grove (up)",
+		"latitude": "52.2802994",
+		"longitude": "-1.5170293"
+	},
+	{
+		"name": "Curzon Grove (up)",
+		"latitude": "52.2799153",
+		"longitude": "-1.514897"
+	},
+	{
+		"name": "Solway Close (up)",
+		"latitude": "52.2797759",
+		"longitude": "-1.5120754"
+	},
+	{
+		"name": "Gainsborough Drive (up)",
+		"latitude": "52.2808671",
+		"longitude": "-1.509766"
+	},
+	{
+		"name": "St Brides Close (up)",
+		"latitude": "52.2822258",
+		"longitude": "-1.5127352"
+	},
+	{
+		"name": "Shops (up)",
+		"latitude": "52.2823242",
+		"longitude": "-1.51667"
+	},
+	{
+		"name": "St Anthonys Primary School (up)",
+		"latitude": "52.283893",
+		"longitude": "-1.516863"
+	},
+	{
+		"name": "Leam Terrace (up)",
+		"latitude": "52.284877",
+		"longitude": "-1.5176489"
+	},
+	{
+		"name": "Farley Street (up)",
+		"latitude": "52.2845403",
+		"longitude": "-1.5230576"
+	},
+	{
+		"name": "Court Street (up)",
+		"latitude": "52.2840127",
+		"longitude": "-1.5305919"
+	},
+	{
+		"name": "Parish Church (up)",
+		"latitude": "52.2862527",
+		"longitude": "-1.5333352"
+	},
+	{
+		"name": "Dormer Place (up)",
+		"latitude": "52.2883459",
+		"longitude": "-1.5352442"
+	},
+	{
+		"name": "Regent Street (up)",
+		"latitude": "52.2894682",
+		"longitude": "-1.5354937"
+	},
+	{
+		"name": "Upper Parade (up)",
+		"latitude": "52.2926903",
+		"longitude": "-1.5360328"
+	},
+	{
+		"name": "Beauchamp Avenue (up)",
+		"latitude": "52.2943973",
+		"longitude": "-1.5354051"
+	},
+	{
+		"name": "Arnold Lodge School (up)",
+		"latitude": "52.2968012",
+		"longitude": "-1.5356667"
+	},
+	{
+		"name": "Lillington Avenue (up)",
+		"latitude": "52.2988233",
+		"longitude": "-1.5360626"
+	},
+	{
+		"name": "Woodcote Road (up)",
+		"latitude": "52.3009245",
+		"longitude": "-1.5366375"
+	},
+	{
+		"name": "Northumberland Road (up)",
+		"latitude": "52.3031345",
+		"longitude": "-1.5372789"
+	},
+	{
+		"name": "Oak Bank House (up)",
+		"latitude": "52.3085723",
+		"longitude": "-1.5387277"
+	},
+	{
+		"name": "Blackdown Crossroads (up)",
+		"latitude": "52.3116477",
+		"longitude": "-1.5395618"
+	},
+	{
+		"name": "Quality Hotel (up)",
+		"latitude": "52.3250815",
+		"longitude": "-1.554489"
+	},
+	{
+		"name": "Chesford Crossroads (up)",
+		"latitude": "52.3288551",
+		"longitude": "-1.5605065"
+	},
+	{
+		"name": "Gibbet Hill (up)",
+		"latitude": "52.3746617",
+		"longitude": "-1.5559199"
+	},
+	{
+		"name": "Gatehouse (up/down)",
+		"latitude": "52.38345",
+		"longitude": "-1.5644333"
+	},
+	{
+		"name": "Library (up/down)",
+		"latitude": "52.3821427",
+		"longitude": "-1.5600236"
+	},
+	{
+		"name": "Arts Centre (down)",
+		"latitude": "52.3792503",
+		"longitude": "-1.561974"
+	},
+	{
+		"name": "Thickthorn Island (up)",
+		"latitude": "52.3324479",
+		"longitude": "-1.5654605"
+	},
+	{
+		"name": "St Johns Street (up)",
+		"latitude": "52.3376075",
+		"longitude": "-1.5740233"
+	},
+	{
+		"name": "Randal Road (up)",
+		"latitude": "52.3411179",
+		"longitude": "-1.5776739"
+	},
+	{
+		"name": "Holiday Inn (up)",
+		"latitude": "52.3441223",
+		"longitude": "-1.5806252"
+	},
+	{
+		"name": "Church (up)",
+		"latitude": "52.3462726",
+		"longitude": "-1.5785496"
+	},
+	{
+		"name": "Sports & Social Club (up)",
+		"latitude": "52.3473284",
+		"longitude": "-1.57678"
+	},
+	{
+		"name": "Wyandotte (up)",
+		"latitude": "52.3499538",
+		"longitude": "-1.5721722"
+	},
+	{
+		"name": "Dalehouse Lane (up)",
+		"latitude": "52.3534546",
+		"longitude": "-1.5604293"
+	},
+	{
+		"name": "Common (up)",
+		"latitude": "52.3566834",
+		"longitude": "-1.5660723"
+	},
+	{
+		"name": "Woodland Road (up)",
+		"latitude": "52.3585201",
+		"longitude": "-1.5658299"
+	},
+	{
+		"name": "Crackley (up)",
+		"latitude": "52.3612314",
+		"longitude": "-1.5623013"
+	},
+	{
+		"name": "Cryfield Grange Road (up)",
+		"latitude": "52.3680916",
+		"longitude": "-1.5527896"
+	},
+	{
+		"name": "Ferndale Drive (down)",
+		"latitude": "52.3356628",
+		"longitude": "-1.5707667"
+	},
+	{
+		"name": "St Johns Church (down)",
+		"latitude": "52.337038",
+		"longitude": "-1.5731482"
+	},
+	{
+		"name": "Earl of Clarendon (down)",
+		"latitude": "52.3382201",
+		"longitude": "-1.5743697"
+	},
+	{
+		"name": "Lion (down)",
+		"latitude": "52.3415682",
+		"longitude": "-1.5778898"
+	},
+	{
+		"name": "Shops (down)",
+		"latitude": "52.3439298",
+		"longitude": "-1.5799581"
+	},
+	{
+		"name": "Church (down)",
+		"latitude": "52.3462892",
+		"longitude": "-1.5781678"
+	},
+	{
+		"name": "Sports & Social Club (down)",
+		"latitude": "52.3471751",
+		"longitude": "-1.5768299"
+	},
+	{
+		"name": "Spring Lane (down)",
+		"latitude": "52.3477738",
+		"longitude": "-1.5744714"
+	},
+	{
+		"name": "Herberts Lane (down)",
+		"latitude": "52.3494983",
+		"longitude": "-1.5723746"
+	},
+	{
+		"name": "Knowle Hill (down)",
+		"latitude": "52.3529552",
+		"longitude": "-1.5606855"
+	},
+	{
+		"name": "Common (down)",
+		"latitude": "52.3570434",
+		"longitude": "-1.5661862"
+	},
+	{
+		"name": "Woodland Road (down)",
+		"latitude": "52.3588533",
+		"longitude": "-1.5651844"
+	},
+	{
+		"name": "Cryfield Grange Road (down)",
+		"latitude": "52.3674955",
+		"longitude": "-1.5529613"
+	},
+	{
+		"name": "Villers Road (up)",
+		"latitude": "52.3489633",
+		"longitude": "-1.5668232"
+	},
+	{
+		"name": "Leyes Lane (up)",
+		"latitude": "52.3471839",
+		"longitude": "-1.5645798"
+	},
+	{
+		"name": "Leyes Lane - Shops (up)",
+		"latitude": "52.3470584",
+		"longitude": "-1.5598099"
+	},
+	{
+		"name": "Chatsworth Grove (up)",
+		"latitude": "52.3479996",
+		"longitude": "-1.5566589"
+	},
+	{
+		"name": "Saville Grove (up)",
+		"latitude": "52.3498972",
+		"longitude": "-1.5577143"
+	},
+	{
+		"name": "Hidcote Road (up)",
+		"latitude": "52.350707",
+		"longitude": "-1.5569842"
+	},
+	{
+		"name": "Kenilworth School (down)",
+		"latitude": "52.3465846",
+		"longitude": "-1.5629562"
+	},
+	{
+		"name": "Leyes Lane - Shops (down)",
+		"latitude": "52.3469842",
+		"longitude": "-1.5591941"
+	},
+	{
+		"name": "Rawnsley Drive (down)",
+		"latitude": "52.3471827",
+		"longitude": "-1.55699"
+	},
+	{
+		"name": "Hidcote Road (down)",
+		"latitude": "52.350796",
+		"longitude": "-1.5567631"
+	}
+]
+

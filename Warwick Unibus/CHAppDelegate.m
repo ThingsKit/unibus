@@ -6,7 +6,9 @@
 //  Copyright (c) 2013 Chris Howell. All rights reserved.
 //
 
+#import <Parse/Parse.h>
 #import "CHAppDelegate.h"
+#import "CHMainViewViewController.h"
 
 @implementation CHAppDelegate
 
@@ -20,6 +22,23 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    
+    CHMainViewViewController *mainViewController = [[CHMainViewViewController alloc] init];
+    self.window.rootViewController = mainViewController;
+    
+    
+    // PARSE r INIT
+    //[Parse setApplicationId:@"wBUuq6l2XgbYmlkP8lIv33vkcaRMShknhMxsf2Wz" clientKey:@"3ac40HQwfrSEmyMei2mxWjCUZFmN2hXJuhFTITAD"];
+    
+    // PARSE OPEN TRACK
+    //[PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    //PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    //[testObject setObject:@"bar" forKey:@"foo"];
+    //[testObject save];
+    
+    
     return YES;
 }
 
