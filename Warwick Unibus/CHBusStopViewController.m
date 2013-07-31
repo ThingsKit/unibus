@@ -89,7 +89,41 @@
     [self.tableView setContentOffset:CGPointMake(self.tableView.frame.origin.x, offset)];
 }
 
+-(void)transitionOut
+{
+    [UIView animateWithDuration:0.5
+                          delay:0.0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         // Animate out nextbusview
+                         self.nextBusView.alpha = 0;
+                         self.nextBusView.frame = CGRectMake(self.nextBusView.frame.origin.x, self.nextBusView.frame.origin.y - 100, self.nextBusView.frame.size.width, self.nextBusView.frame.size.height);
+                         
+                         // Animate out tableview
+                         
+                     }
+                     completion:^(BOOL finished){
+    }];
+    
+    [UIView animateWithDuration:0.3
+                          delay:0.3
+                        options:UIViewAnimationOptionCurveEaseOut
+                     animations:^{
+                        
+                     }
+                     completion:^(BOOL finished){
+                         [UIView animateWithDuration:0.8
+                                               delay:0.0
+                                             options:UIViewAnimationOptionCurveEaseInOut
+                                          animations:^{
+                                              self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, self.tableView.frame.origin.y + 500, self.tableView.frame.size.width, self.tableView.frame.size.height);
+                                          }
+                                          completion:^(BOOL finished){
+                                          }];
 
+                     }];
+
+}
 
 #pragma mark - UITableViewDelegate
 - (void) scrollViewDidScroll:(UIScrollView *)scrollView

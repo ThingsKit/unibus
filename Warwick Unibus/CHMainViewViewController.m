@@ -10,6 +10,7 @@
 #import "UIColor+AppColors.h"
 #import "CHTimetableCell.h"
 #import "CHBusStopViewController.h"
+#import "CHMapViewController.h"
 
 @interface CHMainViewViewController ()
 
@@ -23,7 +24,10 @@
 @property (nonatomic, strong) IBOutlet CHBusStopViewController *busStopTest2;
 @property (nonatomic, strong) IBOutlet CHBusStopViewController *busStopTest3;
 
+@property (nonatomic, strong) IBOutlet UIImageView *bgImage;
 
+@property (nonatomic, strong) IBOutlet CHMapViewController *mapViewController;
+@property (nonatomic, strong) IBOutlet UIView *mapView;
 
 @end
 
@@ -47,6 +51,9 @@ BOOL isScrolling;
 
     [self setupScrollView];
     
+    self.mapViewController = [[CHMapViewController alloc] init];
+    
+
     isScrolling = NO;
 }
 
@@ -59,6 +66,13 @@ BOOL isScrolling;
 - (UIStatusBarStyle) preferredStatusBarStyle
 {
     return UIStatusBarStyleLightContent;
+}
+
+#pragma mark - UIButton events
+-(IBAction)mapButtonWasPressed:(id)sender
+{
+    [self presentViewController:self.mapViewController animated:YES completion:nil];
+
 }
 
 #pragma mark - CHBusStopViewControllerDelegate

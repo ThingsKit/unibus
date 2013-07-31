@@ -10,6 +10,8 @@
 
 @interface CHMapViewController ()
 
+@property (nonatomic, strong) IBOutlet UIButton *doneButton;
+
 @end
 
 @implementation CHMapViewController
@@ -35,4 +37,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+#pragma mark - UIButton events
+-(IBAction)doneButtonPressed:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

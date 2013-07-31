@@ -18,6 +18,6 @@
 - (void) parentScrollViewDidMoveBy: (float) movement;
 -(void)changeOffset:(float)offset;
 -(void)setTableOffset:(float)offset;
-
+-(void)transitionOut;
 
 @end

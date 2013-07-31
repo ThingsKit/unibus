@@ -8,6 +8,7 @@
 
 #import <Parse/Parse.h>
 #import "CHAppDelegate.h"
+#import "CHNavigationViewController.h"
 #import "CHMainViewViewController.h"
 
 @implementation CHAppDelegate
@@ -24,20 +25,11 @@
     [self.window makeKeyAndVisible];
     
     
+    CHNavigationViewController *navController = [[CHNavigationViewController alloc] init];
+    
     CHMainViewViewController *mainViewController = [[CHMainViewViewController alloc] init];
-    self.window.rootViewController = mainViewController;
-    
-    
-    // PARSE r INIT
-    //[Parse setApplicationId:@"wBUuq6l2XgbYmlkP8lIv33vkcaRMShknhMxsf2Wz" clientKey:@"3ac40HQwfrSEmyMei2mxWjCUZFmN2hXJuhFTITAD"];
-    
-    // PARSE OPEN TRACK
-    //[PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-    
-    //PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-    //[testObject setObject:@"bar" forKey:@"foo"];
-    //[testObject save];
-    
+    [navController pushViewController:mainViewController];
+    self.window.rootViewController = navController;
     
     return YES;
 }
