@@ -10,6 +10,7 @@
 #import "CHAppDelegate.h"
 #import "CHNavigationViewController.h"
 #import "CHMainViewViewController.h"
+#import "CHDataLoader.h"
 
 @implementation CHAppDelegate
 
@@ -29,6 +30,12 @@
     
     CHMainViewViewController *mainViewController = [[CHMainViewViewController alloc] init];
     [navController pushViewController:mainViewController];
+    navController.rootViewController = mainViewController;
+    mainViewController.navigationController = navController;
+    
+    CHDataLoader *dataLoader = [[CHDataLoader alloc] initWithManagedObjectContext:self.managedObjectContext];
+    [dataLoader loadData];
+    
     self.window.rootViewController = navController;
     
     return YES;

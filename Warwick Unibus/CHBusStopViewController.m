@@ -8,10 +8,10 @@
 
 #import "CHBusStopViewController.h"
 #import "CHTimetableCell.h"
+#import "CHTimetableViewController.h"
 
 @interface CHBusStopViewController ()
 @property (nonatomic, strong) IBOutlet UIView *timetableHeaderView;
-@property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 @property (nonatomic, strong) IBOutlet UILabel *busStopName;
 
@@ -19,11 +19,16 @@
 @property (nonatomic, strong) IBOutlet UIView *nextBusView;
 @property (nonatomic, strong) IBOutlet UILabel *nextBusTimeLabel;
 
+@property (nonatomic, strong) CHTimetableViewController *timeTableViewController;
+
 //Delegate
 @property (nonatomic, weak) id <CHBusStopViewControllerDelegate> delegate;
 
-@property (nonatomic) float offsetBy;
+@property (nonatomic, strong) UIPanGestureRecognizer *panGesture;
 
+@property (nonatomic, assign) float offsetBy;
+@property (nonatomic, assign) CGPoint startLocation;
+@property (nonatomic, assign) float distance;
 
 
 @end
@@ -45,8 +50,37 @@
     [super viewDidLoad];
     
     // Setup tableview
-    [self.tableView setContentInset:UIEdgeInsetsMake(232,0,0,0)];
-    [self.tableView setTableHeaderView:self.timetableHeaderView];
+    self.timeTableViewController = [[CHTimetableViewController alloc] init];
+    [self.view addSubview:self.timeTableViewController.view];
+    [self.timeTableViewController changeContentInsetTo:UIEdgeInsetsMake(232, 0, 0, 0)];
+    self.timeTableViewController.view.frame = CGRectMake(0, 0, 320, self.view.frame.size.height);
+//    
+//    UIView *newView = [[UIView alloc] initWithFrame:CGRectMake(0, 232, 320, 520-20)];
+//    newView.backgroundColor = [UIColor blackColor];
+//    newView.userInteractionEnabled = YES;
+//    [self.view addSubview:newView];
+//    
+//    self.panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(userPanned:)];
+//    
+//    [newView addGestureRecognizer:self.panGesture];
+}
+
+-(IBAction)userPanned:(UIPanGestureRecognizer *)sender
+{
+    
+    if (sender.state == UIGestureRecognizerStateBegan) {
+        self.startLocation = [sender locationInView:self.view];
+    }
+    else if (sender.state == UIGestureRecognizerStateEnded) {
+        
+    } else {
+        CGPoint stopLocation = [sender locationInView:self.view];
+        CGFloat dy = stopLocation.y - self.startLocation.y;
+        self.distance = dy;
+        NSLog(@"Distance: %f", self.distance);
+        
+    }
+    //[self.timeTableViewController ]
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,8 +88,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
 
 - (void) parentScrollViewDidMoveBy: (float) movement
 {
@@ -86,44 +118,9 @@
 
 -(void)setTableOffset:(float)offset
 {
-    [self.tableView setContentOffset:CGPointMake(self.tableView.frame.origin.x, offset)];
+    //[self.tableView setContentOffset:CGPointMake(self.tableView.frame.origin.x, offset)];
 }
 
--(void)transitionOut
-{
-    [UIView animateWithDuration:0.5
-                          delay:0.0
-                        options:UIViewAnimationOptionCurveEaseInOut
-                     animations:^{
-                         // Animate out nextbusview
-                         self.nextBusView.alpha = 0;
-                         self.nextBusView.frame = CGRectMake(self.nextBusView.frame.origin.x, self.nextBusView.frame.origin.y - 100, self.nextBusView.frame.size.width, self.nextBusView.frame.size.height);
-                         
-                         // Animate out tableview
-                         
-                     }
-                     completion:^(BOOL finished){
-    }];
-    
-    [UIView animateWithDuration:0.3
-                          delay:0.3
-                        options:UIViewAnimationOptionCurveEaseOut
-                     animations:^{
-                        
-                     }
-                     completion:^(BOOL finished){
-                         [UIView animateWithDuration:0.8
-                                               delay:0.0
-                                             options:UIViewAnimationOptionCurveEaseInOut
-                                          animations:^{
-                                              self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, self.tableView.frame.origin.y + 500, self.tableView.frame.size.width, self.tableView.frame.size.height);
-                                          }
-                                          completion:^(BOOL finished){
-                                          }];
-
-                     }];
-
-}
 
 #pragma mark - UITableViewDelegate
 - (void) scrollViewDidScroll:(UIScrollView *)scrollView
@@ -134,7 +131,7 @@
     float lastPos = -225;
     float newPos = 0;
     
-    newPos = lastPos - self.tableView.contentOffset.y ;
+    //newPos = lastPos - self.tableView.contentOffset.y ;
     lastPos = newPos;
     
     // Move
@@ -144,7 +141,7 @@
     float percentage = -newPos / 100;
     self.nextBusView.alpha = 1 - percentage;
     
-    [self.delegate CHBusStopTableviewDidMoveBy:self.tableView.contentOffset.y];
+    //[self.delegate CHBusStopTableviewDidMoveBy:self.tableView.contentOffset.y];
 }
 
 #pragma mark - UITableViewDataSource

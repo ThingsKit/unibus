@@ -12,6 +12,7 @@
 #import "CHBusStopViewController.h"
 #import "CHMapViewController.h"
 
+
 @interface CHMainViewViewController ()
 
 @property (nonatomic, strong) IBOutlet UIButton *mapButton;
@@ -71,8 +72,10 @@ BOOL isScrolling;
 #pragma mark - UIButton events
 -(IBAction)mapButtonWasPressed:(id)sender
 {
+    self.mapViewController.navController = self.navigationController;
+    self.mapViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentViewController:self.mapViewController animated:YES completion:nil];
-
+    [self.navigationController setStatusBarWithStyle:UIStatusBarStyleDefault];
 }
 
 #pragma mark - CHBusStopViewControllerDelegate

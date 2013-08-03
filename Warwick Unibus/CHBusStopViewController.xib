@@ -6,11 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CHBusStopViewController">
             <connections>
-                <outlet property="busStopName" destination="GuL-oH-Zio" id="4jk-a1-Kmn"/>
                 <outlet property="nextBusTimeLabel" destination="fhp-05-34B" id="irD-oI-5At"/>
                 <outlet property="nextBusView" destination="34x-Pf-5Qz" id="KVt-iZ-vHg"/>
-                <outlet property="tableView" destination="5Ic-kg-j8x" id="0XB-eB-WRZ"/>
-                <outlet property="timetableHeaderView" destination="988-5R-XdH" id="6VI-pN-bvZ"/>
                 <outlet property="view" destination="C2o-TS-dkS" id="CHj-XO-wkX"/>
             </connections>
         </placeholder>
@@ -62,36 +59,6 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="45" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="5Ic-kg-j8x">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="520"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="TqD-Ch-98z"/>
-                        <outlet property="delegate" destination="-1" id="g32-yj-kCX"/>
-                    </connections>
-                </tableView>
-            </subviews>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-        </view>
-        <view contentMode="scaleToFill" id="988-5R-XdH" userLabel="Timetable header">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timetable_header.png" translatesAutoresizingMaskIntoConstraints="NO" id="b4e-Ya-JlS">
-                    <rect key="frame" x="0.0" y="1" width="320" height="66"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Arts Centre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuL-oH-Zio">
-                    <rect key="frame" x="53" y="27" width="215" height="32"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                    <color key="shadowColor" red="0.16530395040000001" green="0.3926296749" blue="0.69936735729999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <size key="shadowOffset" width="0.0" height="0.0"/>
-                </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -99,7 +66,6 @@
     </objects>
     <resources>
         <image name="black_shade.png" width="587" height="589"/>
-        <image name="timetable_header.png" width="643" height="129"/>
         <image name="u1.png" width="12" height="12"/>
     </resources>
 </document>

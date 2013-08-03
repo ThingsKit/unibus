@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "CHBusStopViewController.h"
+#import "CHNavigationViewController.h"
+
 
 @interface CHMainViewViewController : UIViewController <UIScrollViewDelegate, CHBusStopViewControllerDelegate>
-
+@property (nonatomic, weak) CHNavigationViewController *navigationController;
 @end

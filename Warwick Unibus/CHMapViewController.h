@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CHNavigationViewController.h"
+#import <MapKit/MapKit.h>
+#import "ADClusterMapView.h"
 
-@interface CHMapViewController : UIViewController
-
+@interface CHMapViewController : UIViewController <MKMapViewDelegate>
+@property (nonatomic, weak) CHNavigationViewController *navController;
 @end
