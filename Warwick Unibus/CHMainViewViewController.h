@@ -13,4 +13,6 @@
 
 @interface CHMainViewViewController : UIViewController <UIScrollViewDelegate, CHBusStopViewControllerDelegate>
 @property (nonatomic, weak) CHNavigationViewController *navigationController;
+
+-(void)attemptImageDownload;
 @end

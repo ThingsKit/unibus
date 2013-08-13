@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Chris Howell. All rights reserved.
 //
 
+@class BusStop;
 #import <Foundation/Foundation.h>
 
 @interface CHDataLoader : NSObject
@@ -15,5 +16,6 @@
 -(void)loadData;
 
 +(CHDataLoader*)sharedDataLoader;
++(BusStop *)busStopWithId:(NSNumber *)id;
 +(NSManagedObjectContext*)getManagedObjectContext;
 @end

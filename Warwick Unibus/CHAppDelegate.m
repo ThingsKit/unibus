@@ -11,6 +11,12 @@
 #import "CHNavigationViewController.h"
 #import "CHMainViewViewController.h"
 #import "CHDataLoader.h"
+#import "CoreData+MagicalRecord.h"
+
+@interface CHAppDelegate()
+@property (nonatomic, strong) CHMainViewViewController *mainViewCon;
+@property (nonatomic, strong) NSTimer *clockTimer;
+@end
 
 @implementation CHAppDelegate
 
@@ -20,25 +26,63 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(coreDataSaved:) name:@"coreDataUpdated" object:nil];
+    
+    // Parse
+    [Parse setApplicationId:@"wBUuq6l2XgbYmlkP8lIv33vkcaRMShknhMxsf2Wz"
+                  clientKey:@"3ac40HQwfrSEmyMei2mxWjCUZFmN2hXJuhFTITAD"];
+    
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor clearColor];
+    self.window.opaque = NO;
     [self.window makeKeyAndVisible];
     
+    // Magical record
     
-    CHNavigationViewController *navController = [[CHNavigationViewController alloc] init];
+    //Setup store coordinator and default context
+    [MagicalRecord setupCoreDataStack];
     
-    CHMainViewViewController *mainViewController = [[CHMainViewViewController alloc] init];
-    [navController pushViewController:mainViewController];
-    navController.rootViewController = mainViewController;
-    mainViewController.navigationController = navController;
-    
-    CHDataLoader *dataLoader = [[CHDataLoader alloc] initWithManagedObjectContext:self.managedObjectContext];
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+
+    // Decide if it is the first run. If it is, prepopulate the selected bus stops with defaults
+    BOOL hasRanBefore = [prefs boolForKey:@"hasRanBefore"];
+    if (!hasRanBefore)
+    {
+        NSMutableArray *stops = [[NSMutableArray alloc] init];
+        [stops addObject:[NSNumber numberWithInt:45]];
+        [stops addObject:[NSNumber numberWithInt:32]];
+        
+        [prefs setObject:stops forKey:@"stops"];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasRanBefore"];
+        [prefs synchronize];
+    }
+    CHDataLoader *dataLoader = [[CHDataLoader alloc] init];
     [dataLoader loadData];
     
-    self.window.rootViewController = navController;
+    
     
     return YES;
+}
+
+- (void)timerTick:(NSTimer *)timer
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"TimeChange" object:nil];
+}
+
+- (void) coreDataSaved: (NSNotification *) notification
+{
+    CHNavigationViewController *navController = [[CHNavigationViewController alloc] init];
+    
+    self.mainViewCon = [[CHMainViewViewController alloc] init];
+    [navController pushViewController:self.mainViewCon];
+    navController.rootViewController = self.mainViewCon;
+    self.mainViewCon.navigationController = navController;
+    
+    self.clockTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTick:) userInfo:nil repeats:YES];
+    
+    self.window.rootViewController = navController;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -61,6 +105,8 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [self.mainViewCon attemptImageDownload];
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

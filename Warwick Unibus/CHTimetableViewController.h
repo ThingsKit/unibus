@@ -7,11 +7,32 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CHTableView.h"
+@class BusStop;
+
+@protocol CHTimetableViewControllerDelegate <NSObject>
+@optional
+- (void) scrollViewDidScrollBy:(CGFloat) offset;
+- (void) userDidFavouriteStop;
+- (void) userDidUnfavouriteStop;
+- (void) removeStopButtonPressed;
+@end
+
+
 
 @interface CHTimetableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic, weak) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) IBOutlet CHTableView *tableView;
 @property (nonatomic, weak) IBOutlet UILabel *titleLabel;
+@property (nonatomic, strong) BusStop *busStop;
+@property (nonatomic, weak) IBOutlet UIButton *removeStopButton;
+@property (nonatomic, assign) int nextBusDue;
+@property (nonatomic, strong) NSString *nextBusTime;
+@property (nonatomic, strong) NSString *nextBusDestination;
+
+@property (nonatomic, weak) id <CHTimetableViewControllerDelegate> delegate;
+
 
 -(void)changeContentInsetTo:(UIEdgeInsets)inset;
+-(void)hideFavouriteButton;
 
 @end

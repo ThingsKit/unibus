@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4488.1" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4488.2" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CHMainViewViewController">
             <connections>
-                <outlet property="bgImage" destination="H8a-gc-PTx" id="E0r-s7-XEO"/>
+                <outlet property="bgImage" destination="H8a-gc-PTx" id="yjD-Tu-Dne"/>
                 <outlet property="mapButton" destination="Lmi-XH-W9R" id="LPe-Yy-Gay"/>
                 <outlet property="mapView" destination="gSE-3i-OHx" id="fDw-fJ-Sin"/>
                 <outlet property="pageControl" destination="yRs-Pf-GaV" id="jVR-gP-Og5"/>
@@ -19,8 +19,8 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImgBlur.png" translatesAutoresizingMaskIntoConstraints="NO" id="H8a-gc-PTx" userLabel="Background img">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H8a-gc-PTx" userLabel="Background img" customClass="PFImageView">
+                    <rect key="frame" x="-10" y="0.0" width="340" height="340"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gSE-3i-OHx" userLabel="Mapview">
@@ -74,13 +74,12 @@
                     </connections>
                 </scrollView>
             </subviews>
-            <color key="backgroundColor" red="0.96068274456521741" green="0.96068274456521741" blue="0.96068274456521741" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.96747622280000001" green="0.94933535000000002" blue="0.9520644184" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
     <resources>
-        <image name="ImgBlur.png" width="646" height="522"/>
         <image name="Map.png" width="26" height="24"/>
     </resources>
 </document>

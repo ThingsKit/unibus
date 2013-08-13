@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "97CD510917A07976004FF161"
-               BuildableName = "Warwick Unibus.app"
-               BlueprintName = "Warwick Unibus"
+               BuildableName = "Unibus.app"
+               BlueprintName = "Unibus"
                ReferencedContainer = "container:Warwick Unibus.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "97CD510917A07976004FF161"
-            BuildableName = "Warwick Unibus.app"
-            BlueprintName = "Warwick Unibus"
+            BuildableName = "Unibus.app"
+            BlueprintName = "Unibus"
             ReferencedContainer = "container:Warwick Unibus.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -62,12 +62,17 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "97CD510917A07976004FF161"
-            BuildableName = "Warwick Unibus.app"
-            BlueprintName = "Warwick Unibus"
+            BuildableName = "Unibus.app"
+            BlueprintName = "Unibus"
             ReferencedContainer = "container:Warwick Unibus.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
+         <AdditionalOption
+            key = "NSZombieEnabled"
+            value = "YES"
+            isEnabled = "YES">
+         </AdditionalOption>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
@@ -80,8 +85,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "97CD510917A07976004FF161"
-            BuildableName = "Warwick Unibus.app"
-            BlueprintName = "Warwick Unibus"
+            BuildableName = "Unibus.app"
+            BlueprintName = "Unibus"
             ReferencedContainer = "container:Warwick Unibus.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

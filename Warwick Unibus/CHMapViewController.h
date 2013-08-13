@@ -10,7 +10,9 @@
 #import "CHNavigationViewController.h"
 #import <MapKit/MapKit.h>
 #import "ADClusterMapView.h"
+#import "CHTimetableViewController.h"
 
-@interface CHMapViewController : UIViewController <MKMapViewDelegate>
+@interface CHMapViewController : UIViewController <MKMapViewDelegate, CHTimetableViewControllerDelegate>
 @property (nonatomic, weak) CHNavigationViewController *navController;
++ (CHMapViewController*)sharedMap;
 @end

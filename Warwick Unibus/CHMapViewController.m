@@ -6,6 +6,12 @@
 //  Copyright (c) 2013 Chris Howell. All rights reserved.
 //
 
+typedef enum {
+    kU1BusRoute,
+    kU2BusRoute,
+    kU17BusRoute
+} BusRoute;
+
 #import "CHMapViewController.h"
 #import "CHDataLoader.h"
 #import "BusStop.h"
@@ -14,12 +20,37 @@
 @interface CHMapViewController ()
 
 @property (nonatomic, weak) IBOutlet ADClusterMapView *mapView;
-@property (nonatomic, weak) IBOutlet UIView *timeTableViewPlacement;
 @property (nonatomic, strong) CHTimetableViewController *timeTableViewController;
+
+@property (nonatomic, weak) IBOutlet UIView *topBar;
+@property (nonatomic, weak) IBOutlet UIToolbar *toolBar;
+
+@property (nonatomic, weak) IBOutlet UIButton *u1Button;
+@property (nonatomic, weak) IBOutlet UIButton *u2Button;
+@property (nonatomic, weak) IBOutlet UIButton *u17Button;
+@property (nonatomic, weak) IBOutlet UIImageView *selectedImage;
+
+@property (nonatomic, assign) BusRoute routeSelected;
+@property (nonatomic, assign) CGFloat currentSelectedImageOffset;
+
+@property (nonatomic, weak) IBOutlet UIView *notifView;
+@property (nonatomic, weak) IBOutlet UILabel *notifLabel;
+@property (nonatomic, weak) IBOutlet UIImageView *notifImageView;
 
 @end
 
+static CHMapViewController *sharedMap;
+
 @implementation CHMapViewController
+
++ (CHMapViewController *) sharedMap {
+    if (sharedMap == nil) {
+        sharedMap = [[super alloc] init];
+        sharedMap.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    }
+
+    return sharedMap;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,17 +72,123 @@
     
     // Setup timetable view
     self.timeTableViewController = [[CHTimetableViewController alloc] init];
-    [self.timeTableViewPlacement addSubview:self.timeTableViewController.view];
-    [self.timeTableViewController changeContentInsetTo:UIEdgeInsetsMake(0, 0, 0, 0)];
-    //self.timeTableViewController.view.frame = CGRectMake(0, 100, self.timeTableViewController.view.frame.size.width, 200);
-    self.timeTableViewController.tableView.scrollEnabled = NO;
+    [self.view addSubview:self.timeTableViewController.view];
     
+    
+    [self.timeTableViewController changeContentInsetTo:UIEdgeInsetsMake(414, 0, 0, 0)];
+    self.timeTableViewController.view.frame = CGRectMake(0, 200, self.timeTableViewController.view.frame.size.width, 568);
+    [self.timeTableViewController.tableView setViewToReturnTo:self.view];
+    self.timeTableViewController.tableView.startOffset = 414;
+    self.timeTableViewController.view.hidden = YES;
+    self.timeTableViewController.delegate = self;
+    
+    // Set selected bus route
+    if (!self.routeSelected) {
+        self.routeSelected = kU1BusRoute;
+    }
+    
+    [self.view addSubview:self.notifView];
+    //self.notifView.frame = CGRectMake(0, 0, self.notifView.frame.size.width, self.notifView.frame.size.width);
+    [self.view bringSubviewToFront:self.topBar];
+    
+}
+
+- (UIStatusBarStyle) preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - CHTimetableViewControllerDelegate
+- (void) userDidFavouriteStop
+{
+    self.notifLabel.text = @"Added favourite bus stop";
+    
+    
+    [UIView animateWithDuration:0.5
+                          delay:0.0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         self.notifView.frame = CGRectMake(0, 90, self.notifView.frame.size.width, self.notifView.frame.size.width);
+                     }
+                     completion:^(BOOL finished){
+                         [UIView animateWithDuration:0.5
+                                               delay:2.0
+                                             options:UIViewAnimationOptionCurveEaseInOut
+                                          animations:^{
+                                              self.notifView.frame = CGRectMake(0, 0, self.notifView.frame.size.width, self.notifView.frame.size.width);
+                                          }
+                                          completion:^(BOOL finished){
+                                              
+                                          }];
+                     }];
+}
+
+- (void) userDidUnfavouriteStop
+{
+    self.notifLabel.text = @"Removed favourite bus stop";
+    //self.notifImageView setImage:[UIImage imageNamed:@""];
+    [UIView animateWithDuration:0.5
+                          delay:0.0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         self.notifView.frame = CGRectMake(0, 90, self.notifView.frame.size.width, self.notifView.frame.size.width);
+                     }
+                     completion:^(BOOL finished){
+                         [UIView animateWithDuration:0.5
+                                               delay:2.0
+                                             options:UIViewAnimationOptionCurveEaseInOut
+                                          animations:^{
+                                              self.notifView.frame = CGRectMake(0, 0, self.notifView.frame.size.width, self.notifView.frame.size.width);
+                                          }
+                                          completion:^(BOOL finished){
+                                              
+                                          }];
+                     }];
+}
+
+-(void) scrollViewDidScrollBy:(CGFloat) offset
+{
+    
+}
+
+#pragma mark - Setters
+- (void) setRouteSelected:(BusRoute)routeSelected
+{
+    _routeSelected = routeSelected;
+    // Animate to the button
+    
+    CGFloat offset = 11;
+    switch (routeSelected) {
+        case kU1BusRoute:
+            offset = 11;
+            break;
+        case kU2BusRoute:
+            offset = 116;
+            break;
+        case kU17BusRoute:
+            offset = 220;
+            break;
+        default:
+            break;
+    }
+    
+    [UIView animateWithDuration:0.3
+                          delay:0.0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         self.selectedImage.frame = CGRectMake(offset, self.selectedImage.frame.origin.y, self.selectedImage.frame.size.width, self.selectedImage.frame.size.height);
+                     }
+                     completion:^(BOOL finished){
+
+                     }];
+
+  
 }
 
 -(void)loadAnnotations
@@ -107,19 +244,66 @@
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view {
     ADClusterAnnotation *stop = view.annotation;
     NSLog(@"%@", stop.cluster.annotation.annotation);
-    BusStop *stop2 = (BusStop *) stop.cluster.annotation.annotation;
-    self.timeTableViewController.titleLabel.text = stop2.name;
+    BusStop *busStop = (BusStop *) stop.cluster.annotation.annotation;
+    self.timeTableViewController.busStop = busStop;
+    
+    self.timeTableViewController.view.hidden = NO;
+    
+    if (busStop != nil) {
+        [UIView animateWithDuration:0.3
+                              delay:0.0
+                            options:UIViewAnimationOptionCurveEaseInOut
+                         animations:^{
+                             self.timeTableViewController.view.frame = CGRectMake(0, 0, self.timeTableViewController.view.frame.size.width, 568);
+                         }
+                         completion:^(BOOL finished){
+                             
+                         }];
+
+    }
+
+}
+
+- (void)mapView:(MKMapView *)mapView regionWillChangeAnimated:(BOOL)animated
+{
+    [UIView animateWithDuration:0.3
+                          delay:0.0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         self.timeTableViewController.view.frame = CGRectMake(0, 200, self.timeTableViewController.view.frame.size.width, 568);
+                     }
+                     completion:^(BOOL finished){
+                         self.timeTableViewController.view.hidden = YES;
+                     }];
 }
 
 - (NSInteger)numberOfClustersInMapView:(ADClusterMapView *)mapView
 {
-    return 20;
+    return 25;
 }
 
 #pragma mark - UIButton events
 -(IBAction)doneButtonPressed:(id)sender
 {
-    [self.navController setStatusBarWithStyle: UIStatusBarStyleLightContent];
+    //[self.navController setStatusBarWithStyle: UIStatusBarStyleLightContent];
     [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
+
+-(IBAction)segmentButtonPressed:(UIButton *)sender
+{
+    switch (sender.tag) {
+        case 0:
+            self.routeSelected = kU1BusRoute;
+            break;
+        case 1:
+            self.routeSelected = kU2BusRoute;
+            break;
+        case 2:
+            self.routeSelected = kU17BusRoute;
+            break;
+        default:
+            break;
+    }
 }
 @end

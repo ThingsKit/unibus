@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BusTime.h"
 
 @interface CHTimetableCell : UITableViewCell
 @property (nonatomic, strong) IBOutlet UIImageView *bgView;
 
 - (void) setBgViewHidden;
-- (void) setupCell;
+- (void) setupWithBusTime:(BusTime *)time;
+- (void) displayMinutes;
 @end

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D8F021E8-91AF-463E-B7F2-64F28E8D923C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Warwick Unibus</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>62E56DF2-6F25-4885-B514-D6668D6B8B80</key>
+		<string>ssh://github.com/ceeK/unibus.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Warwick Unibus.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>62E56DF2-6F25-4885-B514-D6668D6B8B80</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/ceeK/unibus.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>62E56DF2-6F25-4885-B514-D6668D6B8B80</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>62E56DF2-6F25-4885-B514-D6668D6B8B80</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Warwick Unibus</string>
+		</dict>
+	</array>
+</dict>
+</plist>

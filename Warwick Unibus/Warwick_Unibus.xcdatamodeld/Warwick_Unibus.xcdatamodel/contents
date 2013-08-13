@@ -8,8 +8,11 @@
         <relationship name="timetable" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="BusTime" inverseName="relationship" inverseEntity="BusTime" syncable="YES"/>
     </entity>
     <entity name="BusTime" representedClassName="BusTime" syncable="YES">
+        <attribute name="destination" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="period" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stop_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BusStop" inverseName="timetable" inverseEntity="BusStop" syncable="YES"/>
     </entity>
     <elements>

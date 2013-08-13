@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CHTableView : UITableView
-
+@property (nonatomic, assign) CGFloat startOffset;
+@property (nonatomic, weak) UIView *viewToReturnTo;
 @end

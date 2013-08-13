@@ -1,0 +1,6002 @@
+[
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"0754",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"0824",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"0908",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"0938",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1008",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1038",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1108",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1138",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1208",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1238",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1308",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1338",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1408",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1438",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1508",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1538",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1608",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1638",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1708",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1738",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1808",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1838",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1914",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"2014",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"2114",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"2239",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"0757",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"0827",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"0911",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"0941",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"1011",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"1041",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"1111",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"1141",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"1211",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"1241",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"1311",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"1341",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"1411",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"1441",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"1511",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"1541",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"1611",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"1641",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"1711",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"1741",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"1811",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"1841",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"1917",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"2017",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"2117",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"ArtsCentre",
+    "time":"2240",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"0645",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"0715",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"0745",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"0819",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"0849",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"0931",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1001",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1031",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1101",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1131",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1201",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1231",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1301",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1331",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1401",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1431",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1501",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1531",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1601",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1631",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1701",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1731",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1829",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1859",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1933",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"2033",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"2133",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"2256",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0657",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0727",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0757",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0831",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0901",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0943",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1013",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1043",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1113",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1143",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1213",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1243",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1313",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1343",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1413",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1443",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1513",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1543",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1613",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1643",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1713",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1743",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1813",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1841",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1911",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1943",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"2043",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"2143",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"2308",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0702",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0732",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0802",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0836",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0906",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0948",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1018",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1048",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1118",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1148",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1218",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1248",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1318",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1348",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1418",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1448",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1518",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1548",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1618",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1648",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1718",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1748",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1818",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1846",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1916",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1948",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"2048",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"2148",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"2313",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"0816",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"0846",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"0916",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"0946",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1016",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1046",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1116",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1146",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1216",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1246",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1316",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1346",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1416",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1446",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1516",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1546",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1616",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1646",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1716",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1746",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1816",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"1910",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"2010",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"2110",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":43,
+    "stop_name":"The Gatehouse",
+    "time":"2239",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"0819",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"0849",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"0919",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"0949",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1019",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1049",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1119",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1149",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1219",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1249",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1319",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1349",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1419",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1449",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1519",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1549",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1619",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1649",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1719",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1749",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1819",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1913",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"2013",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"2113",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"2240",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":66,
+    "stop_name":"Wyandotte (down)",
+    "time":"0829",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":66,
+    "stop_name":"Wyandotte (down)",
+    "time":"0859",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":66,
+    "stop_name":"Wyandotte (down)",
+    "time":"0929",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":66,
+    "stop_name":"Wyandotte (down)",
+    "time":"0959",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":66,
+    "stop_name":"Wyandotte (down)",
+    "time":"1029",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":66,
+    "stop_name":"Wyandotte (down)",
+    "time":"1059",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":66,
+    "stop_name":"Wyandotte (down)",
+    "time":"1129",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":66,
+    "stop_name":"Wyandotte (down)",
+    "time":"1159",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":66,
+    "stop_name":"Wyandotte (down)",
+    "time":"1229",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":66,
+    "stop_name":"Wyandotte (down)",
+    "time":"1259",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":66,
+    "stop_name":"Wyandotte (down)",
+    "time":"1329",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":66,
+    "stop_name":"Wyandotte (down)",
+    "time":"1359",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":66,
+    "stop_name":"Wyandotte (down)",
+    "time":"1429",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":66,
+    "stop_name":"Wyandotte (down)",
+    "time":"1459",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":66,
+    "stop_name":"Wyandotte (down)",
+    "time":"1529",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":66,
+    "stop_name":"Wyandotte (down)",
+    "time":"1559",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":66,
+    "stop_name":"Wyandotte (down)",
+    "time":"1629",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":66,
+    "stop_name":"Wyandotte (down)",
+    "time":"1659",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":66,
+    "stop_name":"Wyandotte (down)",
+    "time":"1729",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":66,
+    "stop_name":"Wyandotte (down)",
+    "time":"1759",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":62,
+    "stop_name":"Kenilworth Shops",
+    "time":"0832",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":62,
+    "stop_name":"Kenilworth Shops",
+    "time":"0902",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":62,
+    "stop_name":"Kenilworth Shops",
+    "time":"0932",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":62,
+    "stop_name":"Kenilworth Shops",
+    "time":"1002",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":62,
+    "stop_name":"Kenilworth Shops",
+    "time":"1032",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":62,
+    "stop_name":"Kenilworth Shops",
+    "time":"1102",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":62,
+    "stop_name":"Kenilworth Shops",
+    "time":"1132",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":62,
+    "stop_name":"Kenilworth Shops",
+    "time":"1202",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":62,
+    "stop_name":"Kenilworth Shops",
+    "time":"1232",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":62,
+    "stop_name":"Kenilworth Shops",
+    "time":"1302",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":62,
+    "stop_name":"Kenilworth Shops",
+    "time":"1332",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":62,
+    "stop_name":"Kenilworth Shops",
+    "time":"1402",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":62,
+    "stop_name":"Kenilworth Shops",
+    "time":"1432",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":62,
+    "stop_name":"Kenilworth Shops",
+    "time":"1502",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":62,
+    "stop_name":"Kenilworth Shops",
+    "time":"1532",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":62,
+    "stop_name":"Kenilworth Shops",
+    "time":"1602",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":62,
+    "stop_name":"Kenilworth Shops",
+    "time":"1632",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":62,
+    "stop_name":"Kenilworth Shops",
+    "time":"1702",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":62,
+    "stop_name":"Kenilworth Shops",
+    "time":"1732",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":62,
+    "stop_name":"Kenilworth Shops",
+    "time":"1802",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"0715",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"0745",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"0815",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"0845",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"0915",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"0945",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1015",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1045",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1115",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1145",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1215",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1245",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1315",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1345",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1415",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1445",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1515",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1545",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1615",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1645",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1715",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1745",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1815",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1837",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"1929",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"2029",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"2129",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":10,
+    "stop_name":"Upper Parade",
+    "time":"2256",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0727",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0757",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0827",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0857",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0927",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0957",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1027",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1057",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1127",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1157",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1227",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1257",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1327",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1357",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1427",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1457",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1527",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1557",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1627",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1657",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1727",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1757",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1827",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1849",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1939",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"2039",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"2139",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"2308",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0732",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0802",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0832",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0902",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0932",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1002",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1032",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1102",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1132",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1202",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1232",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1302",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1332",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1402",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1432",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1502",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1532",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1602",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1632",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1702",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1732",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1802",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham  "
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1832",
+    "period":"saturday",
+    "busNo":"u2",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1854",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1944",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"2044",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"2144",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"2313",
+    "period":"saturday",
+    "busNo":"u1",
+    "destination":"sydenham"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0657",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0727",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0757",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0831",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0901",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0943",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1013",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1043",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1113",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1143",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1213",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1243",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1313",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1343",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1413",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1443",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1513",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1543",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1613",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1643",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1713",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni  "
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1743",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1813",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1841",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1911",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1943",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"2043",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"2143",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"2308",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0702",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0732",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0802",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0836",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0906",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0948",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1018",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1048",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1118",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1148",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1218",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1248",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1318",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1348",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1418",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1448",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1518",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1548",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1618",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1648",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1718",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1748",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1818",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1846",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1916",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1948",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"2048",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"2148",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"2313",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"0709",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"0739",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"0809",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"0843",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"0913",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"0955",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"1025",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"1055",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"1125",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"1155",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"1225",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"1255",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"1325",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"1355",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"1425",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"1455",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"1525",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"1555",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"1625",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"1655",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"1725",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"1755",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"1825",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"1851",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"1921",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"1953",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"2053",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"2153",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Parish Church (up)",
+    "time":"2318",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni  "
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"0714",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"0744",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"0814",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"0848",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"0918",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1002",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1032",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1102",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1132",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1202",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1232",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1302",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1332",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1402",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1432",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1502",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1532",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1602",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1632",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1702",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1732",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1802",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1832",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1855",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1957",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"2057",
+    "period":"weekday",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"2210",
+    "period":"weekday",
+    "busNo":"x17",
+    "destination":"uni"
+  },
+    {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0727",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0757",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0827",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0857",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0927",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0957",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1027",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1057",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1127",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1157",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1227",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1257",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1327",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1357",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1427",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1457",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1527",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1557",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1627",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1657",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1727",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1757",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1827",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1849",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1939",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"2039",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"2139",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+ {
+ "id":22,
+ "stop_name":"Gainsborough Drive",
+ "time":"2308",
+ "period":"saturdays",
+ "busNo":"u1",
+ "destination":"uni"
+ },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0732",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0802",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0832",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0902",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0932",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1002",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1032",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1102",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1132",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1202",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1232",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1302",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1332",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1402",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1432",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1502",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1532",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1602",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1632",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1702",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1732",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1802",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1832",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1854",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1944",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"2044",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"2144",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"2313",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"0739",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"0809",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"0839",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"0909",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"0939",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1009",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1039",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1109",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1139",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1209",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1239",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1309",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1339",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1409",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1439",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1509",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1539",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1609",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1639",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1709",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1739",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1808",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1837",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1859",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1949",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"2049",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"2149",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"2318",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"0744",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"0814",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"0844",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"0914",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"0944",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"1014",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"1044",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"1114",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"1144",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"1214",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"1244",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"1314",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"1344",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"1414",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"1444",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"1514",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"1544",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"1614",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"1644",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"1714",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni  "
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"1744",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"1841",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"1953",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"2053",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper parade (up)",
+    "time":"2210",
+    "period":"saturdays",
+    "busNo":"x17",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"0756",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"0826",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"0856",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"0926",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"0956",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1026",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1056",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1126",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1156",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1226",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1256",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1326",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1356",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1426",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1456",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1526",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1556",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1626",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1656",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1726",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1756",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"2222",
+    "period":"saturdays",
+    "busNo":"x17",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"0759",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"0829",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"0859",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"0929",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"0959",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"1029",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"1059",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"1129",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"1159",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"1229",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"1259",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"1329",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"1359",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"1429",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"1459",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"1529",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"1559",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"1629",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"1659",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"1729",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"1759",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte (up)",
+    "time":"2225",
+    "period":"saturdays",
+    "busNo":"x17",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"0814",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"0844",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"0914",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"0944",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1014",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1044",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1114",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1144",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1214",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1244",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1314",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1344",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1414",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1444",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1514",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1544",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1614",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1644",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1714",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1744",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1814",
+    "period":"saturdays",
+    "busNo":"u2",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1857",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"2009",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"2109",
+    "period":"saturdays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"2238",
+    "period":"saturdays",
+    "busNo":"x17",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0848",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0925",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"0955",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1025",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1055",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1125",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1155",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1225",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1255",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1325",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1355",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1425",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1455",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1525",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1601",
+    "period":"sundays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1625",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1655",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1740",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1825",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":16,
+    "stop_name":"St Helens Road",
+    "time":"1910",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0843",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0920",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"0950",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1020",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1050",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1120",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1150",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1220",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1250",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1320",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1350",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1420",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1450",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1520",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1556",
+    "period":"sundays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1620",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1650",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1735",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1820",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":22,
+    "stop_name":"Gainsborough Drive",
+    "time":"1905",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"0754",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"0854",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"0915",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"0931",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1001",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1031",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1101",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1131",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1201",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1231",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1301",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1331",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1401",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1431",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni  "
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1501",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1531",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1607",
+    "period":"sundays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1631",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1701",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1746",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1831",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":29,
+    "stop_name":"Church",
+    "time":"1916",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"0800",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"0900",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"0921",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"0941",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1011",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1041",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1111",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1141",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1211",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1241",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1311",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1341",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1411",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1441",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1511",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1541",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1623",
+    "period":"sundays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1708",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1753",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1838",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":32,
+    "stop_name":"Upper Parade",
+    "time":"1921",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"0812",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"0912",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"0933",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"0953",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1023",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1053",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1123",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1153",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1223",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1253",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1323",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1353",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1423",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1453",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1523",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1553",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1635",
+    "period":"sundays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1720",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1805",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1850",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":49,
+    "stop_name":"Holiday Inn",
+    "time":"1933",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte",
+    "time":"0815",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte",
+    "time":"0915",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte",
+    "time":"0936",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte",
+    "time":"0956",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte",
+    "time":"1026",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte",
+    "time":"1056",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte",
+    "time":"1126",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte",
+    "time":"1156",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte",
+    "time":"1226",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte",
+    "time":"1256",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte",
+    "time":"1326",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte",
+    "time":"1356",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte",
+    "time":"1426",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte",
+    "time":"1456",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte",
+    "time":"1526",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte",
+    "time":"1556",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte",
+    "time":"1638",
+    "period":"sundays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte",
+    "time":"1723",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte",
+    "time":"1808",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte",
+    "time":"1853",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":52,
+    "stop_name":"Wyandotte",
+    "time":"1936",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"0828",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"0928",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"0952",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1012",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1042",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1112",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1142",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1212",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1242",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1312",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1342",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1412",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1442",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1512",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1542",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1612",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1654",
+    "period":"sundays",
+    "busNo":"u1",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1739",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1824",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1909",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  },
+  {
+    "id":45,
+    "stop_name":"Arts Centre",
+    "time":"1952",
+    "period":"sundays",
+    "busNo":"u17",
+    "destination":"uni"
+  }
+]
