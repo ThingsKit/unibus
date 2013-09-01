@@ -9,8 +9,11 @@
     </entity>
     <entity name="BusTime" representedClassName="BusTime" syncable="YES">
         <attribute name="destination" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstBus" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="lastBus" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="period" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sequenceNo" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="stop_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BusStop" inverseName="timetable" inverseEntity="BusStop" syncable="YES"/>

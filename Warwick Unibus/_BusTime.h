@@ -6,8 +6,11 @@
 
 extern const struct BusTimeAttributes {
 	__unsafe_unretained NSString *destination;
+	__unsafe_unretained NSString *firstBus;
+	__unsafe_unretained NSString *lastBus;
 	__unsafe_unretained NSString *number;
 	__unsafe_unretained NSString *period;
+	__unsafe_unretained NSString *sequenceNo;
 	__unsafe_unretained NSString *stop_id;
 	__unsafe_unretained NSString *time;
 } BusTimeAttributes;
@@ -20,6 +23,9 @@ extern const struct BusTimeFetchedProperties {
 } BusTimeFetchedProperties;
 
 @class BusStop;
+
+
+
 
 
 
@@ -50,6 +56,34 @@ extern const struct BusTimeFetchedProperties {
 
 
 
+@property (nonatomic, strong) NSNumber* firstBus;
+
+
+
+@property BOOL firstBusValue;
+- (BOOL)firstBusValue;
+- (void)setFirstBusValue:(BOOL)value_;
+
+//- (BOOL)validateFirstBus:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
+@property (nonatomic, strong) NSNumber* lastBus;
+
+
+
+@property BOOL lastBusValue;
+- (BOOL)lastBusValue;
+- (void)setLastBusValue:(BOOL)value_;
+
+//- (BOOL)validateLastBus:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
 @property (nonatomic, strong) NSString* number;
 
 
@@ -65,6 +99,20 @@ extern const struct BusTimeFetchedProperties {
 
 
 //- (BOOL)validatePeriod:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
+@property (nonatomic, strong) NSNumber* sequenceNo;
+
+
+
+@property int16_t sequenceNoValue;
+- (int16_t)sequenceNoValue;
+- (void)setSequenceNoValue:(int16_t)value_;
+
+//- (BOOL)validateSequenceNo:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -117,6 +165,24 @@ extern const struct BusTimeFetchedProperties {
 
 
 
+- (NSNumber*)primitiveFirstBus;
+- (void)setPrimitiveFirstBus:(NSNumber*)value;
+
+- (BOOL)primitiveFirstBusValue;
+- (void)setPrimitiveFirstBusValue:(BOOL)value_;
+
+
+
+
+- (NSNumber*)primitiveLastBus;
+- (void)setPrimitiveLastBus:(NSNumber*)value;
+
+- (BOOL)primitiveLastBusValue;
+- (void)setPrimitiveLastBusValue:(BOOL)value_;
+
+
+
+
 - (NSString*)primitiveNumber;
 - (void)setPrimitiveNumber:(NSString*)value;
 
@@ -125,6 +191,15 @@ extern const struct BusTimeFetchedProperties {
 
 - (NSString*)primitivePeriod;
 - (void)setPrimitivePeriod:(NSString*)value;
+
+
+
+
+- (NSNumber*)primitiveSequenceNo;
+- (void)setPrimitiveSequenceNo:(NSNumber*)value;
+
+- (int16_t)primitiveSequenceNoValue;
+- (void)setPrimitiveSequenceNoValue:(int16_t)value_;
 
 
 

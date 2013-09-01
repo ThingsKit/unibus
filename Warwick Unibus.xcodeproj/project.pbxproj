@@ -59,6 +59,7 @@
 		9729B39A17A71EFF001F45A2 /* busstops.json in Resources */ = {isa = PBXBuildFile; fileRef = 9729B39917A71EFF001F45A2 /* busstops.json */; };
 		9729B3A117A71FBB001F45A2 /* CHMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9729B39F17A71FBB001F45A2 /* CHMapViewController.m */; };
 		9729B3A217A71FBB001F45A2 /* CHMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9729B3A017A71FBB001F45A2 /* CHMapViewController.xib */; };
+		972A460617BE741A00116A30 /* stop_exceptions.json in Resources */ = {isa = PBXBuildFile; fileRef = 972A460517BE741A00116A30 /* stop_exceptions.json */; };
 		9730532117BA8FE5001A5B07 /* CHNoBusesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9730532017BA8FE5001A5B07 /* CHNoBusesCell.m */; };
 		9730532317BA9009001A5B07 /* CHNoBusesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9730532217BA9009001A5B07 /* CHNoBusesCell.xib */; };
 		9734276B17AFE3F100385487 /* plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9734276917AFE3F100385487 /* plus@2x.png */; };
@@ -79,6 +80,11 @@
 		973B85BF17A460410005E2FB /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973B85BE17A460410005E2FB /* iAd.framework */; };
 		973B85C317A46A060005E2FB /* CHBusStopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973B85C117A46A060005E2FB /* CHBusStopViewController.m */; };
 		973B85C417A46A060005E2FB /* CHBusStopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 973B85C217A46A060005E2FB /* CHBusStopViewController.xib */; };
+		974CDE3617D28DC200C34044 /* u1_route.json in Resources */ = {isa = PBXBuildFile; fileRef = 974CDE3317D28DC200C34044 /* u1_route.json */; };
+		974CDE3717D28DC200C34044 /* u2_route.json in Resources */ = {isa = PBXBuildFile; fileRef = 974CDE3417D28DC200C34044 /* u2_route.json */; };
+		974CDE3817D28DC200C34044 /* u17_route.json in Resources */ = {isa = PBXBuildFile; fileRef = 974CDE3517D28DC200C34044 /* u17_route.json */; };
+		974CDE4017D2AF9300C34044 /* CHTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 974CDE3F17D2AF9300C34044 /* CHTableView.m */; };
+		974ED88917BBDB9B004C9BA5 /* all_times.json in Resources */ = {isa = PBXBuildFile; fileRef = 974ED88817BBDB9B004C9BA5 /* all_times.json */; };
 		975CEDB217A9742000734319 /* _BusStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 975CEDAF17A9741F00734319 /* _BusStop.m */; };
 		975CEDB317A9742000734319 /* _BusTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 975CEDB117A9742000734319 /* _BusTime.m */; };
 		975CEDB817A9742600734319 /* BusStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 975CEDB517A9742600734319 /* BusStop.m */; };
@@ -94,7 +100,6 @@
 		976ACC1B17A428320013FA33 /* black_shade.png in Resources */ = {isa = PBXBuildFile; fileRef = 976ACC1A17A428320013FA33 /* black_shade.png */; };
 		976ACC2017A4327F0013FA33 /* u1.png in Resources */ = {isa = PBXBuildFile; fileRef = 976ACC1E17A4327F0013FA33 /* u1.png */; };
 		976ACC2117A4327F0013FA33 /* u1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 976ACC1F17A4327F0013FA33 /* u1@2x.png */; };
-		977D331617AB178100757C21 /* CHTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 977D331517AB178100757C21 /* CHTableView.m */; };
 		9794280917A9E16A00C8E8D3 /* bussign@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9794280717A9E16A00C8E8D3 /* bussign@2x.png */; };
 		9794280A17A9E16A00C8E8D3 /* bussign.png in Resources */ = {isa = PBXBuildFile; fileRef = 9794280817A9E16A00C8E8D3 /* bussign.png */; };
 		9794280E17A9E6B800C8E8D3 /* CHTimetableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9794280C17A9E6B800C8E8D3 /* CHTimetableViewController.m */; };
@@ -152,7 +157,6 @@
 		97D87A0117AEDF7B00BAB733 /* BariolLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D87A0017AEDF7B00BAB733 /* BariolLight.m */; };
 		97D87A0217AEE23700BAB733 /* Bariol_Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 97D879F017AED91900BAB733 /* Bariol_Thin.otf */; };
 		97D87A0317AEE23B00BAB733 /* Bariol_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 97D879F317AED92800BAB733 /* Bariol_Bold.otf */; };
-		97EC7DEE17B8136600ABE9E9 /* all_times.json in Resources */ = {isa = PBXBuildFile; fileRef = 97EC7DED17B8136600ABE9E9 /* all_times.json */; };
 		97F7984B17B18F010084A6BA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F7984A17B18F010084A6BA /* CoreMedia.framework */; };
 		97F7984D17B18F060084A6BA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F7984C17B18F060084A6BA /* CoreVideo.framework */; };
 		97F7984F17B18F0E0084A6BA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F7984E17B18F0E0084A6BA /* OpenGLES.framework */; };
@@ -263,6 +267,7 @@
 		9729B39E17A71FBB001F45A2 /* CHMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHMapViewController.h; sourceTree = "<group>"; };
 		9729B39F17A71FBB001F45A2 /* CHMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHMapViewController.m; sourceTree = "<group>"; };
 		9729B3A017A71FBB001F45A2 /* CHMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHMapViewController.xib; sourceTree = "<group>"; };
+		972A460517BE741A00116A30 /* stop_exceptions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stop_exceptions.json; sourceTree = "<group>"; };
 		9730531F17BA8FE5001A5B07 /* CHNoBusesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHNoBusesCell.h; sourceTree = "<group>"; };
 		9730532017BA8FE5001A5B07 /* CHNoBusesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHNoBusesCell.m; sourceTree = "<group>"; };
 		9730532217BA9009001A5B07 /* CHNoBusesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHNoBusesCell.xib; sourceTree = "<group>"; };
@@ -285,6 +290,12 @@
 		973B85C017A46A060005E2FB /* CHBusStopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHBusStopViewController.h; sourceTree = "<group>"; };
 		973B85C117A46A060005E2FB /* CHBusStopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHBusStopViewController.m; sourceTree = "<group>"; };
 		973B85C217A46A060005E2FB /* CHBusStopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHBusStopViewController.xib; sourceTree = "<group>"; };
+		974CDE3317D28DC200C34044 /* u1_route.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = u1_route.json; sourceTree = "<group>"; };
+		974CDE3417D28DC200C34044 /* u2_route.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = u2_route.json; sourceTree = "<group>"; };
+		974CDE3517D28DC200C34044 /* u17_route.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = u17_route.json; sourceTree = "<group>"; };
+		974CDE3E17D2AF9300C34044 /* CHTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTableView.h; sourceTree = "<group>"; };
+		974CDE3F17D2AF9300C34044 /* CHTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTableView.m; sourceTree = "<group>"; };
+		974ED88817BBDB9B004C9BA5 /* all_times.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = all_times.json; sourceTree = "<group>"; };
 		975CEDAE17A9741F00734319 /* _BusStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _BusStop.h; sourceTree = "<group>"; };
 		975CEDAF17A9741F00734319 /* _BusStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _BusStop.m; sourceTree = "<group>"; };
 		975CEDB017A9741F00734319 /* _BusTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _BusTime.h; sourceTree = "<group>"; };
@@ -309,8 +320,6 @@
 		976ACC1A17A428320013FA33 /* black_shade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_shade.png; sourceTree = "<group>"; };
 		976ACC1E17A4327F0013FA33 /* u1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u1.png; sourceTree = "<group>"; };
 		976ACC1F17A4327F0013FA33 /* u1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "u1@2x.png"; sourceTree = "<group>"; };
-		977D331417AB178100757C21 /* CHTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTableView.h; sourceTree = "<group>"; };
-		977D331517AB178100757C21 /* CHTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTableView.m; sourceTree = "<group>"; };
 		9794280717A9E16A00C8E8D3 /* bussign@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bussign@2x.png"; sourceTree = "<group>"; };
 		9794280817A9E16A00C8E8D3 /* bussign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bussign.png; sourceTree = "<group>"; };
 		9794280B17A9E6B800C8E8D3 /* CHTimetableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTimetableViewController.h; sourceTree = "<group>"; };
@@ -378,7 +387,6 @@
 		97D879FA17AEDF4900BAB733 /* BariolBold.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BariolBold.m; sourceTree = "<group>"; };
 		97D879FF17AEDF7B00BAB733 /* BariolLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BariolLight.h; sourceTree = "<group>"; };
 		97D87A0017AEDF7B00BAB733 /* BariolLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BariolLight.m; sourceTree = "<group>"; };
-		97EC7DED17B8136600ABE9E9 /* all_times.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = all_times.json; sourceTree = "<group>"; };
 		97F7984A17B18F010084A6BA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		97F7984C17B18F060084A6BA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		97F7984E17B18F0E0084A6BA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -580,7 +588,11 @@
 		9729B39B17A71F18001F45A2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				97EC7DED17B8136600ABE9E9 /* all_times.json */,
+				974CDE3317D28DC200C34044 /* u1_route.json */,
+				974CDE3417D28DC200C34044 /* u2_route.json */,
+				974CDE3517D28DC200C34044 /* u17_route.json */,
+				972A460517BE741A00116A30 /* stop_exceptions.json */,
+				974ED88817BBDB9B004C9BA5 /* all_times.json */,
 				9729B39917A71EFF001F45A2 /* busstops.json */,
 			);
 			name = Data;
@@ -782,8 +794,8 @@
 				9794280B17A9E6B800C8E8D3 /* CHTimetableViewController.h */,
 				9794280C17A9E6B800C8E8D3 /* CHTimetableViewController.m */,
 				9794280D17A9E6B800C8E8D3 /* CHTimetableViewController.xib */,
-				977D331417AB178100757C21 /* CHTableView.h */,
-				977D331517AB178100757C21 /* CHTableView.m */,
+				974CDE3E17D2AF9300C34044 /* CHTableView.h */,
+				974CDE3F17D2AF9300C34044 /* CHTableView.m */,
 			);
 			path = "Warwick Unibus";
 			sourceTree = "<group>";
@@ -963,9 +975,11 @@
 				9794280917A9E16A00C8E8D3 /* bussign@2x.png in Resources */,
 				97B5F90417A1D3CB00FC204A /* Nextbusbg@2x.png in Resources */,
 				970F067217A1A4EC00E1AE59 /* FadedLine@2x.png in Resources */,
+				974CDE3617D28DC200C34044 /* u1_route.json in Resources */,
 				9734278217AFE49900385487 /* map_header_bg.png in Resources */,
 				97C6A3C217A16A1D00504668 /* HelveticaNeue-CondensedBlack.otf in Resources */,
 				97B5F90317A1D3CB00FC204A /* Nextbusbg.png in Resources */,
+				974ED88917BBDB9B004C9BA5 /* all_times.json in Resources */,
 				9734276C17AFE3F100385487 /* plus.png in Resources */,
 				97D87A0317AEE23B00BAB733 /* Bariol_Bold.otf in Resources */,
 				9734276B17AFE3F100385487 /* plus@2x.png in Resources */,
@@ -983,6 +997,8 @@
 				97C6A3C817A16A1D00504668 /* HelveticaNeue-UltraLight.otf in Resources */,
 				9794280A17A9E16A00C8E8D3 /* bussign.png in Resources */,
 				9734277817AFE40700385487 /* star_selected.png in Resources */,
+				974CDE3817D28DC200C34044 /* u17_route.json in Resources */,
+				972A460617BE741A00116A30 /* stop_exceptions.json in Resources */,
 				97C6A3C417A16A1D00504668 /* HelveticaNeue-Italic.otf in Resources */,
 				9729B39A17A71EFF001F45A2 /* busstops.json in Resources */,
 				976ACC2117A4327F0013FA33 /* u1@2x.png in Resources */,
@@ -994,9 +1010,9 @@
 				973B85C417A46A060005E2FB /* CHBusStopViewController.xib in Resources */,
 				9734276F17AFE3FB00385487 /* segment_selected@2x.png in Resources */,
 				970F067417A1A5D000E1AE59 /* FadedLine.png in Resources */,
-				97EC7DEE17B8136600ABE9E9 /* all_times.json in Resources */,
 				976ACC2017A4327F0013FA33 /* u1.png in Resources */,
 				9734277B17AFE43000385487 /* notif_bg@2x.png in Resources */,
+				974CDE3717D28DC200C34044 /* u2_route.json in Resources */,
 				9734278117AFE49900385487 /* map_header_bg@2x.png in Resources */,
 				97C6A3C317A16A1D00504668 /* HelveticaNeue-CondensedBold.otf in Resources */,
 				9734277717AFE40700385487 /* star_selected@2x.png in Resources */,
@@ -1043,7 +1059,6 @@
 				9729B38317A71143001F45A2 /* MagicalRecord+Actions.m in Sources */,
 				97D87A0117AEDF7B00BAB733 /* BariolLight.m in Sources */,
 				975CEDD517A9C5C200734319 /* ADMapPointAnnotation.m in Sources */,
-				977D331617AB178100757C21 /* CHTableView.m in Sources */,
 				975CEDD317A9C5C200734319 /* ADClusterMapView.m in Sources */,
 				9729B37E17A71143001F45A2 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
 				9729B38217A71143001F45A2 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
@@ -1077,6 +1092,7 @@
 				970F067B17A1B98800E1AE59 /* UIColor+HexValue.m in Sources */,
 				97CD512317A07976004FF161 /* Warwick_Unibus.xcdatamodeld in Sources */,
 				97D879EF17AED91100BAB733 /* BariolLabel.m in Sources */,
+				974CDE4017D2AF9300C34044 /* CHTableView.m in Sources */,
 				9729B37D17A71143001F45A2 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
 				973B85C317A46A060005E2FB /* CHBusStopViewController.m in Sources */,
 				9729B38717A71143001F45A2 /* MagicalRecord+Setup.m in Sources */,

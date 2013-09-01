@@ -1,0 +1,490 @@
+[
+  {
+    "id":43,
+    "name":"The Gatehouse",
+    "period":"weekdays",
+    "destination":"sydenham",
+    "element":0,
+    "fromEnd":"NO"
+  },
+  {
+    "id":43,
+    "name":"The Gatehouse",
+    "period":"weekdays",
+    "destination":"sydenham",
+    "element":1,
+    "fromEnd":"NO"
+  },
+  {
+    "id":43,
+    "name":"The Gatehouse",
+    "period":"weekdays",
+    "destination":"sydenham",
+    "element":2,
+    "fromEnd":"NO"
+  },
+  {
+    "id":45,
+    "name":"Arts Centre",
+    "period":"weekdays",
+    "destination":"sydenham",
+    "element":0,
+    "fromEnd":"NO"
+  },
+  {
+    "id":45,
+    "name":"Arts Centre",
+    "period":"weekdays",
+    "destination":"sydenham",
+    "element":1,
+    "fromEnd":"NO"
+  },
+  {
+    "id":45,
+    "name":"Arts Centre",
+    "period":"weekdays",
+    "destination":"sydenham",
+    "element":2,
+    "fromEnd":"NO"
+  },
+  {
+    "id":43,
+    "name":"The Gatehouse",
+    "period":"saturdays",
+    "destination":"sydenham",
+    "element":0,
+    "fromEnd":"NO"
+  },
+  {
+    "id":43,
+    "name":"The Gatehouse",
+    "period":"saturdays",
+    "destination":"sydenham",
+    "element":1,
+    "fromEnd":"NO"
+  },
+  {
+    "id":43,
+    "name":"The Gatehouse",
+    "period":"saturdays",
+    "destination":"sydenham",
+    "element":2,
+    "fromEnd":"NO"
+  },
+  {
+    "id":45,
+    "name":"Arts Centre",
+    "period":"saturdays",
+    "destination":"sydenham",
+    "element":0,
+    "fromEnd":"NO"
+  },
+  {
+    "id":45,
+    "name":"Arts Centre",
+    "period":"saturdays",
+    "destination":"sydenham",
+    "element":1,
+    "fromEnd":"NO"
+  },
+  {
+    "id":45,
+    "name":"Arts Centre",
+    "period":"saturdays",
+    "destination":"sydenham",
+    "element":2,
+    "fromEnd":"NO"
+  },
+  {
+    "id":66,
+    "name":"Wyandotte (down)",
+    "period":"saturdays",
+    "destination":"sydenham",
+    "element":0,
+    "fromEnd":"NO"
+  },
+  {
+    "id":66,
+    "name":"Wyandotte (down)",
+    "period":"saturdays",
+    "destination":"sydenham",
+    "element":1,
+    "fromEnd":"NO"
+  },
+  {
+    "id":66,
+    "name":"Wyandotte (down)",
+    "period":"saturdays",
+    "destination":"sydenham",
+    "element":2,
+    "fromEnd":"NO"
+  },
+  {
+    "id":62,
+    "name":"Kenilworth Shops (down)",
+    "period":"saturdays",
+    "destination":"sydenham",
+    "element":0,
+    "fromEnd":"NO"
+  },
+  {
+    "id":62,
+    "name":"Kenilworth Shops (down)",
+    "period":"saturdays",
+    "destination":"sydenham",
+    "element":1,
+    "fromEnd":"NO"
+  },
+  {
+    "id":62,
+    "name":"Kenilworth Shops (down)",
+    "period":"saturdays",
+    "destination":"sydenham",
+    "element":2,
+    "fromEnd":"NO"
+  },
+  {
+    "id":22,
+    "name":"Gainsborough Drive",
+    "period":"sunday",
+    "destination":"sydenham",
+    "element":0,
+    "fromEnd":"YES"
+  },
+  {
+    "id":22,
+    "name":"Gainsborough Drive",
+    "period":"sunday",
+    "destination":"sydenham",
+    "element":5,
+    "fromEnd":"YES"
+  },
+  {
+    "id":16,
+    "name":"St Helens Road",
+    "period":"sunday",
+    "destination":"sydenham",
+    "element":0,
+    "fromEnd":"YES"
+  },
+  {
+    "id":16,
+    "name":"St Helens Road",
+    "period":"sunday",
+    "destination":"sydenham",
+    "element":5,
+    "fromEnd":"YES"
+  },
+  {
+    "id":22,
+    "name":"Gainsborough Drive",
+    "period":"weekdays",
+    "destination":"uni",
+    "element":1,
+    "fromEnd":"YES"
+  },
+  {
+    "id":16,
+    "name":"St Helens Road",
+    "period":"weekdays",
+    "destination":"uni",
+    "element":1,
+    "fromEnd":"YES"
+  },
+  {
+    "id":29,
+    "name":"Parish Church (up)",
+    "period":"weekdays",
+    "destination":"uni",
+    "element":1,
+    "fromEnd":"YES"
+  },
+  {
+    "id":32,
+    "name":"Upper Parade (up)",
+    "period":"weekdays",
+    "destination":"uni",
+    "element":0,
+    "fromEnd":"YES"
+  },
+  {
+    "id":32,
+    "name":"Upper Parade (up)",
+    "period":"weekdays",
+    "destination":"uni",
+    "element":2,
+    "fromEnd":"YES"
+  },
+  {
+    "id":32,
+    "name":"Upper Parade (up)",
+    "period":"weekdays",
+    "destination":"uni",
+    "element":5,
+    "fromEnd":"YES"
+  },
+  {
+    "id":45,
+    "name":"Arts Centre",
+    "period":"weekdays",
+    "destination":"uni",
+    "element":0,
+    "fromEnd":"YES"
+  },
+  {
+    "id":45,
+    "name":"Arts Centre",
+    "period":"weekdays",
+    "destination":"uni",
+    "element":2,
+    "fromEnd":"YES"
+  },
+  {
+    "id":45,
+    "name":"Arts Centre",
+    "period":"weekdays",
+    "destination":"uni",
+    "element":5,
+    "fromEnd":"YES"
+  },
+  {
+    "id":22,
+    "name":"Gainsborough Drive",
+    "period":"saturday",
+    "destination":"uni",
+    "element":0,
+    "fromEnd":"YES"
+  },
+  {
+    "id":22,
+    "name":"Gainsborough Drive",
+    "period":"saturday",
+    "destination":"uni",
+    "element":2,
+    "fromEnd":"YES"
+  },
+  {
+    "id":16,
+    "name":"St Helens Road",
+    "period":"saturday",
+    "destination":"uni",
+    "element":0,
+    "fromEnd":"YES"
+  },
+  {
+    "id":16,
+    "name":"St Helens Road",
+    "period":"saturday",
+    "destination":"uni",
+    "element":2,
+    "fromEnd":"YES"
+  },
+  {
+    "id":29,
+    "name":"Parish Church (up)",
+    "period":"saturday",
+    "destination":"uni",
+    "element":0,
+    "fromEnd":"YES"
+  },
+  {
+    "id":29,
+    "name":"Parish Church (up)",
+    "period":"saturday",
+    "destination":"uni",
+    "element":2,
+    "fromEnd":"YES"
+  },
+  {
+    "id":32,
+    "name":"Upper Parade (up)",
+    "period":"saturday",
+    "destination":"uni",
+    "element":1,
+    "fromEnd":"YES"
+  },
+  {
+    "id":32,
+    "name":"Upper Parade (up)",
+    "period":"saturday",
+    "destination":"uni",
+    "element":3,
+    "fromEnd":"YES"
+  },
+  {
+    "id":32,
+    "name":"Upper Parade (up)",
+    "period":"saturday",
+    "destination":"uni",
+    "element":6,
+    "fromEnd":"YES"
+  },
+  {
+    "id":32,
+    "name":"Upper Parade (up)",
+    "period":"saturday",
+    "destination":"uni",
+    "element":8,
+    "fromEnd":"YES"
+  },
+  {
+    "id":49,
+    "name":"Holiday Inn",
+    "period":"saturday",
+    "destination":"uni",
+    "element":1,
+    "fromEnd":"YES"
+  },
+  {
+    "id":49,
+    "name":"Holiday Inn",
+    "period":"saturday",
+    "destination":"uni",
+    "element":3,
+    "fromEnd":"YES"
+  },
+  {
+    "id":49,
+    "name":"Holiday Inn",
+    "period":"saturday",
+    "destination":"uni",
+    "element":6,
+    "fromEnd":"YES"
+  },
+  {
+    "id":49,
+    "name":"Holiday Inn",
+    "period":"saturday",
+    "destination":"uni",
+    "element":8,
+    "fromEnd":"YES"
+  },
+  {
+    "id":52,
+    "name":"Wyandotte (up)",
+    "period":"saturday",
+    "destination":"uni",
+    "element":1,
+    "fromEnd":"YES"
+  },
+  {
+    "id":52,
+    "name":"Wyandotte (up)",
+    "period":"saturday",
+    "destination":"uni",
+    "element":3,
+    "fromEnd":"YES"
+  },
+  {
+    "id":52,
+    "name":"Wyandotte (up)",
+    "period":"saturday",
+    "destination":"uni",
+    "element":6,
+    "fromEnd":"YES"
+  },
+  {
+    "id":52,
+    "name":"Wyandotte (up)",
+    "period":"saturday",
+    "destination":"uni",
+    "element":8,
+    "fromEnd":"YES"
+  },
+  {
+    "id":45,
+    "name":"Arts Centre",
+    "period":"saturday",
+    "destination":"uni",
+    "element":1,
+    "fromEnd":"YES"
+  },
+  {
+    "id":45,
+    "name":"Arts Centre",
+    "period":"saturday",
+    "destination":"uni",
+    "element":3,
+    "fromEnd":"YES"
+  },
+  {
+    "id":45,
+    "name":"Arts Centre",
+    "period":"saturday",
+    "destination":"uni",
+    "element":6,
+    "fromEnd":"YES"
+  },
+  {
+    "id":45,
+    "name":"Arts Centre",
+    "period":"saturday",
+    "destination":"uni",
+    "element":8,
+    "fromEnd":"YES"
+  },
+  {
+    "id":22,
+    "name":"Gainsborough Drive",
+    "period":"sunday",
+    "destination":"uni",
+    "element":0,
+    "fromEnd":"NO"
+  },
+  {
+    "id":22,
+    "name":"Gainsborough Drive",
+    "period":"sunday",
+    "destination":"uni",
+    "element":2,
+    "fromEnd":"NO"
+  },
+  {
+    "id":16,
+    "name":"St Helens Road",
+    "period":"sunday",
+    "destination":"uni",
+    "element":0,
+    "fromEnd":"NO"
+  },
+  {
+    "id":16,
+    "name":"St Helens Road",
+    "period":"sunday",
+    "destination":"uni",
+    "element":2,
+    "fromEnd":"NO"
+  },
+  {
+    "id":32,
+    "name":"Upper Parade (up)",
+    "period":"saturday",
+    "destination":"uni",
+    "element":4,
+    "fromEnd":"YES"
+  },
+  {
+    "id":49,
+    "name":"Holiday Inn",
+    "period":"saturday",
+    "destination":"uni",
+    "element":4,
+    "fromEnd":"YES"
+  },
+  {
+    "id":52,
+    "name":"Wyandotte (up)",
+    "period":"saturday",
+    "destination":"uni",
+    "element":4,
+    "fromEnd":"YES"
+  },
+  {
+    "id":45,
+    "name":"Arts Centre",
+    "period":"saturday",
+    "destination":"uni",
+    "element":4,
+    "fromEnd":"YES"
+  }
+]

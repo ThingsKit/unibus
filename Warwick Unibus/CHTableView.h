@@ -1,8 +1,8 @@
 //
-//  CHTableView.h
+//  CHTable.h
 //  Warwick Unibus
 //
-//  Created by Chris Howell on 01/08/2013.
+//  Created by Chris Howell on 01/09/2013.
 //  Copyright (c) 2013 Chris Howell. All rights reserved.
 //
 
@@ -10,5 +10,5 @@
 
 @interface CHTableView : UITableView
 @property (nonatomic, assign) CGFloat startOffset;
-@property (nonatomic, weak) UIView *viewToReturnTo;
 @end
+

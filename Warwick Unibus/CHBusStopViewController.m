@@ -23,6 +23,8 @@
 @property (nonatomic, weak) IBOutlet UILabel *nextBusTimeLabel;
 @property (nonatomic, weak) IBOutlet UILabel *minutesLabel;
 @property (nonatomic, weak) IBOutlet UILabel *destinationLabel;
+@property (nonatomic, weak) IBOutlet UILabel *nextBusNumberLeamingtonLabel;
+@property (nonatomic, weak) IBOutlet UILabel *nextBusNumberUniversityLabel;
 
 //Delegate
 @property (nonatomic, weak) id <CHBusStopViewControllerDelegate> delegate;
@@ -41,7 +43,6 @@
 
 -(void)awakeFromNib
 {
-
     [super awakeFromNib];
 }
 
@@ -102,7 +103,6 @@
     [self.view addSubview:self.timeTableViewController.view];
     [self.timeTableViewController changeContentInsetTo:UIEdgeInsetsMake(232, 0, 0, 0)];
     self.timeTableViewController.view.frame = CGRectMake(0, 0, 320, self.view.frame.size.height);
-    [self.timeTableViewController.tableView setViewToReturnTo:self.view];
     self.timeTableViewController.delegate = self;
     self.timeTableViewController.tableView.startOffset = 232;
     
@@ -157,6 +157,7 @@
 
 - (void) timeChanged:(NSNotification *) notification
 {
+    // Move appropriate next bus info view into place
     if ([self.timeTableViewController.nextBusDestination isEqualToString:@"sydenham"]) {
         [self.universityDestinationView removeFromSuperview];
         [self.nextBusView addSubview:self.leamingtonDestinationView];
@@ -167,6 +168,7 @@
         self.universityDestinationView.frame = CGRectMake(0, 145, 320, 40);
     }
     
+    // Display the time for the next bus
     if (self.timeTableViewController.nextBusDue <= 2) {
         self.nextBusTimeLabel.text = @"DUE";
         self.minutesLabel.hidden = YES;
@@ -178,6 +180,10 @@
         self.minutesLabel.hidden = NO;
     }
     
+    // Display the bus number for the next bus
+    self.nextBusNumberLeamingtonLabel.text = [self.timeTableViewController.nextBusNumber capitalizedString];
+    self.nextBusNumberUniversityLabel.text = [self.timeTableViewController.nextBusNumber capitalizedString];
+
 }
 
 #pragma mark - CHTimetableViewControllerDelegate

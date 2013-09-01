@@ -21,6 +21,14 @@
 @property (nonatomic, strong) NSMutableArray *busTimesLeftToday;
 @property (nonatomic, strong) NSMutableArray *busTimesTomorrow;
 @property (nonatomic, strong) NSMutableArray *busTimesTomorrowUnder24Hours;
+
+@property (nonatomic, strong) BusTime *firstBus;
+@property (nonatomic, strong) BusTime *lastBus;
+@property (nonatomic, strong) BusTime *firstBusTomorrow;
+@property (nonatomic, strong) BusTime *lastBusTomorrow;
+
+@property (nonatomic, strong) NSDate *lastMinuteOfDayDate;
+
 @end
 
 @implementation CHTimetableViewController
@@ -73,6 +81,7 @@
         }
     }
     
+    [self loadBusStopTimetable];
 }
 
 - (void) hideFavouriteButton
@@ -90,8 +99,10 @@
     // Get the bus times for this stop
     NSMutableOrderedSet *busTimes = [self.busStop timetableSet];
     
+    NSDate *now = [NSDate date];
+    
     NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    NSDateComponents *comps = [gregorian components:NSWeekdayCalendarUnit fromDate:[NSDate date]];
+    NSDateComponents *comps = [gregorian components:NSWeekdayCalendarUnit fromDate:now];
     int weekday = [comps weekday];
     
     NSString *queryString;
@@ -107,7 +118,7 @@
     }
     
     NSString *queryStringTomorrow;
-    weekday = (weekday + 1) % 7;
+    weekday = (weekday + 1) % 8;
     if (weekday >= 2 && weekday <= 6) {
         // Mon-fri
         queryStringTomorrow = @"weekday";
@@ -119,6 +130,13 @@
         queryStringTomorrow = @"sundays";
     }
     
+    comps = [gregorian components:NSUIntegerMax fromDate:now];
+    [comps setHour:23];
+    [comps setMinute:59];
+    [comps setSecond:59];
+    
+    self.lastMinuteOfDayDate = [gregorian dateFromComponents:comps];
+    
     NSManagedObjectContext *localContext = [NSManagedObjectContext MR_contextForCurrentThread];
     
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"stop_id ==[c] %@ AND period ==[c] %@", self.busStop.stop_id, queryString];
@@ -126,14 +144,24 @@
     
     NSPredicate *predicateTomorrow = [NSPredicate predicateWithFormat:@"stop_id ==[c] %@ AND period ==[c] %@", self.busStop.stop_id, queryStringTomorrow];
     NSArray *busTimesForTomorrow = [BusTime MR_findAllWithPredicate:predicateTomorrow inContext:localContext];
+  
+    // NEEDS FIXING FOR BUS TIMETABLES THAT GO ON TO EARLY MORNINGS
+    self.firstBus = [busTimesForDay firstObject];
+    self.lastBus = [busTimesForDay lastObject];
     
-    NSLog(@"Number of times for %@ is %i on weekday: %i", self.busStop.name, busTimes.count, weekday);
+    self.firstBusTomorrow = [busTimesForTomorrow firstObject];
+    self.lastBusTomorrow = [busTimesForTomorrow lastObject];
+    
     self.busTimes = busTimes;
     
     self.busTimesLeftToday = [NSMutableArray arrayWithArray:busTimesForDay];
     self.busTimesTomorrow = [NSMutableArray arrayWithArray:busTimesForTomorrow];
     
-    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"time" ascending:YES];
+    if (self.busTimesLeftToday == nil && self.busTimesTomorrow == nil) {
+        NSLog(@"Nil values for bus time arrays at time: %@", [NSDate date]);
+    }
+    
+    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"sequenceNo" ascending:YES];
     
     NSArray *sortedTimes = [self.busTimesLeftToday sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
     self.busTimesLeftToday = [NSMutableArray arrayWithArray: sortedTimes];
@@ -150,22 +178,52 @@
 
 - (void) timeChanged:(NSNotification *) notification
 {
-    if (self.busTimesLeftToday.count == 0 || self.busTimesTomorrow == 0) {
+    if (self.busTimesLeftToday.count == 0 && self.busTimesTomorrow == 0) {
         [self loadBusStopTimetable];
     }
+    // Work out if 1 hour away from tomorrows first bus
+    // if yes, update tomorrows buses to be todays
+    // place no more buses after last bus
+    
+    NSDate *now = [NSDate date];
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    
+    NSTimeInterval oneDay = 24 * 60 * 60;
+    NSDate *dateOneDayAhead = [now dateByAddingTimeInterval:oneDay];
 
+    NSDateComponents *components = [gregorian components:NSUIntegerMax fromDate:now];
+    if ([self.lastMinuteOfDayDate earlierDate:now] == now) {
+        // If right now is before midnight today
+        components = [gregorian components:NSUIntegerMax fromDate:dateOneDayAhead];
+    }
+    
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
+    
+    NSNumber *hours = [numberFormatter numberFromString:[self.firstBusTomorrow.time substringToIndex:2]];
+    NSNumber *minutes = [numberFormatter numberFromString:[self.firstBusTomorrow.time substringFromIndex:2]];
+    
+    [components setHour:hours.intValue];
+    [components setMinute:minutes.intValue];
+    [components setSecond:0];
+    
+    NSDate *newDate = [gregorian dateFromComponents:components];
+    
+    newDate = [newDate dateByAddingTimeInterval:- 60 * 60];
+    
+    // If date one hour before tomorrows first bus is earlier than the date right now, we can reload the bus stop timetable data which will
+    // set the busTimesLeftToday and busTimesTomorrow arrays
+    if ([now earlierDate:newDate] == newDate) {
+        [self loadBusStopTimetable];
+    }
+    
+    components = [gregorian components:NSUIntegerMax fromDate:now];
     
     // Remove all times that have passed
-    NSDate *now = [NSDate date];
-
     NSMutableArray *busStopsToRemove = [NSMutableArray new];
     for (BusTime *time in self.busTimesLeftToday) {
-        NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-        NSDateComponents *components = [gregorian components:NSUIntegerMax fromDate:now];
-
-        NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
-        [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
-
+       
+        
         NSNumber *hours = [numberFormatter numberFromString:[time.time substringToIndex:2]];
         NSNumber *minutes = [numberFormatter numberFromString:[time.time substringFromIndex:2]];
 
@@ -173,27 +231,27 @@
         [components setMinute:minutes.intValue];
         [components setSecond:0];
 
-        NSDate *newDate = [gregorian dateFromComponents:components];
+        newDate = [gregorian dateFromComponents:components];
 
         if ([newDate earlierDate:now] == newDate) {
             [busStopsToRemove addObject:time];
 
         }
-
     }
     [self.busTimesLeftToday removeObjectsInArray:busStopsToRemove];
     
     // Only show bus times tomorrow that are under 24 hours away
     self.busTimesTomorrowUnder24Hours = [NSMutableArray new];
+    
+    
     for (BusTime *time in self.busTimesTomorrow) {
-        NSTimeInterval oneDay = 24 * 60 * 60;
-        NSDate *dateOneDayAhead = [now dateByAddingTimeInterval:oneDay];
         
-        NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-        NSDateComponents *components = [gregorian components:NSUIntegerMax fromDate:now];
-        
-        NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
-        [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
+        if ([now earlierDate:self.lastMinuteOfDayDate] == self.lastMinuteOfDayDate) {
+            // If it is after midnight
+            components = [gregorian components:NSUIntegerMax fromDate:now];
+        } else {
+            components = [gregorian components:NSUIntegerMax fromDate:dateOneDayAhead];
+        }
         
         NSNumber *hours = [numberFormatter numberFromString:[time.time substringToIndex:2]];
         NSNumber *minutes = [numberFormatter numberFromString:[time.time substringFromIndex:2]];
@@ -203,17 +261,21 @@
         [components setSecond:0];
         
         NSDate *newDate = [gregorian dateFromComponents:components];
+        
+        // To catch dates that are in the early hours of the morning we must set them to be the correct time frame ahead
+        if ([newDate earlierDate:now] == newDate) {
+            newDate = [newDate dateByAddingTimeInterval:24 * 60 * 60];
+        }
         
         if ([dateOneDayAhead earlierDate:newDate] == newDate) {
             [self.busTimesTomorrowUnder24Hours addObject:time];
         }
     }
     
+    gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    components = [gregorian components:NSUIntegerMax fromDate:now];
     
-    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    NSDateComponents *components = [gregorian components:NSUIntegerMax fromDate:now];
-    
-    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    numberFormatter = [[NSNumberFormatter alloc] init];
     [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
     if (self.busTimesLeftToday.count > 0) {
         NSNumber *hours = [numberFormatter numberFromString:[((BusTime *)self.busTimesLeftToday.firstObject).time substringToIndex:2]];
@@ -223,34 +285,78 @@
         [components setMinute:minutes.intValue];
         [components setSecond:0];
         
-        NSDate *newDate = [gregorian dateFromComponents:components];
+       newDate = [gregorian dateFromComponents:components];
         
         NSTimeInterval differenceInSeconds = [newDate timeIntervalSinceDate:now];
         int minutesToDisplay = ceil(differenceInSeconds / 60);
-        
+  
         self.nextBusDue = minutesToDisplay;
-        self.nextBusTime = [NSString stringWithFormat:@"%@:%@", hours, minutes];
-
+        self.nextBusNumber = ((BusTime *)self.busTimesLeftToday.firstObject).number;
+        self.nextBusTime = [self timeFormattedForHours:hours minutes:minutes];
+        
         self.nextBusDestination = ((BusTime *)self.busTimesLeftToday.firstObject).destination;
     } else {
         // Get bus time for tomorrows first bus!
         NSNumber *hours = [numberFormatter numberFromString:[((BusTime *)self.busTimesTomorrow.firstObject).time substringToIndex:2]];
         NSNumber *minutes = [numberFormatter numberFromString:[((BusTime *)self.busTimesTomorrow.firstObject).time substringFromIndex:2]];
-        
+
         self.nextBusDue = 100;
-        self.nextBusTime = [NSString stringWithFormat:@"%@:%@", hours, minutes];
+        self.nextBusNumber = ((BusTime *)self.busTimesTomorrow.firstObject).number;
+        self.nextBusTime = [self timeFormattedForHours:hours minutes:minutes];
         
         self.nextBusDestination = ((BusTime *)self.busTimesTomorrow.firstObject).destination;
     }
     
+    [self.tableView reloadData];
+}
+
+- (NSString *) timeFormattedForHours:(NSNumber *) hours minutes:(NSNumber *)minutes
+{
+    NSString *minutesString = @"";
+    minutesString = [minutes stringValue];
     
-    if (self.tableView.visibleCells.count <= 3) {
-        self.tableView.scrollEnabled = NO;
-    } else {
-        self.tableView.scrollEnabled = YES;
+    if (minutes.intValue < 10) {
+        minutesString = [NSString stringWithFormat:@"0%@",minutes];
     }
     
-    [self.tableView reloadData];
+    return [NSString stringWithFormat:@"%@:%@", hours, minutesString];
+}
+
+- (NSArray *) busTimesForNext24Hours
+{
+    
+    NSMutableArray *busTimes = [NSMutableArray new];
+    
+    [busTimes addObjectsFromArray:self.busTimesLeftToday];
+    [busTimes addObjectsFromArray:self.busTimesTomorrowUnder24Hours];
+    
+    for (int i = 0; i < busTimes.count; i++) {
+        
+        // Skip a null value
+        if ([busTimes objectAtIndex:i] == [NSNull null]) {
+            continue;
+        }
+        
+        BusTime *time = [busTimes objectAtIndex:i];
+        
+        if ([time.lastBus isEqualToNumber:[NSNumber numberWithBool:YES]]) {
+            [busTimes insertObject:[NSNull null] atIndex:i + 1];
+        }
+        
+        // Edge case: if user loads bus timetable in early morning, we must still show "no more buses"
+        if ([time.firstBus isEqualToNumber:[NSNumber numberWithBool:YES]]) {
+            if (i == 0) {
+                [busTimes insertObject:[NSNull null] atIndex:0];
+            }
+        }
+    }
+    
+//    // Edge case: if user adds bus stop in early hours of the morning, we must make sure it adds the cell "no more buses" at the start
+//    if ([self.busTimesTomorrowUnder24Hours count] == 0 && [self.busTimesLeftToday count] > 0 && [busTimes objectAtIndex:0] == [NSNull null]) {
+//        [busTimes insertObject:[NSNull null] atIndex:0];
+//    }
+        
+    return busTimes;
 }
 
 #pragma mark - UIButton event
@@ -282,16 +388,6 @@
     [self.delegate removeStopButtonPressed];
 }
 
-- (NSArray *) busTimesForNext24Hours
-{
-    NSMutableArray *busTimes = [NSMutableArray new];
-    [busTimes addObjectsFromArray:self.busTimesLeftToday];
-    [busTimes addObject:[NSNull null]];
-    [busTimes addObjectsFromArray:self.busTimesTomorrowUnder24Hours];
-    
-    return busTimes;
-}
-
 #pragma mark - UITableViewDelegate
 - (void) scrollViewDidScroll:(UIScrollView *)scrollView
 {
@@ -308,7 +404,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // Add one to result to include "no buses until morning" cell
     return [[self busTimesForNext24Hours] count] ;
 }
 
@@ -317,7 +412,7 @@
     id cell;
     
     int row = indexPath.row;
-    if (indexPath.row == self.busTimesLeftToday.count ) {
+    if ([[self busTimesForNext24Hours] objectAtIndex:indexPath.row] == [NSNull null]) {
         static NSString *CellIdentifier = @"CHNoBusesCell";
         cell = (CHTimetableCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         
@@ -330,7 +425,7 @@
         }
 
     } else {
-        static NSString *CellIdentifier = @"TimetableCell";
+        static NSString *CellIdentifier = @"CHTimetableCell";
         cell = (CHTimetableCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         
         // Configure the cell...
@@ -349,7 +444,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == self.busTimesLeftToday.count ) {
+    if ([[self busTimesForNext24Hours] objectAtIndex:indexPath.row] == [NSNull null]) {
         return 90;
     } else {
         return 45;

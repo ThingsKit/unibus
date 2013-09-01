@@ -80,8 +80,7 @@
     navController.rootViewController = self.mainViewCon;
     self.mainViewCon.navigationController = navController;
     
-    self.clockTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerTick:) userInfo:nil repeats:YES];
-    
+    self.clockTimer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(timerTick:) userInfo:nil repeats:YES];
     self.window.rootViewController = navController;
 }
 

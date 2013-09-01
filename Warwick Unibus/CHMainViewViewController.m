@@ -272,7 +272,6 @@ BOOL isScrolling;
 	CGFloat pageWidth = self.scrollView.bounds.size.width ;
     float fractionalPage = self.scrollView.contentOffset.x / pageWidth ;
 	NSInteger nearestNumber = lround(fractionalPage) ;
-	
 	if (self.pageControl.currentPage != nearestNumber)
 	{
 		self.pageControl.currentPage = nearestNumber;
@@ -286,8 +285,6 @@ BOOL isScrolling;
     for (CHBusStopViewController *controller in self.viewControllers) {
         [controller parentScrollViewDidMoveBy:self.scrollView.contentOffset.x];
     }
-    
-    
 }
 
 

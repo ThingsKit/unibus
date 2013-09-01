@@ -9,6 +9,8 @@
                 <outlet property="destinationLabel" destination="frq-CW-EcW" id="G8r-nK-lEA"/>
                 <outlet property="leamingtonDestinationView" destination="cvE-nG-oIb" id="nfE-ij-PEd"/>
                 <outlet property="minutesLabel" destination="p5W-dw-vUV" id="a5m-WW-PUn"/>
+                <outlet property="nextBusNumberLeamingtonLabel" destination="KVZ-yw-f3j" id="uRH-ip-VWU"/>
+                <outlet property="nextBusNumberUniversityLabel" destination="UR6-b5-W0Y" id="NJg-pa-Gih"/>
                 <outlet property="nextBusTimeLabel" destination="fhp-05-34B" id="irD-oI-5At"/>
                 <outlet property="nextBusView" destination="34x-Pf-5Qz" id="KVt-iZ-vHg"/>
                 <outlet property="statusBarBackground" destination="Gy7-Yh-QKg" id="IxY-oX-XRm"/>

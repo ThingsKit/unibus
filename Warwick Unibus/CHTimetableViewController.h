@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CHTableView.h"
+
 @class BusStop;
 
 @protocol CHTimetableViewControllerDelegate <NSObject>
@@ -28,6 +29,9 @@
 @property (nonatomic, assign) int nextBusDue;
 @property (nonatomic, strong) NSString *nextBusTime;
 @property (nonatomic, strong) NSString *nextBusDestination;
+@property (nonatomic, strong) NSString *nextBusNumber;
+
+
 
 @property (nonatomic, weak) id <CHTimetableViewControllerDelegate> delegate;
 

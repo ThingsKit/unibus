@@ -1,0 +1,378 @@
+[
+  {
+    "id":1,
+    "name":"Arts Centre (down)",
+    "ref_stop":"YES",
+    "ref_stop_id":1,
+    "miles":0,
+    "miles_diff":0
+  },
+  {
+    "id":2,
+    "name":"Gibbet Hill (down)",
+    "ref_stop":"NO",
+    "ref_stop_id":1,
+    "miles":0.7,
+    "miles_diff":0.7
+  },
+  {
+    "id":3,
+    "name":"Chesford Crossroads (down)",
+    "ref_stop":"NO",
+    "ref_stop_id":1,
+    "miles":4.7,
+    "miles_diff":4
+  },
+  {
+    "id":4,
+    "name":"Quality Hotel (down)",
+    "ref_stop":"NO",
+    "ref_stop_id":1,
+    "miles":4.9,
+    "miles_diff":0.2
+  },
+  {
+    "id":5,
+    "name":"Leamington Rugby Club (down)",
+    "ref_stop":"NO",
+    "ref_stop_id":1,
+    "miles":5.5,
+    "miles_diff":0.6
+  },
+  {
+    "id":6,
+    "name":"Blackdown Crossroads (down)",
+    "ref_stop":"NO",
+    "ref_stop_id":1,
+    "miles":6,
+    "miles_diff":0.5
+  },
+  {
+    "id":7,
+    "name":"Northumberland Road (down)",
+    "ref_stop":"NO",
+    "ref_stop_id":1,
+    "miles":6.7,
+    "miles_diff":0.7
+  },
+  {
+    "id":8,
+    "name":"Woodcote Road (down)",
+    "ref_stop":"NO",
+    "ref_stop_id":1,
+    "miles":6.9,
+    "miles_diff":0.2
+  },
+  {
+    "id":9,
+    "name":"Opp. Arnold Lodge School (down)",
+    "ref_stop":"NO",
+    "ref_stop_id":1,
+    "miles":7.1,
+    "miles_diff":0.2
+  },
+  {
+    "id":10,
+    "name":"Trinity Street (down)",
+    "ref_stop":"NO",
+    "ref_stop_id":1,
+    "miles":7.2,
+    "miles_diff":0.1
+  },
+  {
+    "id":11,
+    "name":"Upper Parade (down)",
+    "ref_stop":"YES",
+    "ref_stop_id":1,
+    "miles":7.4,
+    "miles_diff":0.2
+  },
+  {
+    "id":12,
+    "name":"Regent Hotel (down)",
+    "ref_stop":"NO",
+    "ref_stop_id":11,
+    "miles":7.6,
+    "miles_diff":0.2
+  },
+  {
+    "id":13,
+    "name":"Parish Church (down)",
+    "ref_stop":"NO",
+    "ref_stop_id":11,
+    "miles":7.9,
+    "miles_diff":0.3
+  },
+  {
+    "id":14,
+    "name":"Kelsey's (down/up)",
+    "ref_stop":"NO",
+    "ref_stop_id":11,
+    "miles":8.1,
+    "miles_diff":0.2
+  },
+  {
+    "id":15,
+    "name":"Claremont Road (down)",
+    "ref_stop":"NO",
+    "ref_stop_id":11,
+    "miles":8.5,
+    "miles_diff":0.4
+  },
+  {
+    "id":16,
+    "name":"Wheatsheaf (down)",
+    "ref_stop":"NO",
+    "ref_stop_id":11,
+    "miles":8.6,
+    "miles_diff":0.1
+  },
+  {
+    "id":17,
+    "name":"St Helen's Road (Bottom)",
+    "ref_stop":"YES",
+    "ref_stop_id":11,
+    "miles":8.8,
+    "miles_diff":0.2
+  },
+  {
+    "id":18,
+    "name":"Grosevnor Road (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":17,
+    "miles":9.1,
+    "miles_diff":0.3
+  },
+  {
+    "id":19,
+    "name":"Prospect Road (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":17,
+    "miles":9.4,
+    "miles_diff":0.3
+  },
+  {
+    "id":20,
+    "name":"Berrington Road (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":17,
+    "miles":9.6,
+    "miles_diff":0.2
+  },
+  {
+    "id":21,
+    "name":"Crabtree Grove (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":17,
+    "miles":9.7,
+    "miles_diff":0.1
+  },
+  {
+    "id":22,
+    "name":"Curzon Grove (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":17,
+    "miles":9.8,
+    "miles_diff":0.1
+  },
+  {
+    "id":23,
+    "name":"Solway Close (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":17,
+    "miles":9.9,
+    "miles_diff":0.1
+  },
+  {
+    "id":24,
+    "name":"Gainsborough Drive (up)",
+    "ref_stop":"YES",
+    "ref_stop_id":17,
+    "miles":10,
+    "miles_diff":0.1
+  },
+  {
+    "id":25,
+    "name":"St Brides Close (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":24,
+    "miles":10.2,
+    "miles_diff":0.2
+  },
+  {
+    "id":26,
+    "name":"Shops (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":24,
+    "miles":10.4,
+    "miles_diff":0.2
+  },
+  {
+    "id":27,
+    "name":"St Anthonys Primary School (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":24,
+    "miles":10.5,
+    "miles_diff":0.1
+  },
+  {
+    "id":28,
+    "name":"Leam Terrace (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":24,
+    "miles":10.6,
+    "miles_diff":0.1
+  },
+  {
+    "id":29,
+    "name":"Farley Street (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":24,
+    "miles":10.8,
+    "miles_diff":0.2
+  },
+  {
+    "id":30,
+    "name":"Court Street (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":24,
+    "miles":11.1,
+    "miles_diff":0.3
+  },
+  {
+    "id":31,
+    "name":"Parish Church (up)",
+    "ref_stop":"YES",
+    "ref_stop_id":24,
+    "miles":11.5,
+    "miles_diff":0.4
+  },
+  {
+    "id":32,
+    "name":"Dormer Place (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":31,
+    "miles":11.7,
+    "miles_diff":0.2
+  },
+  {
+    "id":33,
+    "name":"Regent Street (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":31,
+    "miles":11.8,
+    "miles_diff":0.1
+  },
+  {
+    "id":34,
+    "name":"Upper Parade (up)",
+    "ref_stop":"YES",
+    "ref_stop_id":31,
+    "miles":12,
+    "miles_diff":0.2
+  },
+  {
+    "id":35,
+    "name":"Beauchamp Avenue (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":34,
+    "miles":12.2,
+    "miles_diff":0.2
+  },
+  {
+    "id":36,
+    "name":"Arnold Lodge School (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":34,
+    "miles":12.4,
+    "miles_diff":0.2
+  },
+  {
+    "id":37,
+    "name":"Lillington Avenue (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":34,
+    "miles":12.5,
+    "miles_diff":0.1
+  },
+  {
+    "id":38,
+    "name":"Woodcote Road (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":34,
+    "miles":12.6,
+    "miles_diff":0.1
+  },
+  {
+    "id":39,
+    "name":"Northumberland Road (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":34,
+    "miles":12.8,
+    "miles_diff":0.2
+  },
+  {
+    "id":40,
+    "name":"Oak Bank House (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":34,
+    "miles":13.2,
+    "miles_diff":0.4
+  },
+  {
+    "id":41,
+    "name":"Blackdown Crossroads (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":34,
+    "miles":13.4,
+    "miles_diff":0.2
+  },
+  {
+    "id":42,
+    "name":"Leamington Rugby Club (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":34,
+    "miles":14,
+    "miles_diff":0.6
+  },
+  {
+    "id":43,
+    "name":"Quality Hotel (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":34,
+    "miles":14,
+    "miles_diff":0.6
+  },
+  {
+    "id":44,
+    "name":"Chesford Crossroads (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":34,
+    "miles":14.4,
+    "miles_diff":0.4
+  },
+  {
+    "id":45,
+    "name":"Gibbet Hill (up)",
+    "ref_stop":"NO",
+    "ref_stop_id":34,
+    "miles":18.5,
+    "miles_diff":4.1
+  },
+  {
+    "id":46,
+    "name":"Gatehouse (up/down)",
+    "ref_stop":"NO",
+    "ref_stop_id":34,
+    "miles":19.3,
+    "miles_diff":0.8
+  },
+  {
+    "id":47,
+    "name":"Library (up/down)",
+    "ref_stop":"NO",
+    "ref_stop_id":34,
+    "miles":19.5,
+    "miles_diff":0.2
+  }
+]

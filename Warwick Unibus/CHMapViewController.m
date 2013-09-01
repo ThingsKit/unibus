@@ -14,7 +14,9 @@ typedef enum {
 
 #import "CHMapViewController.h"
 #import "CHDataLoader.h"
+#import "CoreData+MagicalRecord.h"
 #import "BusStop.h"
+#import "BusTime.h"
 #import "CHTimetableViewController.h"
 
 @interface CHMapViewController ()
@@ -74,10 +76,8 @@ static CHMapViewController *sharedMap;
     self.timeTableViewController = [[CHTimetableViewController alloc] init];
     [self.view addSubview:self.timeTableViewController.view];
     
-    
     [self.timeTableViewController changeContentInsetTo:UIEdgeInsetsMake(414, 0, 0, 0)];
     self.timeTableViewController.view.frame = CGRectMake(0, 200, self.timeTableViewController.view.frame.size.width, 568);
-    [self.timeTableViewController.tableView setViewToReturnTo:self.view];
     self.timeTableViewController.tableView.startOffset = 414;
     self.timeTableViewController.view.hidden = YES;
     self.timeTableViewController.delegate = self;
@@ -108,7 +108,6 @@ static CHMapViewController *sharedMap;
 - (void) userDidFavouriteStop
 {
     self.notifLabel.text = @"Added favourite bus stop";
-    
     
     [UIView animateWithDuration:0.5
                           delay:0.0
@@ -187,22 +186,54 @@ static CHMapViewController *sharedMap;
                      completion:^(BOOL finished){
 
                      }];
-
-  
+    
+    //[self loadAnnotationsForRoute:routeSelected];
 }
 
 -(void)loadAnnotations
 {
-    NSManagedObjectContext *moc = [CHDataLoader getManagedObjectContext];
-    NSFetchRequest *busStopRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *busStopDescription = [NSEntityDescription entityForName:@"BusStop" inManagedObjectContext:moc];
-    [busStopRequest setEntity:busStopDescription];
+    [self loadAnnotationsForRoute:kU1BusRoute];
+}
+
+-(void)loadAnnotationsForRoute:(BusRoute) route
+{
+//    NSManagedObjectContext *localContext = [NSManagedObjectContext MR_contextForCurrentThread];
     
-    NSError *error;
-    NSArray *fetchedBusStops = [moc executeFetchRequest:busStopRequest error:&error];
+    NSArray *busStops = [BusStop MR_findAll];
+    
+    NSString *queryString = @"";
+    switch (route) {
+        case kU1BusRoute:
+            queryString = @"u1";
+            break;
+        case kU2BusRoute:
+            queryString = @"u2";
+            break;
+        case kU17BusRoute:
+            queryString = @"u17";
+            break;
+        default:
+            break;
+    }
+    
+    NSMutableArray *busStopsMatched = [NSMutableArray new];
+    for (BusStop *stop in busStops) {
+        for (BusTime *time in [[stop timetableSet] array]) {
+            if ([time.number isEqualToString:queryString]) {
+                NSLog(@"stop: %@", stop.name);
+                NSLog(@"time: %@", time.time);
+                NSLog(@"number: %@", time.number);
+                [busStopsMatched addObject:stop];
+                break;
+            }
+        }
+    }
+    
+    busStopsMatched = busStops;
     
     NSMutableArray *annotations = [[NSMutableArray alloc] init];
-    for (BusStop *busStop in fetchedBusStops) {
+    for (BusStop *busStop in busStopsMatched) {
+        busStop.title = busStop.name;
         MKAnnotationView *pin = [[MKAnnotationView alloc] initWithAnnotation:busStop reuseIdentifier:@"busStopPin"];
         pin.image = [UIImage imageNamed:@"bussign.png"];
         
@@ -213,7 +244,8 @@ static CHMapViewController *sharedMap;
     
     self.mapView.showsUserLocation = YES;
 }
-      
+
+
 #pragma mark - MKMapViewDelegate
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
@@ -228,28 +260,52 @@ static CHMapViewController *sharedMap;
         annView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:reuseId];
         annView.image = [UIImage imageNamed:@"bussign.png"];
         annView.centerOffset = CGPointMake(10, -29);
-
-     
-        
+        annView.canShowCallout = NO;
     }
     else
     {
         //update the annotation property if view is being re-used...
         annView.annotation = annotation;
+        annView.canShowCallout = NO;
     }
     
     return annView;
 }
 
+- (MKAnnotationView *)mapView:(ADClusterMapView *)mapView viewForClusterAnnotation:(id <MKAnnotation>)annotation
+{
+    NSString *reuseId = @"busStopPin";
+    MKAnnotationView *annView = (MKAnnotationView *)[self.mapView dequeueReusableAnnotationViewWithIdentifier:reuseId];
+    if (annView == nil)
+    {
+        annView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:reuseId];
+        annView.image = [UIImage imageNamed:@"bussign.png"];
+        annView.centerOffset = CGPointMake(10, -29);
+        annView.canShowCallout = YES;
+    }
+    else
+    {
+        //update the annotation property if view is being re-used...
+        annView.annotation = annotation;
+        annView.canShowCallout = YES;
+
+    }
+    
+    return annView;
+}
+
+
+
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view {
     ADClusterAnnotation *stop = view.annotation;
-    NSLog(@"%@", stop.cluster.annotation.annotation);
+    NSLog(@"annotation: %@", stop.cluster.annotation.annotation);
     BusStop *busStop = (BusStop *) stop.cluster.annotation.annotation;
     self.timeTableViewController.busStop = busStop;
     
     self.timeTableViewController.view.hidden = NO;
     
     if (busStop != nil) {
+        
         [UIView animateWithDuration:0.3
                               delay:0.0
                             options:UIViewAnimationOptionCurveEaseInOut
@@ -261,11 +317,16 @@ static CHMapViewController *sharedMap;
                          }];
 
     }
+}
 
+- (BOOL)shouldShowSubtitleForClusterAnnotationsInMapView:(ADClusterMapView *)mapView
+{
+    return YES;
 }
 
 - (void)mapView:(MKMapView *)mapView regionWillChangeAnimated:(BOOL)animated
 {
+    
     [UIView animateWithDuration:0.3
                           delay:0.0
                         options:UIViewAnimationOptionCurveEaseInOut
@@ -280,6 +341,11 @@ static CHMapViewController *sharedMap;
 - (NSInteger)numberOfClustersInMapView:(ADClusterMapView *)mapView
 {
     return 25;
+}
+
+- (NSString *)clusterTitleForMapView:(ADClusterMapView *)mapView
+{
+    return @"%d bus stops";
 }
 
 #pragma mark - UIButton events
