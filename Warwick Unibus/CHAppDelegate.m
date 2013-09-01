@@ -51,8 +51,8 @@
     if (!hasRanBefore)
     {
         NSMutableArray *stops = [[NSMutableArray alloc] init];
-        [stops addObject:[NSNumber numberWithInt:45]];
-        [stops addObject:[NSNumber numberWithInt:32]];
+        [stops addObject:[NSNumber numberWithInt:1]];
+        [stops addObject:[NSNumber numberWithInt:34]];
         
         [prefs setObject:stops forKey:@"stops"];
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasRanBefore"];
