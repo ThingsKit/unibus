@@ -48,7 +48,7 @@
     "miles_diff":0.4
   },
   {
-    "id":80,
+    "id":82,
     "name":"Hidcote Road (down)",
     "ref_stop":"NO",
     "ref_stop_id":1,
@@ -56,7 +56,7 @@
     "miles_diff":0.3
   },
   {
-    "id":79,
+    "id":81,
     "name":"Rawnsley Drive (down)",
     "ref_stop":"NO",
     "ref_stop_id":1,
@@ -64,7 +64,7 @@
     "miles_diff":0.3
   },
   {
-    "id":78,
+    "id":80,
     "name":"Leyes Lane - Shops (down)",
     "ref_stop":"NO",
     "ref_stop_id":1,
@@ -72,7 +72,7 @@
     "miles_diff":0.1
   },
   {
-    "id":77,
+    "id":79,
     "name":"Kenilworth School (down)",
     "ref_stop":"NO",
     "ref_stop_id":1,
@@ -544,7 +544,7 @@
     "miles_diff":0.3
   },
   {
-    "id":71,
+    "id":73,
     "name":"Villers Road (up)",
     "ref_stop":"NO",
     "ref_stop_id":54,
@@ -552,7 +552,7 @@
     "miles_diff":0.3
   },
   {
-    "id":72,
+    "id":74,
     "name":"Leyes Lane (up)",
     "ref_stop":"NO",
     "ref_stop_id":54,
@@ -560,7 +560,7 @@
     "miles_diff":0.2
   },
   {
-    "id":73,
+    "id":75,
     "name":"Leyes Lane - Shops (up)",
     "ref_stop":"NO",
     "ref_stop_id":54,
@@ -568,7 +568,7 @@
     "miles_diff":0.2
   },
   {
-    "id":74,
+    "id":76,
     "name":"Chatsworth Grove (up)",
     "ref_stop":"NO",
     "ref_stop_id":54,
@@ -576,7 +576,7 @@
     "miles_diff":0.2
   },
   {
-    "id":75,
+    "id":77,
     "name":"Saville Grove (up)",
     "ref_stop":"NO",
     "ref_stop_id":54,
@@ -584,7 +584,7 @@
     "miles_diff":0.1
   },
   {
-    "id":76,
+    "id":78,
     "name":"Hidcote Road (up)",
     "ref_stop":"NO",
     "ref_stop_id":54,
