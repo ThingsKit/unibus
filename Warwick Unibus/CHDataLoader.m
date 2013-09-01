@@ -12,6 +12,7 @@
 #import "CoreData+MagicalRecord.h"
 
 @interface CHDataLoader()
+@property (nonatomic, strong) NSArray *reference_stops;
 @end
 
 @implementation CHDataLoader
@@ -166,67 +167,6 @@ static CHDataLoader *sharedDataLoader = nil;    // static instance variable
     NSLog(@"Time objects out: %i", objects.count);
 }
 
-- (void) loadU1Route
-{
-//    NSManagedObjectContext *localContext = [NSManagedObjectContext MR_contextForCurrentThread];
-//
-//    NSError *e = nil;
-//    NSString *filePath = [[NSBundle mainBundle] pathForResource:[@"u1_route.json" stringByDeletingPathExtension] ofType:[@"u1_route.json" pathExtension]];
-//    
-//    NSData* data = [NSData dataWithContentsOfFile:filePath];
-//    NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData: data options: NSJSONReadingMutableContainers error: &e];
-//    NSLog(@"Error parsing JSON: %@", e);
-//    if (!jsonArray) {
-//        NSLog(@"Error parsing JSON: %@", e);
-//    } else {
-//        
-//        // Get all the reference stops for the route
-//        NSMutableArray *reference_stops = [NSMutableArray new];
-//        for (NSDictionary *item in jsonArray) {
-//            if ([item objectForKey:@"ref_stop"] != nil) {
-//                [reference_stops addObject:item];
-//            }
-//        }
-//        
-//        reference_stops = (NSMutableArray *)[[reference_stops reverseObjectEnumerator] allObjects];
-//        
-//        NSDictionary *reference_stop = [reference_stops lastObject];
-//        NSDictionary *next_reference_stop = [reference_stops objectAtIndex:[reference_stops count] - 2];
-//        
-//        for (NSDictionary *stop_dictionary in jsonArray) {
-//            //id,name,ref_stop,ref_stop_id,miles,miles_diff
-//            if ([stop_dictionary isEqualToDictionary:next_reference_stop]) {
-//                reference_stop = stop_dictionary;
-//                [reference_stops removeLastObject];
-//                
-//                if ([reference_stops count] > 2) {
-//                    next_reference_stop = [reference_stops objectAtIndex:[reference_stops count] - 2];
-//                } else {
-//                    next_reference_stop = reference_stop;
-//                }
-//            }
-//            
-//            CGFloat milesForReferenceStop = [[reference_stop objectForKey:@"miles"] floatValue];
-//            CGFloat milesForNextReferenceStop = [[next_reference_stop objectForKey:@"miles"] floatValue];
-//            CGFloat milesForSection = 0;
-//            
-//            if (next_reference_stop == reference_stop) {
-//                milesForSection = [[[jsonArray lastObject] objectForKey:@"miles"] floatValue] - milesForReferenceStop;
-//            } else {
-//                milesForSection = milesForNextReferenceStop - milesForReferenceStop;
-//            }
-//            
-//            if (milesForSection == 0) {
-//                NSLog(@"Error, calculated section miles is 0");
-//            }
-//            
-//        }
-//    }
-//    
-    
-}
-
-
 - (NSArray *) stopExceptions
 {
     NSError *e = nil;
@@ -242,22 +182,111 @@ static CHDataLoader *sharedDataLoader = nil;    // static instance variable
     return jsonArray;
 }
 
+- (void) computeSectionTimes
+{
+    NSManagedObjectContext *localContext = [NSManagedObjectContext MR_contextForCurrentThread];
+    
+    NSArray *stopExceptions = [self stopExceptions];
+    
+    // Weekdays to sydenham
+    int highestNumOfTimes = 0;
+    for (NSDictionary *stop_dictionary in self.reference_stops) {
+        int stop_id = [[stop_dictionary objectForKey:@"id"] intValue];
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"stop_id ==[c] %i", stop_id];
+        BusStop *stop = [[BusStop MR_findAllWithPredicate:predicate inContext:localContext] firstObject];
+        int numOfBusTimes = [[stop timetableSet] count];
+        
+        if (numOfBusTimes > highestNumOfTimes) {
+            numOfBusTimes = highestNumOfTimes;
+        }
+    }
+    NSLog(@"highest: %i", highestNumOfTimes);
+    
+}
+
 - (void) computeMinorTimetableInformation
 {
     [self computeWeekdayMinorTimetables];
 }
 
+- (NSMutableArray *)loadReferenceStops:(NSArray *)jsonArray
+{
+    // Get all the reference stops for the route
+    NSMutableArray *ref_stops = [NSMutableArray new];
+    for (NSDictionary *item in jsonArray) {
+        if ([[item objectForKey:@"ref_stop"] isEqualToString:@"YES"]) {
+            [ref_stops addObject:item];
+        }
+    }
+    
+    // Keep track of reference stops
+    self.reference_stops = ref_stops;
+    return ref_stops;
+}
+
 - (void) computeWeekdayMinorTimetables
 {
-    // Weekday stops to Leam: Gatehouse -> Arts Centre -> Upper Parade -> Gainsborough Drive -> St Helens Road
-    // Weekday stops to Uni: Gainsborough Drive -> St Helens Road -> Church -> Upper Parade -> Arts Centre
+    NSManagedObjectContext *localContext = [NSManagedObjectContext MR_contextForCurrentThread];
     
-    // Need to watch out for repeats!
+    NSError *e = nil;
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:[@"u1_route.json" stringByDeletingPathExtension] ofType:[@"u1_route.json" pathExtension]];
     
-    // IDs for first loop:
-    /*
+    NSData* data = [NSData dataWithContentsOfFile:filePath];
+    NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData: data options: NSJSONReadingMutableContainers error: &e];
+    if (!jsonArray) {
+        NSLog(@"Error parsing JSON: %@", e);
+    } else {
+        // Step through the stops for the route. If the stop is a reference stop, set it as so and calculate the
+        // total miles between the stop and the next reference stop. Use this milage to calculate the percentage
+        // along the route that minor stops lie.
         
-    */
+        NSMutableArray *ref_stops;
+        ref_stops = [self loadReferenceStops:jsonArray];
+        [self computeSectionTimes];
+
+        ref_stops = (NSMutableArray *)[[ref_stops reverseObjectEnumerator] allObjects];
+        
+        NSDictionary *reference_stop = [ref_stops lastObject];
+        NSDictionary *next_reference_stop = [ref_stops objectAtIndex:[ref_stops count] - 2];
+        
+        for (NSDictionary *stop_dictionary in jsonArray) {
+            //id,name,ref_stop,ref_stop_id,miles,miles_diff
+            if ([stop_dictionary isEqualToDictionary:next_reference_stop]) {
+                reference_stop = stop_dictionary;
+                [ref_stops removeLastObject];
+                
+                // Stops accessing index of array when it doesnt exist
+                if ([ref_stops count] > 1) {
+                    next_reference_stop = [ref_stops objectAtIndex:[ref_stops count] - 2];
+                } else {
+                    next_reference_stop = reference_stop;
+                }
+            }
+            
+            CGFloat milesForReferenceStop = [[reference_stop objectForKey:@"miles"] floatValue];
+            CGFloat milesForNextReferenceStop = [[next_reference_stop objectForKey:@"miles"] floatValue];
+            CGFloat milesForSection = 0;
+            
+            if (next_reference_stop == reference_stop) {
+                milesForSection = [[[jsonArray lastObject] objectForKey:@"miles"] floatValue] - milesForReferenceStop;
+            } else {
+                milesForSection = milesForNextReferenceStop - milesForReferenceStop;
+            }
+
+            if (milesForSection == 0) {
+                NSLog(@"Error, calculated section miles is 0");
+            }
+            
+            CGFloat milesFromReferenceStop = [[stop_dictionary objectForKey:@"miles"] floatValue] - milesForReferenceStop;
+            CGFloat percentageAlongSection = milesFromReferenceStop / milesForSection;
+
+            
+            
+            // Get time total
+            // Work out time offset: timetotal * percentageAlongSection
+            // Add times to minor bus stop, badum tsh!
+        }
+    }
 }
 
 - (void) computeSaturdayMinorTimetables
@@ -269,6 +298,5 @@ static CHDataLoader *sharedDataLoader = nil;    // static instance variable
 {
     
 }
-
 
 @end
