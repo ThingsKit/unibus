@@ -220,9 +220,6 @@ static CHMapViewController *sharedMap;
     for (BusStop *stop in busStops) {
         for (BusTime *time in [[stop timetableSet] array]) {
             if ([time.number isEqualToString:queryString]) {
-                NSLog(@"stop: %@", stop.name);
-                NSLog(@"time: %@", time.time);
-                NSLog(@"number: %@", time.number);
                 [busStopsMatched addObject:stop];
                 break;
             }
