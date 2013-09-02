@@ -186,21 +186,112 @@ static CHDataLoader *sharedDataLoader = nil;    // static instance variable
 {
     NSManagedObjectContext *localContext = [NSManagedObjectContext MR_contextForCurrentThread];
     
+    //id, name, period, destination, element, fromEnd
     NSArray *stopExceptions = [self stopExceptions];
+    
+    NSMutableArray *stopExceptionsForWeekdayToSydenham = [NSMutableArray new];
+    for (NSDictionary *dictionary in stopExceptions) {
+        if ([[dictionary objectForKey:@"period"] isEqualToString:@"weekdays"]) {
+            if ([[dictionary objectForKey:@"destination"] isEqualToString:@"sydenham"]) {
+                [stopExceptionsForWeekdayToSydenham addObject:dictionary];
+            }
+        }
+    }
+                 
+
     
     // Weekdays to sydenham
     int highestNumOfTimes = 0;
     for (NSDictionary *stop_dictionary in self.reference_stops) {
         int stop_id = [[stop_dictionary objectForKey:@"id"] intValue];
-        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"stop_id ==[c] %i", stop_id];
-        BusStop *stop = [[BusStop MR_findAllWithPredicate:predicate inContext:localContext] firstObject];
-        int numOfBusTimes = [[stop timetableSet] count];
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"stop_id ==[c] %i AND period ==[c] %@ AND destination ==[c] %@", stop_id, @"weekday", @"sydenham"];
+        
+        int numOfBusTimes = [[BusTime MR_findAllWithPredicate:predicate inContext:localContext] count];
         
         if (numOfBusTimes > highestNumOfTimes) {
-            numOfBusTimes = highestNumOfTimes;
+            highestNumOfTimes = numOfBusTimes;
         }
     }
-    NSLog(@"highest: %i", highestNumOfTimes);
+
+    // For each "column" in the bus timetable, we need to:
+    // - Calculate the difference in time between the first reference stop and the next one
+    //   - if a stop does not exist (blank entry in PDF timetable), we can ignore it as bus must not be running
+    // This whole thing works because a column in the timetable maps to an actual bus proceeding through the network
+    // There are gaps in the timetable, which are accounted for by "stop exceptions"
+    
+    // Timetable to step through
+    id timetable[highestNumOfTimes][[self.reference_stops count]];
+    
+    // For each row
+    for (int row = 0; row < [self.reference_stops count]; row++) {
+        NSDictionary *stop = (NSDictionary *)[self.reference_stops objectAtIndex:row];
+        // For each column
+        for (int column = 0; column < highestNumOfTimes; column++) {
+            NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(id ==[c] %i)", [[stop objectForKey:@"id"] longValue]];
+            NSPredicate *predicateForEntity = [NSPredicate predicateWithFormat:@"(stop_id ==[c] %i)", [[stop objectForKey:@"id"] longValue]];
+            NSArray *exceptionsForStop = [stopExceptionsForWeekdayToSydenham filteredArrayUsingPredicate:predicate];
+            for (NSDictionary *exception in exceptionsForStop) {
+                if ([[exception objectForKey:@"fromEnd"] isEqualToString:@"NO"] && [[exception objectForKey:@"element"] intValue] == column) {
+                    timetable[column][row] = [NSNull null];
+                }
+                
+                if ([[exception objectForKey:@"fromEnd"] isEqualToString:@"YES"] && highestNumOfTimes - 1 - [[exception objectForKey:@"element"] intValue] == column) {
+                    timetable[column][row] = [NSNull null];
+                }
+            }
+            
+            if (timetable[column][row] == nil) {
+                BusStop *referenceBusStop = [[BusStop MR_findAllWithPredicate:predicateForEntity inContext:localContext] firstObject];
+                NSString *time = [referenceBusStop.timetableSet objectAtIndex:column];
+                timetable[column][row] = time;
+            }
+            
+            NSLog(@"%@", timetable[column][row]);
+        }
+        NSLog(@"-");
+        
+    }
+    
+
+    
+    // Keys for this are a concatenation of the
+    NSDictionary *timeDifferences = [NSDictionary new];
+    
+    for (int x = 0; x < highestNumOfTimes; x++) {
+        for (int y = 0; y < [self.reference_stops count]; y++) {
+            NSDictionary *stop = (NSDictionary *)[self.reference_stops objectAtIndex:y];
+            
+            
+//            
+//            BOOL shouldSkip = NO;
+//            for (NSDictionary *dictionary in exceptionsForStop) {
+//                if ([[dictionary objectForKey:@"element"] intValue] == x) {
+//                    shouldSkip = YES;
+//                }
+//                
+//                if (highestNumOfTimes - [[dictionary objectForKey:@"element"] intValue] == x && [[dictionary objectForKey:@"fromEnd"] isEqualToString:@"YES"]) {
+//                    shouldSkip = YES;
+//                }
+//            }
+//            
+//            if (shouldSkip == YES) {
+//                continue;
+//            }
+//            
+//            // Else proceed to calculate time differences of next times
+//            BusStop *referenceBusStop = [[BusStop MR_findAllWithPredicate:predicate inContext:localContext] firstObject];
+//            NSString *time = [referenceBusStop.timetableSet objectAtIndex:x];
+//            
+//            BusStop *nextReferenceBusStop = nil;
+//            if (y+1 < [self.reference_stops count]) {
+//                NSPredicate *predicateNext = [NSPredicate predicateWithFormat:@"id ==[c] %i", y+1];
+//                nextReferenceBusStop = [[BusStop MR_findAllWithPredicate:predicateNext inContext:localContext] firstObject];
+//                NSString *nextTime = [nextReferenceBusStop.timetableSet objectAtIndex:x];
+//            }
+
+            
+        }
+    }
     
 }
 
