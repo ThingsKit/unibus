@@ -594,6 +594,14 @@
   {
   "id":11,
   "stop_name":"Upper Parade",
+  "time":"18:01",
+  "period":"weekday",
+  "busNo":"u1",
+  "destination":"sydenham"
+  },
+  {
+  "id":11,
+  "stop_name":"Upper Parade",
   "time":"18:29",
   "period":"weekday",
   "busNo":"u1",
