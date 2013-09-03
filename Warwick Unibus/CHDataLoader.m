@@ -17,6 +17,7 @@
 
 @implementation CHDataLoader
 
+
 static CHDataLoader *sharedDataLoader = nil;    // static instance variable
 
 +(CHDataLoader*)sharedDataLoader
@@ -95,8 +96,6 @@ static CHDataLoader *sharedDataLoader = nil;    // static instance variable
         }];  //saves the context to disk
         
     }
-
-    
 }
 
 -(void)loadTimetableData
@@ -197,12 +196,13 @@ static CHDataLoader *sharedDataLoader = nil;    // static instance variable
             }
         }
     }
-                 
-
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"destination ==[c] %@", @"sydenham"];
+    NSArray *u1StopsToSydenham = [[self.reference_stops copy] filteredArrayUsingPredicate:predicate];
     
     // Weekdays to sydenham
     int highestNumOfTimes = 0;
-    for (NSDictionary *stop_dictionary in self.reference_stops) {
+    for (NSDictionary *stop_dictionary in u1StopsToSydenham) {
         int stop_id = [[stop_dictionary objectForKey:@"id"] intValue];
         NSPredicate *predicate = [NSPredicate predicateWithFormat:@"stop_id ==[c] %i AND period ==[c] %@ AND destination ==[c] %@", stop_id, @"weekday", @"sydenham"];
         
@@ -220,39 +220,55 @@ static CHDataLoader *sharedDataLoader = nil;    // static instance variable
     // There are gaps in the timetable, which are accounted for by "stop exceptions"
     
     // Timetable to step through
-    id timetable[highestNumOfTimes][[self.reference_stops count]];
+    
+    NSMutableArray *rowsArray = [NSMutableArray arrayWithCapacity:highestNumOfTimes - 1];
+    for (int i = 0; i < highestNumOfTimes; i++)
+    {
+        [rowsArray addObject:[NSMutableArray new]];
+    }
     
     // For each row
-    for (int row = 0; row < [self.reference_stops count]; row++) {
-        NSDictionary *stop = (NSDictionary *)[self.reference_stops objectAtIndex:row];
+    for (int row = 0; row < [u1StopsToSydenham count]; row++) {
+        NSDictionary *stop = (NSDictionary *)[u1StopsToSydenham objectAtIndex:row];
+        NSLog(@"%@", [stop objectForKey:@"name"]);
+        
+        NSPredicate *predicateForEntity = [NSPredicate predicateWithFormat:@"(stop_id ==[c] %i)", [[stop objectForKey:@"id"] longValue]];
+        BusStop *referenceBusStop = [[BusStop MR_findAllWithPredicate:predicateForEntity inContext:localContext] firstObject];
+        NSMutableArray *times = [NSMutableArray arrayWithArray:[referenceBusStop.timetable array]];
+        
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(period ==[c] %@ AND destination ==[c] %@)", @"weekday", @"sydenham"];
+        times = [NSMutableArray arrayWithArray:[times filteredArrayUsingPredicate:predicate]];
+        
         // For each column
         for (int column = 0; column < highestNumOfTimes; column++) {
             NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(id ==[c] %i)", [[stop objectForKey:@"id"] longValue]];
-            NSPredicate *predicateForEntity = [NSPredicate predicateWithFormat:@"(stop_id ==[c] %i)", [[stop objectForKey:@"id"] longValue]];
+
+            
             NSArray *exceptionsForStop = [stopExceptionsForWeekdayToSydenham filteredArrayUsingPredicate:predicate];
             for (NSDictionary *exception in exceptionsForStop) {
                 if ([[exception objectForKey:@"fromEnd"] isEqualToString:@"NO"] && [[exception objectForKey:@"element"] intValue] == column) {
-                    timetable[column][row] = [NSNull null];
+                    [[rowsArray objectAtIndex:row] insertObject:[NSNull null] atIndex:column];
                 }
                 
                 if ([[exception objectForKey:@"fromEnd"] isEqualToString:@"YES"] && highestNumOfTimes - 1 - [[exception objectForKey:@"element"] intValue] == column) {
-                    timetable[column][row] = [NSNull null];
+                    [[rowsArray objectAtIndex:row] insertObject:[NSNull null] atIndex:column];
                 }
             }
             
-            if (timetable[column][row] == nil) {
-                BusStop *referenceBusStop = [[BusStop MR_findAllWithPredicate:predicateForEntity inContext:localContext] firstObject];
-                NSString *time = [referenceBusStop.timetableSet objectAtIndex:column];
-                timetable[column][row] = time;
+            // Check if anything was placed in the array, if not, place the actual time into the array
+            if ([[rowsArray objectAtIndex:row] count] <= column ) {
+                BusTime *time = (BusTime *)[times firstObject];
+                
+                if (time != nil) {
+                    [[rowsArray objectAtIndex:row] insertObject:time.time atIndex:column];
+                    [times removeObjectAtIndex:0];
+                }
             }
             
-            NSLog(@"%@", timetable[column][row]);
+             NSLog(@"%@", [[rowsArray objectAtIndex:row] objectAtIndex:column]);
         }
         NSLog(@"-");
-        
     }
-    
-
     
     // Keys for this are a concatenation of the
     NSDictionary *timeDifferences = [NSDictionary new];
