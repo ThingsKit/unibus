@@ -2739,7 +2739,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"07:32",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2747,7 +2747,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"08:02",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2755,7 +2755,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"08:32",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2763,7 +2763,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"09:02",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2771,7 +2771,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"09:32",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2779,7 +2779,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"10:02",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2787,7 +2787,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"10:32",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2795,7 +2795,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"11:02",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2803,7 +2803,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"11:32",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2811,7 +2811,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"12:02",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2819,7 +2819,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"12:32",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2827,7 +2827,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"13:02",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2835,7 +2835,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"13:32",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2843,7 +2843,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"14:02",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2851,7 +2851,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"14:32",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2859,7 +2859,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"15:02",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2867,7 +2867,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"15:32",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2875,7 +2875,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"16:02",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2883,7 +2883,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"16:32",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2891,7 +2891,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"17:02",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2899,7 +2899,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"17:32",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2907,7 +2907,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"18:02",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u1",
   "destination":"uni"
   },
@@ -2915,7 +2915,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"18:32",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u1",
   "destination":"uni"
   },
@@ -2923,7 +2923,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"18:54",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u1",
   "destination":"uni"
   },
@@ -2931,7 +2931,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"19:44",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u1",
   "destination":"uni"
   },
@@ -2939,7 +2939,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"20:44",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u1",
   "destination":"uni"
   },
@@ -2947,7 +2947,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"21:44",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u1",
   "destination":"uni"
   },
@@ -2955,7 +2955,7 @@
   "id":17,
   "stop_name":"St Helens Road",
   "time":"23:13",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u1",
   "destination":"uni"
   },
@@ -2963,7 +2963,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"07:39",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2971,7 +2971,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"08:09",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2979,7 +2979,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"08:39",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2987,7 +2987,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"09:09",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -2995,7 +2995,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"09:39",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3003,7 +3003,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"10:09",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3011,7 +3011,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"10:39",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3019,7 +3019,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"11:09",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3027,7 +3027,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"11:39",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3035,7 +3035,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"12:09",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3043,7 +3043,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"12:39",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3051,7 +3051,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"13:09",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3059,7 +3059,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"13:39",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3067,7 +3067,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"14:09",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3075,7 +3075,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"14:39",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3083,7 +3083,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"15:09",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3091,7 +3091,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"15:39",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3099,7 +3099,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"16:09",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3107,7 +3107,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"16:39",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3115,7 +3115,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"17:09",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3123,7 +3123,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"17:39",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3131,7 +3131,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"18:08",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u1",
   "destination":"uni"
   },
@@ -3139,7 +3139,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"18:37",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u1",
   "destination":"uni"
   },
@@ -3147,7 +3147,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"18:59",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u1",
   "destination":"uni"
   },
@@ -3155,7 +3155,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"19:49",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u1",
   "destination":"uni"
   },
@@ -3163,7 +3163,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"20:49",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u1",
   "destination":"uni"
   },
@@ -3171,7 +3171,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"21:49",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u1",
   "destination":"uni"
   },
@@ -3179,7 +3179,7 @@
   "id":31,
   "stop_name":"Church",
   "time":"23:18",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u1",
   "destination":"uni"
   },
@@ -3187,7 +3187,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"07:44",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3195,7 +3195,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"08:14",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3203,7 +3203,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"08:44",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3211,7 +3211,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"09:14",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3219,7 +3219,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"09:44",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3227,7 +3227,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"10:14",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3235,7 +3235,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"10:44",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3243,7 +3243,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"11:14",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3251,7 +3251,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"11:44",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3259,7 +3259,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"12:14",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3267,7 +3267,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"12:44",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3275,7 +3275,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"13:14",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3283,7 +3283,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"13:44",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3291,7 +3291,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"14:14",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3299,7 +3299,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"14:44",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3307,7 +3307,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"15:14",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3315,7 +3315,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"15:44",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3323,7 +3323,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"16:14",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3331,7 +3331,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"16:44",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3339,7 +3339,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"17:14",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni  "
   },
@@ -3347,7 +3347,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"17:44",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3355,7 +3355,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"18:41",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u1",
   "destination":"uni"
   },
@@ -3363,7 +3363,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"19:53",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u1",
   "destination":"uni"
   },
@@ -3371,7 +3371,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"20:53",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u1",
   "destination":"uni"
   },
@@ -3379,7 +3379,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"22:10",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u1",
   "destination":"uni"
   },
@@ -3387,7 +3387,7 @@
   "id":34,
   "stop_name":"Upper parade (up)",
   "time":"22:10",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"x17",
   "destination":"uni"
   },
@@ -3395,7 +3395,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"07:56",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3403,7 +3403,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"08:26",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3411,7 +3411,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"08:56",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3419,7 +3419,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"09:26",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3427,7 +3427,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"09:56",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3435,7 +3435,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"10:26",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3443,7 +3443,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"10:56",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3451,7 +3451,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"11:26",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3459,7 +3459,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"11:56",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3467,7 +3467,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"12:26",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3475,7 +3475,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"12:56",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3483,7 +3483,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"13:26",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3491,7 +3491,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"13:56",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3499,7 +3499,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"14:26",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3507,7 +3507,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"14:56",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3515,7 +3515,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"15:26",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3523,7 +3523,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"15:56",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3531,7 +3531,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"16:26",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3539,7 +3539,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"16:56",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3547,7 +3547,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"17:26",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3555,7 +3555,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"17:56",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3563,7 +3563,7 @@
   "id":51,
   "stop_name":"Holiday Inn",
   "time":"22:22",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"x17",
   "destination":"uni"
   },
@@ -3571,7 +3571,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"07:59",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3579,7 +3579,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"08:29",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3587,7 +3587,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"08:59",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3595,7 +3595,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"09:29",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3603,7 +3603,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"09:59",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3611,7 +3611,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"10:29",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3619,7 +3619,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"10:59",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3627,7 +3627,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"11:29",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3635,7 +3635,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"11:59",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3643,7 +3643,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"12:29",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3651,7 +3651,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"12:59",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3659,7 +3659,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"13:29",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3667,7 +3667,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"13:59",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3675,7 +3675,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"14:29",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3683,7 +3683,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"14:59",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3691,7 +3691,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"15:29",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3699,7 +3699,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"15:59",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3707,7 +3707,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"16:29",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3715,7 +3715,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"16:59",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3723,7 +3723,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"17:29",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3731,7 +3731,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"17:59",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"u2",
   "destination":"uni"
   },
@@ -3739,7 +3739,7 @@
   "id":54,
   "stop_name":"Wyandotte (up)",
   "time":"22:25",
-  "period":"saturdays",
+  "period":"saturday",
   "busNo":"x17",
   "destination":"uni"
   },
