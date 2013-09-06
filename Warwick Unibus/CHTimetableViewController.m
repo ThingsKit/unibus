@@ -124,10 +124,10 @@
         queryStringTomorrow = @"weekday";
     } else if (weekday == 7) {
         // Sat
-        queryStringTomorrow = @"saturdays";
+        queryStringTomorrow = @"saturday";
     } else {
         // Sun
-        queryStringTomorrow = @"sundays";
+        queryStringTomorrow = @"sunday";
     }
     
     comps = [gregorian components:NSUIntegerMax fromDate:now];
@@ -142,8 +142,12 @@
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"stop_id ==[c] %@ AND period ==[c] %@", self.busStop.stop_id, queryString];
     NSArray *busTimesForDay = [BusTime MR_findAllWithPredicate:predicate inContext:localContext];
     
+    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"sequenceNo" ascending:YES];
+    busTimesForDay = [busTimesForDay sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+    
     NSPredicate *predicateTomorrow = [NSPredicate predicateWithFormat:@"stop_id ==[c] %@ AND period ==[c] %@", self.busStop.stop_id, queryStringTomorrow];
     NSArray *busTimesForTomorrow = [BusTime MR_findAllWithPredicate:predicateTomorrow inContext:localContext];
+    busTimesForTomorrow = [busTimesForTomorrow sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
   
     // NEEDS FIXING FOR BUS TIMETABLES THAT GO ON TO EARLY MORNINGS
     self.firstBus = [busTimesForDay firstObject];
@@ -161,7 +165,6 @@
         NSLog(@"Nil values for bus time arrays at time: %@", [NSDate date]);
     }
     
-    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"sequenceNo" ascending:YES];
     
     NSArray *sortedTimes = [self.busTimesLeftToday sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
     self.busTimesLeftToday = [NSMutableArray arrayWithArray: sortedTimes];

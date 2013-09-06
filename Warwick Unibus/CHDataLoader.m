@@ -15,6 +15,12 @@
 @property (nonatomic, strong) NSArray *reference_stops;
 @end
 
+typedef enum {
+    U1Route,
+    U2Route,
+    U17Route
+} Route;
+
 @implementation CHDataLoader
 
 
@@ -152,13 +158,17 @@ static CHDataLoader *sharedDataLoader = nil;    // static instance variable
             }
             sequence++;
             count++;
-            
         }
-        
     }
     [localContext MR_saveToPersistentStoreWithCompletion:^(BOOL success, NSError *e) {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"coreDataUpdated" object:self];
-        [self computeMinorTimetableInformation];
+        [self computeMinorTimetableInformationForRoute:U1Route andDestination:@"sydenham"];
+//        [self computeMinorTimetableInformationForRoute:U1Route andDestination:@"uni"];
+        //[self computeMinorTimetableInformationForRoute:U2Route andDestination:@"sydenham"];
+//        [self computeMinorTimetableInformationForRoute:U2Route andDestination:@"uni"];
+        //[self computeMinorTimetableInformationForRoute:U17Route andDestination:@"sydenham"];
+//        [self computeMinorTimetableInformationForRoute:U17Route andDestination:@"uni"];
+
     }];
 
     NSArray *objects = [BusTime MR_findAll];
@@ -181,32 +191,113 @@ static CHDataLoader *sharedDataLoader = nil;    // static instance variable
     return jsonArray;
 }
 
-- (void) computeSectionTimes
+- (NSArray *) getExceptionsForRoute:(Route)route andDestination:(NSString *)destination
 {
-    NSManagedObjectContext *localContext = [NSManagedObjectContext MR_contextForCurrentThread];
+    
+    NSString *period = @"";
+    
+    switch (route) {
+        case U1Route:
+            period = @"weekdays";
+            break;
+        case U2Route:
+            period = @"saturday";
+            break;
+            
+        case U17Route:
+            period = @"sunday";
+            break;
+            
+        default:
+            break;
+    }
     
     //id, name, period, destination, element, fromEnd
     NSArray *stopExceptions = [self stopExceptions];
     
-    NSMutableArray *stopExceptionsForWeekdayToSydenham = [NSMutableArray new];
+    NSMutableArray *relevantStopExceptions = [NSMutableArray new];
     for (NSDictionary *dictionary in stopExceptions) {
-        if ([[dictionary objectForKey:@"period"] isEqualToString:@"weekdays"]) {
-            if ([[dictionary objectForKey:@"destination"] isEqualToString:@"sydenham"]) {
-                [stopExceptionsForWeekdayToSydenham addObject:dictionary];
+        if ([[dictionary objectForKey:@"period"] isEqualToString:period]) {
+            if ([[dictionary objectForKey:@"destination"] isEqualToString:destination]) {
+                [relevantStopExceptions addObject:dictionary];
             }
         }
     }
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"destination ==[c] %@", @"sydenham"];
-    NSArray *u1StopsToSydenham = [[self.reference_stops copy] filteredArrayUsingPredicate:predicate];
+    return relevantStopExceptions;
+}
+
+- (NSArray *) getReferenceStopsForRoute: (Route) route andDestination:(NSString *) destination
+{
+    NSArray *allStopsForRoute = nil;
+    
+    switch (route) {
+        case U1Route:
+            allStopsForRoute = [self getRouteStopsForRoute:U1Route andDestination:destination];
+            break;
+        case U2Route:
+            allStopsForRoute = [self getRouteStopsForRoute:U2Route andDestination:destination];
+            break;
+        case U17Route:
+            allStopsForRoute = [self getRouteStopsForRoute:U17Route andDestination:destination];
+            break;
+        default:
+            break;
+    }
+
+    NSMutableArray *ref_stops = [NSMutableArray new];
+    for (NSDictionary *item in allStopsForRoute) {
+        if ([[item objectForKey:@"ref_stop"] isEqualToString:@"YES"]) {
+            [ref_stops addObject:item];
+        }
+    }
+    
+    return ref_stops;
+}
+
+- (NSArray *) getRouteStopsForRoute:(Route) route andDestination:(NSString *) destination
+{
+    NSError *e = nil;
+    NSString *filePathString = nil;
+    
+    switch (route) {
+        case U1Route:
+            filePathString = [NSString stringWithFormat:@"u1_to_%@.json", destination];
+            break;
+        case U2Route:
+            filePathString = [NSString stringWithFormat:@"u2_to_%@.json", destination];
+            break;
+        case U17Route:
+            filePathString = [NSString stringWithFormat:@"u17_to_%@.json", destination];
+            break;
+            
+        default:
+            break;
+    }
+    
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:[filePathString stringByDeletingPathExtension] ofType:[filePathString pathExtension]];
+    
+    NSData* data = [NSData dataWithContentsOfFile:filePath];
+    NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData: data options: NSJSONReadingMutableContainers error: &e];
+    if (!jsonArray) {
+        NSLog(@"Error: getRouteStopsForRoute failed to load data");
+    }
+    return jsonArray;
+}
+
+- (NSArray *) getSectionTimesForRoute:(Route) route andDestination:(NSString *) destination
+{
+    NSManagedObjectContext *localContext = [NSManagedObjectContext MR_contextForCurrentThread];
+
+    NSArray *stopExceptions = [self getExceptionsForRoute:route andDestination:destination];
+    NSArray *referenceStops = [self getReferenceStopsForRoute:route andDestination:destination];
     
     // Weekdays to sydenham
     int highestNumOfTimes = 0;
-    for (NSDictionary *stop_dictionary in u1StopsToSydenham) {
+    for (NSDictionary *stop_dictionary in referenceStops) {
         int stop_id = [[stop_dictionary objectForKey:@"id"] intValue];
-        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"stop_id ==[c] %i AND period ==[c] %@ AND destination ==[c] %@", stop_id, @"weekday", @"sydenham"];
         
-        int numOfBusTimes = [[BusTime MR_findAllWithPredicate:predicate inContext:localContext] count];
+        int numOfBusTimes = [[self getStopTimesForStop:[[BusStop MR_findByAttribute:@"stop_id" withValue:[NSNumber numberWithInt:stop_id]] firstObject] onRoute:route andDestination:destination] count];
         
         if (numOfBusTimes > highestNumOfTimes) {
             highestNumOfTimes = numOfBusTimes;
@@ -221,30 +312,30 @@ static CHDataLoader *sharedDataLoader = nil;    // static instance variable
     
     // Timetable to step through
     
-    NSMutableArray *rowsArray = [NSMutableArray arrayWithCapacity:highestNumOfTimes - 1];
-    for (int i = 0; i < highestNumOfTimes; i++)
+    NSMutableArray *rowsArray = [NSMutableArray arrayWithCapacity:[referenceStops count]];
+    for (int i = 0; i < [referenceStops count]; i++)
     {
         [rowsArray addObject:[NSMutableArray new]];
     }
     
-    // For each row
-    for (int row = 0; row < [u1StopsToSydenham count]; row++) {
-        NSDictionary *stop = (NSDictionary *)[u1StopsToSydenham objectAtIndex:row];
+    // For each row barring the last
+    for (int row = 0; row < [referenceStops count]; row++) {
+        NSDictionary *stop = (NSDictionary *)[referenceStops objectAtIndex:row];
         NSLog(@"%@", [stop objectForKey:@"name"]);
         
         NSPredicate *predicateForEntity = [NSPredicate predicateWithFormat:@"(stop_id ==[c] %i)", [[stop objectForKey:@"id"] longValue]];
         BusStop *referenceBusStop = [[BusStop MR_findAllWithPredicate:predicateForEntity inContext:localContext] firstObject];
         NSMutableArray *times = [NSMutableArray arrayWithArray:[referenceBusStop.timetable array]];
         
-        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(period ==[c] %@ AND destination ==[c] %@)", @"weekday", @"sydenham"];
+        // PROBLEM HERE FOR ST HELENS ROAD, ST HELENS DEST. IS UNI
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(period ==[c] %@ )", @"weekday"];
         times = [NSMutableArray arrayWithArray:[times filteredArrayUsingPredicate:predicate]];
         
         // For each column
         for (int column = 0; column < highestNumOfTimes; column++) {
             NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(id ==[c] %i)", [[stop objectForKey:@"id"] longValue]];
-
             
-            NSArray *exceptionsForStop = [stopExceptionsForWeekdayToSydenham filteredArrayUsingPredicate:predicate];
+            NSArray *exceptionsForStop = [stopExceptions filteredArrayUsingPredicate:predicate];
             for (NSDictionary *exception in exceptionsForStop) {
                 if ([[exception objectForKey:@"fromEnd"] isEqualToString:@"NO"] && [[exception objectForKey:@"element"] intValue] == column) {
                     [[rowsArray objectAtIndex:row] insertObject:[NSNull null] atIndex:column];
@@ -256,7 +347,7 @@ static CHDataLoader *sharedDataLoader = nil;    // static instance variable
             }
             
             // Check if anything was placed in the array, if not, place the actual time into the array
-            if ([[rowsArray objectAtIndex:row] count] <= column ) {
+            if ([[rowsArray objectAtIndex:row] count] == column ) {
                 BusTime *time = (BusTime *)[times firstObject];
                 
                 if (time != nil) {
@@ -271,75 +362,259 @@ static CHDataLoader *sharedDataLoader = nil;    // static instance variable
     }
     
     // Keys for this are a concatenation of the
-    NSDictionary *timeDifferences = [NSDictionary new];
+    NSMutableArray *timeDifferences = [NSMutableArray new];
     
     for (int x = 0; x < highestNumOfTimes; x++) {
-        for (int y = 0; y < [self.reference_stops count]; y++) {
-            NSDictionary *stop = (NSDictionary *)[self.reference_stops objectAtIndex:y];
+        for (int y = 0; y < [referenceStops count] - 1; y++) {
             
+            NSString *time = [[rowsArray objectAtIndex:y] objectAtIndex:x];
+            NSString *nextTime = nil;
+            if (y <= [referenceStops count] - 2) {
+                nextTime = [[rowsArray objectAtIndex:y+1] objectAtIndex:x];
+            }
             
-//            
-//            BOOL shouldSkip = NO;
-//            for (NSDictionary *dictionary in exceptionsForStop) {
-//                if ([[dictionary objectForKey:@"element"] intValue] == x) {
-//                    shouldSkip = YES;
-//                }
-//                
-//                if (highestNumOfTimes - [[dictionary objectForKey:@"element"] intValue] == x && [[dictionary objectForKey:@"fromEnd"] isEqualToString:@"YES"]) {
-//                    shouldSkip = YES;
-//                }
-//            }
-//            
-//            if (shouldSkip == YES) {
-//                continue;
-//            }
-//            
-//            // Else proceed to calculate time differences of next times
-//            BusStop *referenceBusStop = [[BusStop MR_findAllWithPredicate:predicate inContext:localContext] firstObject];
-//            NSString *time = [referenceBusStop.timetableSet objectAtIndex:x];
-//            
-//            BusStop *nextReferenceBusStop = nil;
-//            if (y+1 < [self.reference_stops count]) {
-//                NSPredicate *predicateNext = [NSPredicate predicateWithFormat:@"id ==[c] %i", y+1];
-//                nextReferenceBusStop = [[BusStop MR_findAllWithPredicate:predicateNext inContext:localContext] firstObject];
-//                NSString *nextTime = [nextReferenceBusStop.timetableSet objectAtIndex:x];
-//            }
+            if (time != [NSNull null] && nextTime != [NSNull null]) {
+                NSMutableDictionary *timeDifferenceInfo = [NSMutableDictionary new];
+                NSNumber *minutesDifference = [NSNumber numberWithInt:[self minutesDifferenceBetween:time and:nextTime]];
+                
+                [timeDifferenceInfo setObject:[referenceStops objectAtIndex:y] forKey:@"firstReferenceStop"];
+                [timeDifferenceInfo setObject:[referenceStops objectAtIndex:y+1] forKey:@"secondReferenceStop"];
+                [timeDifferenceInfo setObject:minutesDifference forKey:@"minutesDifference"];
+                [timeDifferenceInfo setObject:time forKey:@"time"];
+                
+                [timeDifferences addObject:timeDifferenceInfo];
+            }
+        }
+    }
+    
+    return timeDifferences;
+}
 
+// Takes two strings like: 2240, 0130, 1715 etc
+- (int) minutesDifferenceBetween:(NSString *) timeOne and:(NSString *) timeTwo
+{
+    NSDate *dateOne = [self dateForTimeString:timeOne];
+    NSDate *dateTwo = [self dateForTimeString:timeTwo];
+    
+    // If datetwo is earlier, i.e. dateOne = 2350, dateTwo = 0010, we must say 20 mins and not be stupid
+    // To do this, add a day onto the second date before calculating minutes difference =)
+    if ([dateOne earlierDate:dateTwo] == dateTwo) {
+        dateTwo = [dateTwo dateByAddingTimeInterval:24 * 60 * 60];
+    }
+    
+    NSTimeInterval secondsBetween = [dateTwo timeIntervalSinceDate:dateOne];
+    int minutesDifference = secondsBetween / 60;
+
+    //NSLog(@"%@ -> %@ = %i", timeOne, timeTwo, minutesDifference);
+    
+    return minutesDifference;
+}
+
+- (NSString *) getTimeByAddingMinutes: (int) minutes toDate: (NSDate *) date
+{
+    NSDate *newDate = [date dateByAddingTimeInterval:minutes * 60];
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+
+    NSDateComponents *components = [gregorian components:NSUIntegerMax fromDate:newDate];
+
+    NSInteger hoursForDate = [components hour];
+    NSInteger minutesForDate = [components minute];
+    
+    NSString *formattedHours = @"";
+    NSString *formattedMinutes = @"";
+    
+    if (hoursForDate < 10) {
+        formattedHours = [NSString stringWithFormat:@"0%d", hoursForDate];
+    } else {
+        formattedHours = [NSString stringWithFormat:@"%d", hoursForDate];
+    }
+    
+    if (minutesForDate < 10) {
+        formattedMinutes = [NSString stringWithFormat:@"0%d", minutesForDate];
+    } else {
+        formattedMinutes = [NSString stringWithFormat:@"%d", minutesForDate];
+    }
+    
+    
+    return [NSString stringWithFormat:@"%@%@", formattedHours, formattedMinutes];
+}
+
+- (NSDate *) dateForTimeString: (NSString *) time
+{
+    NSDate *now = [NSDate date];
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    
+    NSTimeInterval oneDay = 24 * 60 * 60;
+    NSDate *dateOneDayAhead = [now dateByAddingTimeInterval:oneDay];
+    
+    NSDateComponents *components = [gregorian components:NSUIntegerMax fromDate:now];
+    //            if ([self.lastMinuteOfDayDate earlierDate:now] == now) {
+    //                // If right now is before midnight today
+    //                components = [gregorian components:NSUIntegerMax fromDate:dateOneDayAhead];
+    //            }
+    
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
+    
+    NSNumber *hours = [numberFormatter numberFromString:[time substringToIndex:2]];
+    NSNumber *minutes = [numberFormatter numberFromString:[time substringFromIndex:2]];
+    
+    [components setHour:hours.intValue];
+    [components setMinute:minutes.intValue];
+    [components setSecond:0];
+    
+    NSDate *date = [gregorian dateFromComponents:components];
+    
+    return date;
+}
+
+- (NSArray *) getMinorStopsBetweenReferenceStop: (BusStop *) stopOne andStop: (BusStop *) stopTwo onRoute: (Route) route forDestination: (NSString *) destination
+{
+    NSMutableArray *minorStops = [NSMutableArray new];
+    
+    NSArray *allStopsForRoute = [self getRouteStopsForRoute:route andDestination:destination];
+    NSArray *referenceStops = [self getReferenceStopsForRoute:route andDestination:destination];
+    
+    BOOL recordStops = NO;
+    for (NSDictionary *dictionary in allStopsForRoute) {
+        if ([[dictionary objectForKey:@"id"] isEqualToNumber:stopOne.stop_id]) {
+            recordStops = YES;
+        }
+        if ([dictionary objectForKey:@"id"] == stopTwo.stop_id) {
+            recordStops = NO;
+        }
+        if (recordStops == YES && [[dictionary objectForKey:@"ref_stop"] isEqualToString:@"NO"]) {
+            [minorStops addObject:dictionary];
+        }
+        
+        if ((int)[dictionary objectForKey:@"id"] == 47) {
             
         }
     }
     
+    return [minorStops copy];
 }
 
-- (void) computeMinorTimetableInformation
+- (void) computeMinorTimetableInformationForRoute:(Route) route andDestination: (NSString *) destination
 {
-    [self computeWeekdayMinorTimetables];
-}
+    NSManagedObjectContext *localContext = [NSManagedObjectContext MR_contextForCurrentThread ];
+    
+    NSArray *sectionTimes = [self getSectionTimesForRoute:route andDestination:destination];
+    
+    int i = 0;
+    NSDictionary *stopSectionPercentages = [self getPercentagesForRoute:route andDestination:destination];
+    
+    int sequence = 0;
+    for (NSDictionary *sectionInfo in sectionTimes) {
+        NSDictionary *firstReferenceStop = [sectionInfo objectForKey:@"firstReferenceStop"];
+        NSDictionary *secondReferenceStop = [sectionInfo objectForKey:@"secondReferenceStop"];
+        NSNumber *minutesDifference = [sectionInfo objectForKey:@"minutesDifference"];
+        NSString *time = [sectionInfo objectForKey:@"time"];
+        
+        BusStop *firstStop = [[BusStop MR_findByAttribute:@"stop_id" withValue:[firstReferenceStop objectForKey:@"id"]] firstObject];
+        BusStop *secondStop = [[BusStop MR_findByAttribute:@"stop_id" withValue:[secondReferenceStop objectForKey:@"id"]] firstObject];
+        
+        NSArray *minorStops = [self getMinorStopsBetweenReferenceStop:firstStop andStop:secondStop onRoute:route forDestination:destination];
+        
+        
+        for (NSDictionary *minorStopDictionary in minorStops) {
+            BusStop *minorStop = [[BusStop MR_findByAttribute:@"stop_id" withValue:[minorStopDictionary objectForKey:@"id"]] firstObject];;
+            NSArray *stopTimes = [self getStopTimesForStop:firstStop onRoute:route andDestination:destination];
+            
+            float percentage = [[stopSectionPercentages objectForKey:[minorStopDictionary objectForKey:@"id"]] floatValue];
+            int minutesToAdd = minutesDifference.intValue * percentage;
+            
+            NSString *newTimeString = [self getTimeByAddingMinutes:minutesToAdd toDate:[self dateForTimeString:time]];
+            if ([newTimeString length] < 4) {
+                //newTimeString = [NSString stringWithFormat:@"0%@", newTimeString];
+            }
+            
+            
+            NSString *period = @"";
+            NSString *number = @"";
+            switch (route) {
+                case U1Route:
+                    period = @"weekday";
+                    number = @"u1";
+                    break;
+                case U2Route:
+                    period = @"saturdays";
+                    number = @"u2";
+                    break;
+                case U17Route:
+                    period = @"sundays";
+                    number = @"u17";
+                    break;
+                    
+                default:
+                    break;
+            }
+            
+            NSPredicate *predicate = [NSPredicate predicateWithFormat:@"stop_id ==[c] %@ AND time LIKE[c] %@ AND destination LIKE[c] %@ AND period LIKE[c] %@ AND number LIKE[c] %@", minorStop.stop_id, newTimeString, destination, period, number];
+            BusTime *busTime = [BusTime MR_findFirstWithPredicate:predicate inContext:localContext];
+            //NSLog(@"%@",predicate);
+            if (!busTime) {
+                
+                BusTime *newTime = [BusTime MR_createInContext:localContext];
+                
+                newTime.time = newTimeString;
+                newTime.stop_id = minorStop.stop_id;
+                newTime.destination = destination;
+                newTime.sequenceNo = [NSNumber numberWithInt:sequence];
+                newTime.period = period;
+                newTime.number = number;
 
-- (NSMutableArray *)loadReferenceStops:(NSArray *)jsonArray
-{
-    // Get all the reference stops for the route
-    NSMutableArray *ref_stops = [NSMutableArray new];
-    for (NSDictionary *item in jsonArray) {
-        if ([[item objectForKey:@"ref_stop"] isEqualToString:@"YES"]) {
-            [ref_stops addObject:item];
+                [[minorStop timetableSet] addObject:newTime];
+            }
+            NSLog(@"%@ + %i -> %@ for stop %@", time, minutesToAdd, newTimeString, minorStop.name);
+            
         }
+        sequence++;
+        
+    }
+    [localContext MR_saveToPersistentStoreWithCompletion:^(BOOL success, NSError *error){
+        
+    }];
+    
+    //[self computeWeekdayMinorTimetables];
+}
+
+
+- (NSArray *) getStopTimesForStop: (BusStop *) stop onRoute: (Route) route andDestination: (NSString *) destination
+{
+    NSArray *stopTimes = [NSArray new];
+    
+    NSString *period = @"";
+    switch (route) {
+        case U1Route:
+            period = @"weekday";
+            break;
+            
+        case U2Route:
+            period = @"saturdays";
+            break;
+            
+        case U17Route:
+            period = @"sundays";
+            break;
+            
+        default:
+            break;
     }
     
-    // Keep track of reference stops
-    self.reference_stops = ref_stops;
-    return ref_stops;
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"stop_id ==[c] %@ AND period ==[c] %@ AND destination ==[c] %@", stop.stop_id, period, destination];
+    stopTimes = [stop.timetable array];
+    stopTimes = [stopTimes filteredArrayUsingPredicate:predicate];
+    
+    return stopTimes;
 }
 
-- (void) computeWeekdayMinorTimetables
+- (NSDictionary *) getPercentagesForRoute: (Route) route andDestination: (NSString *) destination
 {
-    NSManagedObjectContext *localContext = [NSManagedObjectContext MR_contextForCurrentThread];
+    NSMutableDictionary *percentageDifferences = [NSMutableDictionary new];
     
     NSError *e = nil;
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:[@"u1_route.json" stringByDeletingPathExtension] ofType:[@"u1_route.json" pathExtension]];
-    
-    NSData* data = [NSData dataWithContentsOfFile:filePath];
-    NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData: data options: NSJSONReadingMutableContainers error: &e];
+    NSArray *jsonArray = [self getRouteStopsForRoute:route andDestination:destination];
     if (!jsonArray) {
         NSLog(@"Error parsing JSON: %@", e);
     } else {
@@ -348,13 +623,14 @@ static CHDataLoader *sharedDataLoader = nil;    // static instance variable
         // along the route that minor stops lie.
         
         NSMutableArray *ref_stops;
-        ref_stops = [self loadReferenceStops:jsonArray];
-        [self computeSectionTimes];
+        ref_stops = [[self getReferenceStopsForRoute:route andDestination:destination] mutableCopy];
+        //NSDictionary *sectionTimes = [self getSectionTimesForRoute:U1Route andDestination:@"sydenham"];
 
         ref_stops = (NSMutableArray *)[[ref_stops reverseObjectEnumerator] allObjects];
         
         NSDictionary *reference_stop = [ref_stops lastObject];
         NSDictionary *next_reference_stop = [ref_stops objectAtIndex:[ref_stops count] - 2];
+        
         
         for (NSDictionary *stop_dictionary in jsonArray) {
             //id,name,ref_stop,ref_stop_id,miles,miles_diff
@@ -386,7 +662,10 @@ static CHDataLoader *sharedDataLoader = nil;    // static instance variable
             
             CGFloat milesFromReferenceStop = [[stop_dictionary objectForKey:@"miles"] floatValue] - milesForReferenceStop;
             CGFloat percentageAlongSection = milesFromReferenceStop / milesForSection;
+            
+            [percentageDifferences setObject:[NSNumber numberWithFloat:percentageAlongSection] forKey:[stop_dictionary objectForKey:@"id"]];
 
+            // Calculate time between refStop and nextRefStop, for this route and
             
             
             // Get time total
@@ -394,6 +673,8 @@ static CHDataLoader *sharedDataLoader = nil;    // static instance variable
             // Add times to minor bus stop, badum tsh!
         }
     }
+    
+    return percentageDifferences;
 }
 
 - (void) computeSaturdayMinorTimetables

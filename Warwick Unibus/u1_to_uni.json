@@ -230,29 +230,5 @@
     "ref_stop_id":34,
     "miles":9.7,
     "miles_diff":4.1
-  },
-  {
-    "id":46,
-    "name":"Gatehouse (up/down)",
-    "ref_stop":"NO",
-    "ref_stop_id":34,
-    "miles":10.5,
-    "miles_diff":0.8
-  },
-  {
-    "id":47,
-    "name":"Library (up/down)",
-    "ref_stop":"NO",
-    "ref_stop_id":34,
-    "miles":10.7,
-    "miles_diff":0.2
-  },
-  {
-    "id":1,
-    "name":"Arts Centre (down)",
-    "ref_stop":"YES",
-    "ref_stop_id":1,
-    "miles":10.8,
-    "miles_diff":0.1
   }
 ]
