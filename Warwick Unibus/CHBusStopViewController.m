@@ -190,30 +190,41 @@
 - (void) scrollViewDidScrollBy:(CGFloat) offset
 {
     // Move the next bus view and fade it out
-    
     // Starts with offset 225
-    float lastPos = -225;
-    float newPos = 0;
+    if (offset > -225) {
+        
+        float lastPos = -225;
+        float newPos = 0;
+        
+        newPos = lastPos - offset;
+        lastPos = newPos;
+        
+        // Move
+        self.nextBusView.frame = CGRectMake(self.nextBusView.frame.origin.x, MIN(32 + (newPos / 2), 32), self.nextBusView.frame.size.width, self.nextBusView.frame.size.height);
+        
+        // Fade
+        float percentage = -newPos / 100;
+        self.nextBusView.alpha = 1 - percentage;
+        
+        // Fade the status bar background (needed because otherwise we cant see it!
+        newPos = lastPos + 70 - offset + 70 ;
+        percentage = -newPos / 100;
+        self.statusBarBackground.alpha = 0 + percentage;
+        
+        [self.delegate CHBusStopTableviewDidMoveBy:offset];
+    } else {
+        float lastPos = -225;
+        float newPos = 0;
+        
+        newPos = lastPos - offset;
+        lastPos = newPos;
+        
+        // Move
+        self.nextBusView.frame = CGRectMake(self.nextBusView.frame.origin.x, 32 + (newPos / 2), self.nextBusView.frame.size.width, self.nextBusView.frame.size.height);
+        
+        [self.delegate CHBusStopTableviewDidMoveBy:offset];
+    }
     
-    newPos = lastPos - offset;
-    lastPos = newPos;
-    
-    // Move
-    self.nextBusView.frame = CGRectMake(self.nextBusView.frame.origin.x, MIN(32 + (newPos / 2), 32), self.nextBusView.frame.size.width, self.nextBusView.frame.size.height);
-    
-    // Fade
-    float percentage = -newPos / 100;
-    self.nextBusView.alpha = 1 - percentage;
-    
-    // Fade the status bar background (needed because otherwise we cant see it!
-    newPos = lastPos + 70 - offset + 70 ;
-    percentage = -newPos / 100;
-    self.statusBarBackground.alpha = 0 + percentage;
-    
-    
-    
-    
-    [self.delegate CHBusStopTableviewDidMoveBy:offset];
 }
 
 - (void) removeStopButtonPressed

@@ -200,6 +200,15 @@ BOOL isScrolling;
     for (CHBusStopViewController *controller in self.viewControllers) {
         [controller setTableOffset: offset];
     }
+    
+    float lastPos = -225;
+    float newPos = 0;
+    
+    newPos = lastPos - offset;
+    lastPos = newPos;
+    
+    // Move
+    self.bgImage.frame = CGRectMake(self.bgImage.frame.origin.x, newPos / 4, self.bgImage.frame.size.width, self.bgImage.frame.size.height);
 }
 
 -(void)removeBusStopController:(CHBusStopViewController *)controller
