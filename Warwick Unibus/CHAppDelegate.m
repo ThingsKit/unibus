@@ -11,10 +11,13 @@
 #import "CHNavigationViewController.h"
 #import "CHMainViewViewController.h"
 #import "CHDataLoader.h"
+#import "CHLoadingViewController.h"
 #import "CoreData+MagicalRecord.h"
 
 @interface CHAppDelegate()
 @property (nonatomic, strong) CHMainViewViewController *mainViewCon;
+@property (nonatomic, strong) CHNavigationViewController *navController;
+@property (nonatomic, strong) CHLoadingViewController *loadingViewController;
 @property (nonatomic, strong) NSTimer *clockTimer;
 @end
 
@@ -31,13 +34,19 @@
     // Parse
     [Parse setApplicationId:@"wBUuq6l2XgbYmlkP8lIv33vkcaRMShknhMxsf2Wz"
                   clientKey:@"3ac40HQwfrSEmyMei2mxWjCUZFmN2hXJuhFTITAD"];
+
+    self.navController = [[CHNavigationViewController alloc] init];
+    self.loadingViewController = [[CHLoadingViewController alloc] init];
+
     
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor clearColor];
     self.window.opaque = NO;
+    self.window.rootViewController = self.navController;
     [self.window makeKeyAndVisible];
+    [self.window addSubview:self.loadingViewController.view];
     
     // Magical record
     
@@ -73,15 +82,17 @@
 
 - (void) coreDataSaved: (NSNotification *) notification
 {
-    CHNavigationViewController *navController = [[CHNavigationViewController alloc] init];
+    [self.loadingViewController fadeOutLoadingViewWithCompletion:^(void){
+    
+    }];
     
     self.mainViewCon = [[CHMainViewViewController alloc] init];
-    [navController pushViewController:self.mainViewCon];
-    navController.rootViewController = self.mainViewCon;
-    self.mainViewCon.navigationController = navController;
+    [self.navController pushViewController:self.mainViewCon];
+    self.navController.rootViewController = self.mainViewCon;
+    self.mainViewCon.navigationController = self.navController;
     
     self.clockTimer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(timerTick:) userInfo:nil repeats:YES];
-    self.window.rootViewController = navController;
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

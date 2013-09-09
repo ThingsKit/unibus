@@ -321,7 +321,7 @@ static CHDataLoader *sharedDataLoader = nil;    // static instance variable
     // For each row barring the last
     for (int row = 0; row < [referenceStops count]; row++) {
         NSDictionary *stop = (NSDictionary *)[referenceStops objectAtIndex:row];
-        NSLog(@"%@", [stop objectForKey:@"name"]);
+//        NSLog(@"%@", [stop objectForKey:@"name"]);
         
         NSPredicate *predicateForEntity = [NSPredicate predicateWithFormat:@"(stop_id ==[c] %i)", [[stop objectForKey:@"id"] longValue]];
         BusStop *referenceBusStop = [[BusStop MR_findAllWithPredicate:predicateForEntity inContext:localContext] firstObject];
@@ -356,9 +356,9 @@ static CHDataLoader *sharedDataLoader = nil;    // static instance variable
                 }
             }
             
-             NSLog(@"%@", [[rowsArray objectAtIndex:row] objectAtIndex:column]);
+             //NSLog(@"%@", [[rowsArray objectAtIndex:row] objectAtIndex:column]);
         }
-        NSLog(@"-");
+//        NSLog(@"-");
     }
     
     // Keys for this are a concatenation of the
@@ -566,7 +566,7 @@ static CHDataLoader *sharedDataLoader = nil;    // static instance variable
 
                 [[minorStop timetableSet] addObject:newTime];
             }
-            NSLog(@"%@ + %i -> %@ for stop %@", time, minutesToAdd, newTimeString, minorStop.name);
+//            NSLog(@"%@ + %i -> %@ for stop %@", time, minutesToAdd, newTimeString, minorStop.name);
             
         }
         sequence++;
