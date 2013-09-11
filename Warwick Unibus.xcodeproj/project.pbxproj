@@ -100,10 +100,16 @@
 		976ACC1B17A428320013FA33 /* black_shade.png in Resources */ = {isa = PBXBuildFile; fileRef = 976ACC1A17A428320013FA33 /* black_shade.png */; };
 		976ACC2017A4327F0013FA33 /* u1.png in Resources */ = {isa = PBXBuildFile; fileRef = 976ACC1E17A4327F0013FA33 /* u1.png */; };
 		976ACC2117A4327F0013FA33 /* u1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 976ACC1F17A4327F0013FA33 /* u1@2x.png */; };
+		978077C517DE730F005917D5 /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 978077C317DE730F005917D5 /* minus.png */; };
+		978077C617DE730F005917D5 /* minus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 978077C417DE730F005917D5 /* minus@2x.png */; };
 		9794280917A9E16A00C8E8D3 /* bussign@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9794280717A9E16A00C8E8D3 /* bussign@2x.png */; };
 		9794280A17A9E16A00C8E8D3 /* bussign.png in Resources */ = {isa = PBXBuildFile; fileRef = 9794280817A9E16A00C8E8D3 /* bussign.png */; };
 		9794280E17A9E6B800C8E8D3 /* CHTimetableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9794280C17A9E6B800C8E8D3 /* CHTimetableViewController.m */; };
 		9794280F17A9E6B800C8E8D3 /* CHTimetableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9794280D17A9E6B800C8E8D3 /* CHTimetableViewController.xib */; };
+		9794C17917DE1A5800A8F5F8 /* loadingScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 9794C17817DE1A5800A8F5F8 /* loadingScreen.png */; };
+		9794C17D17DE1A6300A8F5F8 /* icon016.png in Resources */ = {isa = PBXBuildFile; fileRef = 9794C17C17DE1A6300A8F5F8 /* icon016.png */; };
+		9794C18117DE1A8100A8F5F8 /* CHLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9794C17E17DE1A8100A8F5F8 /* CHLoadingViewController.xib */; };
+		9794C18217DE1A8100A8F5F8 /* CHLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9794C17F17DE1A8100A8F5F8 /* CHLoadingViewController.m */; };
 		97AD4F7D17A1821000B7A28E /* CHTimetableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AD4F7C17A1821000B7A28E /* CHTimetableCell.m */; };
 		97AD4F7F17A1822100B7A28E /* CHTimetableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97AD4F7E17A1822100B7A28E /* CHTimetableCell.xib */; };
 		97B5F90317A1D3CB00FC204A /* Nextbusbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B5F90117A1D3CB00FC204A /* Nextbusbg.png */; };
@@ -157,6 +163,7 @@
 		97D87A0117AEDF7B00BAB733 /* BariolLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D87A0017AEDF7B00BAB733 /* BariolLight.m */; };
 		97D87A0217AEE23700BAB733 /* Bariol_Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 97D879F017AED91900BAB733 /* Bariol_Thin.otf */; };
 		97D87A0317AEE23B00BAB733 /* Bariol_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 97D879F317AED92800BAB733 /* Bariol_Bold.otf */; };
+		97D996B617E0C22C001C7DE1 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D996B517E0C22C001C7DE1 /* iRate.m */; };
 		97F7984B17B18F010084A6BA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F7984A17B18F010084A6BA /* CoreMedia.framework */; };
 		97F7984D17B18F060084A6BA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F7984C17B18F060084A6BA /* CoreVideo.framework */; };
 		97F7984F17B18F0E0084A6BA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F7984E17B18F0E0084A6BA /* OpenGLES.framework */; };
@@ -320,11 +327,18 @@
 		976ACC1A17A428320013FA33 /* black_shade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_shade.png; sourceTree = "<group>"; };
 		976ACC1E17A4327F0013FA33 /* u1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u1.png; sourceTree = "<group>"; };
 		976ACC1F17A4327F0013FA33 /* u1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "u1@2x.png"; sourceTree = "<group>"; };
+		978077C317DE730F005917D5 /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = "<group>"; };
+		978077C417DE730F005917D5 /* minus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "minus@2x.png"; sourceTree = "<group>"; };
 		9794280717A9E16A00C8E8D3 /* bussign@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bussign@2x.png"; sourceTree = "<group>"; };
 		9794280817A9E16A00C8E8D3 /* bussign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bussign.png; sourceTree = "<group>"; };
 		9794280B17A9E6B800C8E8D3 /* CHTimetableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTimetableViewController.h; sourceTree = "<group>"; };
 		9794280C17A9E6B800C8E8D3 /* CHTimetableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTimetableViewController.m; sourceTree = "<group>"; };
 		9794280D17A9E6B800C8E8D3 /* CHTimetableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHTimetableViewController.xib; sourceTree = "<group>"; };
+		9794C17817DE1A5800A8F5F8 /* loadingScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingScreen.png; sourceTree = "<group>"; };
+		9794C17C17DE1A6300A8F5F8 /* icon016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon016.png; sourceTree = "<group>"; };
+		9794C17E17DE1A8100A8F5F8 /* CHLoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CHLoadingViewController.xib; path = ADClusterMapView/CHLoadingViewController.xib; sourceTree = "<group>"; };
+		9794C17F17DE1A8100A8F5F8 /* CHLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLoadingViewController.m; path = ADClusterMapView/CHLoadingViewController.m; sourceTree = "<group>"; };
+		9794C18017DE1A8100A8F5F8 /* CHLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHLoadingViewController.h; path = ADClusterMapView/CHLoadingViewController.h; sourceTree = "<group>"; };
 		97AD4F7B17A1821000B7A28E /* CHTimetableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTimetableCell.h; sourceTree = "<group>"; };
 		97AD4F7C17A1821000B7A28E /* CHTimetableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTimetableCell.m; sourceTree = "<group>"; };
 		97AD4F7E17A1822100B7A28E /* CHTimetableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHTimetableCell.xib; sourceTree = "<group>"; };
@@ -387,6 +401,8 @@
 		97D879FA17AEDF4900BAB733 /* BariolBold.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BariolBold.m; sourceTree = "<group>"; };
 		97D879FF17AEDF7B00BAB733 /* BariolLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BariolLight.h; sourceTree = "<group>"; };
 		97D87A0017AEDF7B00BAB733 /* BariolLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BariolLight.m; sourceTree = "<group>"; };
+		97D996B417E0C22C001C7DE1 /* iRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iRate.h; sourceTree = "<group>"; };
+		97D996B517E0C22C001C7DE1 /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iRate.m; sourceTree = "<group>"; };
 		97F7984A17B18F010084A6BA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		97F7984C17B18F060084A6BA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		97F7984E17B18F0E0084A6BA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -440,6 +456,8 @@
 		970F066E17A1A4DC00E1AE59 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9794C17C17DE1A6300A8F5F8 /* icon016.png */,
+				9794C17817DE1A5800A8F5F8 /* loadingScreen.png */,
 				9734278317AFE4A300385487 /* close_button@2x.png */,
 				9734278417AFE4A300385487 /* close_button.png */,
 				9734277F17AFE49900385487 /* map_header_bg@2x.png */,
@@ -453,6 +471,8 @@
 				9734277417AFE40700385487 /* star_selected.png */,
 				9734276D17AFE3FB00385487 /* segment_selected@2x.png */,
 				9734276E17AFE3FB00385487 /* segment_selected.png */,
+				978077C317DE730F005917D5 /* minus.png */,
+				978077C417DE730F005917D5 /* minus@2x.png */,
 				9734276917AFE3F100385487 /* plus@2x.png */,
 				9734276A17AFE3F100385487 /* plus.png */,
 				97D3EE5C17AEB176005AC819 /* separator.png */,
@@ -688,6 +708,16 @@
 			path = ADClusterMapView;
 			sourceTree = "<group>";
 		};
+		9794C18317DE1A8800A8F5F8 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				9794C17E17DE1A8100A8F5F8 /* CHLoadingViewController.xib */,
+				9794C17F17DE1A8100A8F5F8 /* CHLoadingViewController.m */,
+				9794C18017DE1A8100A8F5F8 /* CHLoadingViewController.h */,
+			);
+			name = LoadingView;
+			sourceTree = "<group>";
+		};
 		97AD4F7A17A181EF00B7A28E /* Timetable cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -723,6 +753,7 @@
 		97CD510117A07976004FF161 = {
 			isa = PBXGroup;
 			children = (
+				97D996B117E0C21E001C7DE1 /* iRate */,
 				97CD511517A07976004FF161 /* Warwick Unibus */,
 				97CD513217A07976004FF161 /* Warwick UnibusTests */,
 				97CD510C17A07976004FF161 /* Frameworks */,
@@ -773,6 +804,7 @@
 		97CD511517A07976004FF161 /* Warwick Unibus */ = {
 			isa = PBXGroup;
 			children = (
+				9794C18317DE1A8800A8F5F8 /* LoadingView */,
 				975CEDC917A9C5C200734319 /* ADClusterMapView */,
 				9729B39D17A71FA7001F45A2 /* App delegate */,
 				9729B39C17A71F9E001F45A2 /* Categories */,
@@ -845,6 +877,15 @@
 				97D87A0017AEDF7B00BAB733 /* BariolLight.m */,
 			);
 			name = "Custom labels";
+			sourceTree = "<group>";
+		};
+		97D996B117E0C21E001C7DE1 /* iRate */ = {
+			isa = PBXGroup;
+			children = (
+				97D996B417E0C22C001C7DE1 /* iRate.h */,
+				97D996B517E0C22C001C7DE1 /* iRate.m */,
+			);
+			name = iRate;
 			sourceTree = "<group>";
 		};
 		97F7985317B191A90084A6BA /* Products */ = {
@@ -965,6 +1006,8 @@
 				970F067017A1A4E700E1AE59 /* GreyFade@2x.png in Resources */,
 				9734277517AFE40700385487 /* star@2x.png in Resources */,
 				976ACC1917A427E80013FA33 /* Map@2x.png in Resources */,
+				9794C17D17DE1A6300A8F5F8 /* icon016.png in Resources */,
+				978077C617DE730F005917D5 /* minus@2x.png in Resources */,
 				97C6A3C917A16A1D00504668 /* HelveticaNeue-UltraLightItalic.otf in Resources */,
 				9734277C17AFE43000385487 /* notif_bg.png in Resources */,
 				97C6A3CA17A16A1D00504668 /* HelveticaNeue.otf in Resources */,
@@ -976,6 +1019,7 @@
 				97B5F90417A1D3CB00FC204A /* Nextbusbg@2x.png in Resources */,
 				970F067217A1A4EC00E1AE59 /* FadedLine@2x.png in Resources */,
 				974CDE3617D28DC200C34044 /* u1_route.json in Resources */,
+				9794C18117DE1A8100A8F5F8 /* CHLoadingViewController.xib in Resources */,
 				9734278217AFE49900385487 /* map_header_bg.png in Resources */,
 				97C6A3C217A16A1D00504668 /* HelveticaNeue-CondensedBlack.otf in Resources */,
 				97B5F90317A1D3CB00FC204A /* Nextbusbg.png in Resources */,
@@ -983,6 +1027,7 @@
 				9734276C17AFE3F100385487 /* plus.png in Resources */,
 				97D87A0317AEE23B00BAB733 /* Bariol_Bold.otf in Resources */,
 				9734276B17AFE3F100385487 /* plus@2x.png in Resources */,
+				978077C517DE730F005917D5 /* minus.png in Resources */,
 				97D879F517AED93700BAB733 /* Bariol_Regular.otf in Resources */,
 				97C6A3C717A16A1D00504668 /* HelveticaNeue-Medium.otf in Resources */,
 				97D3EE5F17AEB176005AC819 /* separator@2x.png in Resources */,
@@ -995,6 +1040,7 @@
 				9794280F17A9E6B800C8E8D3 /* CHTimetableViewController.xib in Resources */,
 				97C6A3C017A16A1D00504668 /* HelveticaNeue-Bold.otf in Resources */,
 				97C6A3C817A16A1D00504668 /* HelveticaNeue-UltraLight.otf in Resources */,
+				9794C17917DE1A5800A8F5F8 /* loadingScreen.png in Resources */,
 				9794280A17A9E16A00C8E8D3 /* bussign.png in Resources */,
 				9734277817AFE40700385487 /* star_selected.png in Resources */,
 				974CDE3817D28DC200C34044 /* u17_route.json in Resources */,
@@ -1058,6 +1104,7 @@
 				9729B37A17A71143001F45A2 /* NSManagedObject+MagicalRecord.m in Sources */,
 				9729B38317A71143001F45A2 /* MagicalRecord+Actions.m in Sources */,
 				97D87A0117AEDF7B00BAB733 /* BariolLight.m in Sources */,
+				97D996B617E0C22C001C7DE1 /* iRate.m in Sources */,
 				975CEDD517A9C5C200734319 /* ADMapPointAnnotation.m in Sources */,
 				975CEDD317A9C5C200734319 /* ADClusterMapView.m in Sources */,
 				9729B37E17A71143001F45A2 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
@@ -1086,6 +1133,7 @@
 				9729B3A117A71FBB001F45A2 /* CHMapViewController.m in Sources */,
 				9729B37617A71143001F45A2 /* NSString+MagicalDataImport.m in Sources */,
 				975CEDB217A9742000734319 /* _BusStop.m in Sources */,
+				9794C18217DE1A8100A8F5F8 /* CHLoadingViewController.m in Sources */,
 				9729B37517A71143001F45A2 /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
 				970F067E17A1B9CB00E1AE59 /* UIColor+AppColors.m in Sources */,
 				9729B38017A71143001F45A2 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
@@ -1237,7 +1285,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1264,7 +1311,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

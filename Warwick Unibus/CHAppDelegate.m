@@ -13,6 +13,7 @@
 #import "CHDataLoader.h"
 #import "CHLoadingViewController.h"
 #import "CoreData+MagicalRecord.h"
+#import "iRate.h"
 
 @interface CHAppDelegate()
 @property (nonatomic, strong) CHMainViewViewController *mainViewCon;
@@ -26,6 +27,17 @@
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+
+
++ (void)initialize
+{
+    //configure iRate
+    [iRate sharedInstance].daysUntilPrompt = 5;
+    [iRate sharedInstance].remindPeriod = 3;
+    [iRate sharedInstance].promptAgainForEachNewVersion = YES;
+    [iRate sharedInstance].previewMode = YES;
+    
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
