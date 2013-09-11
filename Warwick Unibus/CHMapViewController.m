@@ -108,7 +108,9 @@ static CHMapViewController *sharedMap;
 - (void) userDidFavouriteStop
 {
     self.notifLabel.text = @"Added favourite bus stop";
-    
+    self.notifLabel.frame = CGRectMake(74, self.notifLabel.frame.origin.y, self.notifLabel.frame.size.width, self.notifLabel.frame.size.height);
+    self.notifImageView.image = [UIImage imageNamed:@"plus.png"];
+    self.notifImageView.frame = CGRectMake(21, self.notifImageView.frame.origin.y, self.notifImageView.frame.size.width, self.notifImageView.frame.size.height);
     [UIView animateWithDuration:0.5
                           delay:0.0
                         options:UIViewAnimationOptionCurveEaseInOut
@@ -131,6 +133,9 @@ static CHMapViewController *sharedMap;
 - (void) userDidUnfavouriteStop
 {
     self.notifLabel.text = @"Removed favourite bus stop";
+    self.notifLabel.frame = CGRectMake(64, self.notifLabel.frame.origin.y, self.notifLabel.frame.size.width, self.notifLabel.frame.size.height);
+    self.notifImageView.image = [UIImage imageNamed:@"minus.png"];
+    self.notifImageView.frame = CGRectMake(11, self.notifImageView.frame.origin.y, self.notifImageView.frame.size.width, self.notifImageView.frame.size.height);
     //self.notifImageView setImage:[UIImage imageNamed:@""];
     [UIView animateWithDuration:0.5
                           delay:0.0

@@ -439,6 +439,12 @@
             cell = (CHTimetableCell *)[topLevelObjects objectAtIndex:0];
         }
         BusTime *timeForCell = [[self busTimesForNext24Hours] objectAtIndex:row];
+        
+        if (timeForCell.time == nil || timeForCell.number == nil || timeForCell.destination == nil)
+        {
+            NSLog(@"Error with timeForCell: %@", timeForCell);
+        }
+        
         [cell setupWithBusTime:timeForCell];
     }
 
