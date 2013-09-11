@@ -76,7 +76,21 @@ static CHMapViewController *sharedMap;
     self.timeTableViewController = [[CHTimetableViewController alloc] init];
     [self.view addSubview:self.timeTableViewController.view];
     
-    [self.timeTableViewController changeContentInsetTo:UIEdgeInsetsMake(414, 0, 0, 0)];
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+    {
+        CGSize result = [[UIScreen mainScreen] bounds].size;
+        if(result.height == 480)
+        {
+            //Load 3.5 inch xib
+            [self.timeTableViewController changeContentInsetTo:UIEdgeInsetsMake(326, 0, 0, 0)];
+        }
+        if(result.height == 568)
+        {
+            //Load 4 inch xib
+            [self.timeTableViewController changeContentInsetTo:UIEdgeInsetsMake(414, 0, 0, 0)];
+        }
+    }
+    
     self.timeTableViewController.view.frame = CGRectMake(0, 200, self.timeTableViewController.view.frame.size.width, 568);
     self.timeTableViewController.tableView.startOffset = 414;
     self.timeTableViewController.view.hidden = YES;
@@ -312,7 +326,21 @@ static CHMapViewController *sharedMap;
                               delay:0.0
                             options:UIViewAnimationOptionCurveEaseInOut
                          animations:^{
-                             self.timeTableViewController.view.frame = CGRectMake(0, 0, self.timeTableViewController.view.frame.size.width, 568);
+                             if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+                             {
+                                 CGSize result = [[UIScreen mainScreen] bounds].size;
+                                 if(result.height == 480)
+                                 {
+                                     //Load 3.5 inch xib
+                                     self.timeTableViewController.view.frame = CGRectMake(0, 0, self.timeTableViewController.view.frame.size.width, 480);
+                                 }
+                                 if(result.height == 568)
+                                 {
+                                     //Load 4 inch xib
+                                     self.timeTableViewController.view.frame = CGRectMake(0, 0, self.timeTableViewController.view.frame.size.width, 568);
+                                 }
+                             }
+
                          }
                          completion:^(BOOL finished){
                              

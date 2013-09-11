@@ -7,7 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CHMainViewViewController">
             <connections>
                 <outlet property="bgImage" destination="bAG-61-taP" id="Lgf-zu-dBf"/>
-                <outlet property="mapButton" destination="VRM-0u-EiK" id="QjD-ez-lQH"/>
+                <outlet property="mapButton" destination="Iiy-oQ-jRA" id="fWp-U1-vIc"/>
                 <outlet property="mapView" destination="N7d-mt-ixv" id="TEy-w4-ND2"/>
                 <outlet property="pageControl" destination="AzO-GX-B4v" id="JJ2-4o-xKu"/>
                 <outlet property="scrollView" destination="6lf-Hc-56t" id="l0R-xG-c4j"/>
@@ -45,8 +45,13 @@
                     <color key="pageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <color key="currentPageIndicatorTintColor" red="0.23552689339999999" green="0.56147443129999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </pageControl>
-                <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRM-0u-EiK">
-                    <rect key="frame" x="269" y="433" width="44" height="44"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lf-Hc-56t">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="430"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </scrollView>
+                <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iiy-oQ-jRA">
+                    <rect key="frame" x="271" y="434" width="44" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -62,14 +67,9 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="mapButtonWasPressed:" destination="-1" eventType="touchUpInside" id="EeC-jX-g8h"/>
+                        <action selector="mapButtonWasPressed:" destination="-1" eventType="touchUpInside" id="XGy-l7-nQO"/>
                     </connections>
                 </button>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lf-Hc-56t">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="430"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                </scrollView>
             </subviews>
             <color key="backgroundColor" red="0.96747622280000001" green="0.94933535000000002" blue="0.9520644184" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>

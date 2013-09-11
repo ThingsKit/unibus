@@ -58,7 +58,7 @@
 		9729B38C17A71AC7001F45A2 /* NPReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9729B38B17A71AC7001F45A2 /* NPReachability.m */; };
 		9729B39A17A71EFF001F45A2 /* busstops.json in Resources */ = {isa = PBXBuildFile; fileRef = 9729B39917A71EFF001F45A2 /* busstops.json */; };
 		9729B3A117A71FBB001F45A2 /* CHMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9729B39F17A71FBB001F45A2 /* CHMapViewController.m */; };
-		9729B3A217A71FBB001F45A2 /* CHMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9729B3A017A71FBB001F45A2 /* CHMapViewController.xib */; };
+		9729B3A217A71FBB001F45A2 /* CHMapViewController_4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9729B3A017A71FBB001F45A2 /* CHMapViewController_4.xib */; };
 		972A460617BE741A00116A30 /* stop_exceptions.json in Resources */ = {isa = PBXBuildFile; fileRef = 972A460517BE741A00116A30 /* stop_exceptions.json */; };
 		9730532117BA8FE5001A5B07 /* CHNoBusesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9730532017BA8FE5001A5B07 /* CHNoBusesCell.m */; };
 		9730532317BA9009001A5B07 /* CHNoBusesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9730532217BA9009001A5B07 /* CHNoBusesCell.xib */; };
@@ -106,9 +106,9 @@
 		9794280A17A9E16A00C8E8D3 /* bussign.png in Resources */ = {isa = PBXBuildFile; fileRef = 9794280817A9E16A00C8E8D3 /* bussign.png */; };
 		9794280E17A9E6B800C8E8D3 /* CHTimetableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9794280C17A9E6B800C8E8D3 /* CHTimetableViewController.m */; };
 		9794280F17A9E6B800C8E8D3 /* CHTimetableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9794280D17A9E6B800C8E8D3 /* CHTimetableViewController.xib */; };
-		9794C17917DE1A5800A8F5F8 /* loadingScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 9794C17817DE1A5800A8F5F8 /* loadingScreen.png */; };
+		9794C17917DE1A5800A8F5F8 /* loadingScreen_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9794C17817DE1A5800A8F5F8 /* loadingScreen_4.png */; };
 		9794C17D17DE1A6300A8F5F8 /* icon016.png in Resources */ = {isa = PBXBuildFile; fileRef = 9794C17C17DE1A6300A8F5F8 /* icon016.png */; };
-		9794C18117DE1A8100A8F5F8 /* CHLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9794C17E17DE1A8100A8F5F8 /* CHLoadingViewController.xib */; };
+		9794C18117DE1A8100A8F5F8 /* CHLoadingViewController_4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9794C17E17DE1A8100A8F5F8 /* CHLoadingViewController_4.xib */; };
 		9794C18217DE1A8100A8F5F8 /* CHLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9794C17F17DE1A8100A8F5F8 /* CHLoadingViewController.m */; };
 		97AD4F7D17A1821000B7A28E /* CHTimetableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AD4F7C17A1821000B7A28E /* CHTimetableCell.m */; };
 		97AD4F7F17A1822100B7A28E /* CHTimetableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97AD4F7E17A1822100B7A28E /* CHTimetableCell.xib */; };
@@ -151,7 +151,7 @@
 		97CD513717A07976004FF161 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97CD513517A07976004FF161 /* InfoPlist.strings */; };
 		97CD513917A07976004FF161 /* Warwick_UnibusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97CD513817A07976004FF161 /* Warwick_UnibusTests.m */; };
 		97CD514517A07A40004FF161 /* CHMainViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97CD514317A07A40004FF161 /* CHMainViewViewController.m */; };
-		97CD514617A07A40004FF161 /* CHMainViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97CD514417A07A40004FF161 /* CHMainViewViewController.xib */; };
+		97CD514617A07A40004FF161 /* CHMainViewViewController_4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97CD514417A07A40004FF161 /* CHMainViewViewController_4.xib */; };
 		97CD514817A07F3E004FF161 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97CD514717A07F3E004FF161 /* MapKit.framework */; };
 		97D3EE5E17AEB176005AC819 /* separator.png in Resources */ = {isa = PBXBuildFile; fileRef = 97D3EE5C17AEB176005AC819 /* separator.png */; };
 		97D3EE5F17AEB176005AC819 /* separator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97D3EE5D17AEB176005AC819 /* separator@2x.png */; };
@@ -164,6 +164,10 @@
 		97D87A0217AEE23700BAB733 /* Bariol_Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 97D879F017AED91900BAB733 /* Bariol_Thin.otf */; };
 		97D87A0317AEE23B00BAB733 /* Bariol_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 97D879F317AED92800BAB733 /* Bariol_Bold.otf */; };
 		97D996B617E0C22C001C7DE1 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D996B517E0C22C001C7DE1 /* iRate.m */; };
+		97D996B817E0F40F001C7DE1 /* CHLoadingViewController_3.5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D996B717E0F40F001C7DE1 /* CHLoadingViewController_3.5.xib */; };
+		97D996BA17E0F567001C7DE1 /* loadingScreen_3.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 97D996B917E0F567001C7DE1 /* loadingScreen_3.5.png */; };
+		97D996BC17E0F7F9001C7DE1 /* CHMainViewViewController_3.5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D996BB17E0F7F9001C7DE1 /* CHMainViewViewController_3.5.xib */; };
+		97D996BE17E101ED001C7DE1 /* CHMapViewController_3.5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D996BD17E101ED001C7DE1 /* CHMapViewController_3.5.xib */; };
 		97F7984B17B18F010084A6BA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F7984A17B18F010084A6BA /* CoreMedia.framework */; };
 		97F7984D17B18F060084A6BA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F7984C17B18F060084A6BA /* CoreVideo.framework */; };
 		97F7984F17B18F0E0084A6BA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F7984E17B18F0E0084A6BA /* OpenGLES.framework */; };
@@ -273,7 +277,7 @@
 		9729B39917A71EFF001F45A2 /* busstops.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = busstops.json; path = "Warwick UnibusTests/busstops.json"; sourceTree = SOURCE_ROOT; };
 		9729B39E17A71FBB001F45A2 /* CHMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHMapViewController.h; sourceTree = "<group>"; };
 		9729B39F17A71FBB001F45A2 /* CHMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHMapViewController.m; sourceTree = "<group>"; };
-		9729B3A017A71FBB001F45A2 /* CHMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHMapViewController.xib; sourceTree = "<group>"; };
+		9729B3A017A71FBB001F45A2 /* CHMapViewController_4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHMapViewController_4.xib; sourceTree = "<group>"; };
 		972A460517BE741A00116A30 /* stop_exceptions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stop_exceptions.json; sourceTree = "<group>"; };
 		9730531F17BA8FE5001A5B07 /* CHNoBusesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHNoBusesCell.h; sourceTree = "<group>"; };
 		9730532017BA8FE5001A5B07 /* CHNoBusesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHNoBusesCell.m; sourceTree = "<group>"; };
@@ -334,9 +338,9 @@
 		9794280B17A9E6B800C8E8D3 /* CHTimetableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTimetableViewController.h; sourceTree = "<group>"; };
 		9794280C17A9E6B800C8E8D3 /* CHTimetableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTimetableViewController.m; sourceTree = "<group>"; };
 		9794280D17A9E6B800C8E8D3 /* CHTimetableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHTimetableViewController.xib; sourceTree = "<group>"; };
-		9794C17817DE1A5800A8F5F8 /* loadingScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingScreen.png; sourceTree = "<group>"; };
+		9794C17817DE1A5800A8F5F8 /* loadingScreen_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingScreen_4.png; sourceTree = "<group>"; };
 		9794C17C17DE1A6300A8F5F8 /* icon016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon016.png; sourceTree = "<group>"; };
-		9794C17E17DE1A8100A8F5F8 /* CHLoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CHLoadingViewController.xib; path = ADClusterMapView/CHLoadingViewController.xib; sourceTree = "<group>"; };
+		9794C17E17DE1A8100A8F5F8 /* CHLoadingViewController_4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CHLoadingViewController_4.xib; path = ADClusterMapView/CHLoadingViewController_4.xib; sourceTree = "<group>"; };
 		9794C17F17DE1A8100A8F5F8 /* CHLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLoadingViewController.m; path = ADClusterMapView/CHLoadingViewController.m; sourceTree = "<group>"; };
 		9794C18017DE1A8100A8F5F8 /* CHLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHLoadingViewController.h; path = ADClusterMapView/CHLoadingViewController.h; sourceTree = "<group>"; };
 		97AD4F7B17A1821000B7A28E /* CHTimetableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTimetableCell.h; sourceTree = "<group>"; };
@@ -385,7 +389,7 @@
 		97CD513817A07976004FF161 /* Warwick_UnibusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Warwick_UnibusTests.m; sourceTree = "<group>"; };
 		97CD514217A07A40004FF161 /* CHMainViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHMainViewViewController.h; sourceTree = "<group>"; };
 		97CD514317A07A40004FF161 /* CHMainViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHMainViewViewController.m; sourceTree = "<group>"; };
-		97CD514417A07A40004FF161 /* CHMainViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHMainViewViewController.xib; sourceTree = "<group>"; };
+		97CD514417A07A40004FF161 /* CHMainViewViewController_4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHMainViewViewController_4.xib; sourceTree = "<group>"; };
 		97CD514717A07F3E004FF161 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		97D3EE5C17AEB176005AC819 /* separator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = separator.png; sourceTree = "<group>"; };
 		97D3EE5D17AEB176005AC819 /* separator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "separator@2x.png"; sourceTree = "<group>"; };
@@ -403,6 +407,10 @@
 		97D87A0017AEDF7B00BAB733 /* BariolLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BariolLight.m; sourceTree = "<group>"; };
 		97D996B417E0C22C001C7DE1 /* iRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iRate.h; sourceTree = "<group>"; };
 		97D996B517E0C22C001C7DE1 /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iRate.m; sourceTree = "<group>"; };
+		97D996B717E0F40F001C7DE1 /* CHLoadingViewController_3.5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHLoadingViewController_3.5.xib; sourceTree = "<group>"; };
+		97D996B917E0F567001C7DE1 /* loadingScreen_3.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingScreen_3.5.png; sourceTree = "<group>"; };
+		97D996BB17E0F7F9001C7DE1 /* CHMainViewViewController_3.5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHMainViewViewController_3.5.xib; sourceTree = "<group>"; };
+		97D996BD17E101ED001C7DE1 /* CHMapViewController_3.5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHMapViewController_3.5.xib; sourceTree = "<group>"; };
 		97F7984A17B18F010084A6BA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		97F7984C17B18F060084A6BA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		97F7984E17B18F0E0084A6BA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -457,7 +465,8 @@
 			isa = PBXGroup;
 			children = (
 				9794C17C17DE1A6300A8F5F8 /* icon016.png */,
-				9794C17817DE1A5800A8F5F8 /* loadingScreen.png */,
+				97D996B917E0F567001C7DE1 /* loadingScreen_3.5.png */,
+				9794C17817DE1A5800A8F5F8 /* loadingScreen_4.png */,
 				9734278317AFE4A300385487 /* close_button@2x.png */,
 				9734278417AFE4A300385487 /* close_button.png */,
 				9734277F17AFE49900385487 /* map_header_bg@2x.png */,
@@ -678,7 +687,8 @@
 			children = (
 				9729B39E17A71FBB001F45A2 /* CHMapViewController.h */,
 				9729B39F17A71FBB001F45A2 /* CHMapViewController.m */,
-				9729B3A017A71FBB001F45A2 /* CHMapViewController.xib */,
+				9729B3A017A71FBB001F45A2 /* CHMapViewController_4.xib */,
+				97D996BD17E101ED001C7DE1 /* CHMapViewController_3.5.xib */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -711,9 +721,10 @@
 		9794C18317DE1A8800A8F5F8 /* LoadingView */ = {
 			isa = PBXGroup;
 			children = (
-				9794C17E17DE1A8100A8F5F8 /* CHLoadingViewController.xib */,
+				9794C17E17DE1A8100A8F5F8 /* CHLoadingViewController_4.xib */,
 				9794C17F17DE1A8100A8F5F8 /* CHLoadingViewController.m */,
 				9794C18017DE1A8100A8F5F8 /* CHLoadingViewController.h */,
+				97D996B717E0F40F001C7DE1 /* CHLoadingViewController_3.5.xib */,
 			);
 			name = LoadingView;
 			sourceTree = "<group>";
@@ -817,7 +828,8 @@
 				9730531E17BA8FC6001A5B07 /* NoBusesCell */,
 				97CD514217A07A40004FF161 /* CHMainViewViewController.h */,
 				97CD514317A07A40004FF161 /* CHMainViewViewController.m */,
-				97CD514417A07A40004FF161 /* CHMainViewViewController.xib */,
+				97CD514417A07A40004FF161 /* CHMainViewViewController_4.xib */,
+				97D996BB17E0F7F9001C7DE1 /* CHMainViewViewController_3.5.xib */,
 				97CD511617A07976004FF161 /* Supporting Files */,
 				975CEDC817A98B9D00734319 /* Nav con */,
 				975CEDC717A98B8D00734319 /* Map */,
@@ -1002,7 +1014,7 @@
 				97C6A3C117A16A1D00504668 /* HelveticaNeue-BoldItalic.otf in Resources */,
 				97C6A3C617A16A1D00504668 /* HelveticaNeue-LightItalic.otf in Resources */,
 				9734277617AFE40700385487 /* star.png in Resources */,
-				97CD514617A07A40004FF161 /* CHMainViewViewController.xib in Resources */,
+				97CD514617A07A40004FF161 /* CHMainViewViewController_4.xib in Resources */,
 				970F067017A1A4E700E1AE59 /* GreyFade@2x.png in Resources */,
 				9734277517AFE40700385487 /* star@2x.png in Resources */,
 				976ACC1917A427E80013FA33 /* Map@2x.png in Resources */,
@@ -1019,7 +1031,7 @@
 				97B5F90417A1D3CB00FC204A /* Nextbusbg@2x.png in Resources */,
 				970F067217A1A4EC00E1AE59 /* FadedLine@2x.png in Resources */,
 				974CDE3617D28DC200C34044 /* u1_route.json in Resources */,
-				9794C18117DE1A8100A8F5F8 /* CHLoadingViewController.xib in Resources */,
+				9794C18117DE1A8100A8F5F8 /* CHLoadingViewController_4.xib in Resources */,
 				9734278217AFE49900385487 /* map_header_bg.png in Resources */,
 				97C6A3C217A16A1D00504668 /* HelveticaNeue-CondensedBlack.otf in Resources */,
 				97B5F90317A1D3CB00FC204A /* Nextbusbg.png in Resources */,
@@ -1033,14 +1045,17 @@
 				97D3EE5F17AEB176005AC819 /* separator@2x.png in Resources */,
 				9734278617AFE4A300385487 /* close_button.png in Resources */,
 				9734278517AFE4A300385487 /* close_button@2x.png in Resources */,
+				97D996BA17E0F567001C7DE1 /* loadingScreen_3.5.png in Resources */,
 				970F067617A1A5D500E1AE59 /* GreyFade.png in Resources */,
 				9734277017AFE3FB00385487 /* segment_selected.png in Resources */,
 				97AD4F7F17A1822100B7A28E /* CHTimetableCell.xib in Resources */,
+				97D996B817E0F40F001C7DE1 /* CHLoadingViewController_3.5.xib in Resources */,
 				9734277E17AFE48100385487 /* timetable_header@2x.png in Resources */,
 				9794280F17A9E6B800C8E8D3 /* CHTimetableViewController.xib in Resources */,
 				97C6A3C017A16A1D00504668 /* HelveticaNeue-Bold.otf in Resources */,
+				97D996BE17E101ED001C7DE1 /* CHMapViewController_3.5.xib in Resources */,
 				97C6A3C817A16A1D00504668 /* HelveticaNeue-UltraLight.otf in Resources */,
-				9794C17917DE1A5800A8F5F8 /* loadingScreen.png in Resources */,
+				9794C17917DE1A5800A8F5F8 /* loadingScreen_4.png in Resources */,
 				9794280A17A9E16A00C8E8D3 /* bussign.png in Resources */,
 				9734277817AFE40700385487 /* star_selected.png in Resources */,
 				974CDE3817D28DC200C34044 /* u17_route.json in Resources */,
@@ -1049,10 +1064,11 @@
 				9729B39A17A71EFF001F45A2 /* busstops.json in Resources */,
 				976ACC2117A4327F0013FA33 /* u1@2x.png in Resources */,
 				97C6A3C517A16A1D00504668 /* HelveticaNeue-Light.otf in Resources */,
+				97D996BC17E0F7F9001C7DE1 /* CHMainViewViewController_3.5.xib in Resources */,
 				976ACC1B17A428320013FA33 /* black_shade.png in Resources */,
 				9730532317BA9009001A5B07 /* CHNoBusesCell.xib in Resources */,
 				97CD511A17A07976004FF161 /* InfoPlist.strings in Resources */,
-				9729B3A217A71FBB001F45A2 /* CHMapViewController.xib in Resources */,
+				9729B3A217A71FBB001F45A2 /* CHMapViewController_4.xib in Resources */,
 				973B85C417A46A060005E2FB /* CHBusStopViewController.xib in Resources */,
 				9734276F17AFE3FB00385487 /* segment_selected@2x.png in Resources */,
 				970F067417A1A5D000E1AE59 /* FadedLine.png in Resources */,

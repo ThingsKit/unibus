@@ -188,9 +188,31 @@ BOOL isScrolling;
 {
     //self.mapViewController.navController = self.navigationController;
    // self.mapViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    CHMapViewController *mapViewController = [CHMapViewController sharedMap];
+    
+    
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+    {
+        CGSize result = [[UIScreen mainScreen] bounds].size;
+        if(result.height == 480)
+        {
+            //Load 3.5 inch xib
+            if (self.mapViewController == nil) {
+                self.mapViewController = [[CHMapViewController alloc] initWithNibName:@"CHMapViewController_3.5" bundle:[NSBundle mainBundle]];
+            }
 
-    [self.navigationController presentViewController:mapViewController animated:YES completion:nil];
+        }
+        if(result.height == 568)
+        {
+            //Load 4 inch xib
+            if (self.mapViewController == nil) {
+                self.mapViewController = [[CHMapViewController alloc] initWithNibName:@"CHMapViewController_4" bundle:[NSBundle mainBundle]];
+            }
+        }
+    }
+    
+    self.mapViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+
+    [self.navigationController presentViewController:self.mapViewController animated:YES completion:nil];
     [self.navigationController setStatusBarWithStyle:UIStatusBarStyleLightContent];
 }
 
