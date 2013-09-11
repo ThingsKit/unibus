@@ -48,7 +48,22 @@
                   clientKey:@"3ac40HQwfrSEmyMei2mxWjCUZFmN2hXJuhFTITAD"];
 
     self.navController = [[CHNavigationViewController alloc] init];
-    self.loadingViewController = [[CHLoadingViewController alloc] init];
+    
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+    {
+        CGSize result = [[UIScreen mainScreen] bounds].size;
+        if(result.height == 480)
+        {
+            //Load 3.5 inch xib
+            self.loadingViewController = [[CHLoadingViewController alloc] initWithNibName:@"CHLoadingViewController_3.5" bundle:[NSBundle mainBundle]];
+        }
+        if(result.height == 568)
+        {
+            //Load 4 inch xib
+            self.loadingViewController = [[CHLoadingViewController alloc] initWithNibName:@"CHLoadingViewController_4" bundle:[NSBundle mainBundle]];
+        }
+    }
+    
 
     
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
@@ -98,7 +113,21 @@
     
     }];
     
-    self.mainViewCon = [[CHMainViewViewController alloc] init];
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+    {
+        CGSize result = [[UIScreen mainScreen] bounds].size;
+        if(result.height == 480)
+        {
+            //Load 3.5 inch xib
+            self.mainViewCon = [[CHMainViewViewController alloc] initWithNibName:@"CHMainViewViewController_3.5" bundle:[NSBundle mainBundle]];
+        }
+        if(result.height == 568)
+        {
+            //Load 4 inch xib
+            self.mainViewCon = [[CHMainViewViewController alloc] initWithNibName:@"CHMainViewViewController_4" bundle:[NSBundle mainBundle]];
+        }
+    }
+    
     [self.navController pushViewController:self.mainViewCon];
     self.navController.rootViewController = self.mainViewCon;
     self.mainViewCon.navigationController = self.navController;
