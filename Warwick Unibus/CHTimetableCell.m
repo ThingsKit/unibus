@@ -44,6 +44,18 @@
     
     self.busNumber.text = [time.number capitalizedString];
     
+    if ([time.number isEqualToString:@"u1"]) {
+        self.busNumberImageView.image = [UIImage imageNamed:@"green.png"];
+    }
+    
+    if ([time.number isEqualToString:@"u2"] || [time.number isEqualToString:@"u12"]) {
+        self.busNumberImageView.image = [UIImage imageNamed:@"orange.png"];
+    }
+    
+    if ([time.number isEqualToString:@"u17"]) {
+        self.busNumberImageView.image = [UIImage imageNamed:@"red.png"];
+    }
+    
     // Get all times that are in the next hour and change them to be in minutes
     NSDate *now = [NSDate date];
     

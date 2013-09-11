@@ -6,6 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CHBusStopViewController">
             <connections>
+                <outlet property="busNumberLeamingtonImageView" destination="YnO-DU-fkb" id="RSY-cv-2ff"/>
+                <outlet property="busNumberUniversityImageView" destination="A71-bX-BUt" id="C9I-jQ-whn"/>
                 <outlet property="destinationLabel" destination="frq-CW-EcW" id="G8r-nK-lEA"/>
                 <outlet property="leamingtonDestinationView" destination="cvE-nG-oIb" id="nfE-ij-PEd"/>
                 <outlet property="minutesLabel" destination="p5W-dw-vUV" id="a5m-WW-PUn"/>

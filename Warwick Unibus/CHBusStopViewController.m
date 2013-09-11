@@ -25,6 +25,9 @@
 @property (nonatomic, weak) IBOutlet UILabel *destinationLabel;
 @property (nonatomic, weak) IBOutlet UILabel *nextBusNumberLeamingtonLabel;
 @property (nonatomic, weak) IBOutlet UILabel *nextBusNumberUniversityLabel;
+@property (nonatomic, weak) IBOutlet UIImageView *busNumberLeamingtonImageView;
+@property (nonatomic, weak) IBOutlet UIImageView *busNumberUniversityImageView;
+
 
 //Delegate
 @property (nonatomic, weak) id <CHBusStopViewControllerDelegate> delegate;
@@ -178,6 +181,21 @@
     } else {
         self.nextBusTimeLabel.text = [NSString stringWithFormat:@"%i",self.timeTableViewController.nextBusDue];
         self.minutesLabel.hidden = NO;
+    }
+    
+    if ([self.timeTableViewController.nextBusNumber isEqualToString:@"u1"]) {
+        self.busNumberUniversityImageView.image = [UIImage imageNamed:@"green.png"];
+        self.busNumberLeamingtonImageView.image = [UIImage imageNamed:@"green.png"];
+    }
+    
+    if ([self.timeTableViewController.nextBusNumber isEqualToString:@"u2"] || [self.timeTableViewController.nextBusNumber isEqualToString:@"u12"]) {
+        self.busNumberUniversityImageView.image = [UIImage imageNamed:@"orange.png"];
+        self.busNumberLeamingtonImageView.image = [UIImage imageNamed:@"green.png"];
+    }
+    
+    if ([self.timeTableViewController.nextBusNumber isEqualToString:@"u17"]) {
+        self.busNumberUniversityImageView.image = [UIImage imageNamed:@"red.png"];
+        self.busNumberLeamingtonImageView.image = [UIImage imageNamed:@"green.png"];
     }
     
     // Display the bus number for the next bus
