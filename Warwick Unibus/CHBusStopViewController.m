@@ -184,19 +184,25 @@
     }
     
     if ([self.timeTableViewController.nextBusNumber isEqualToString:@"u1"]) {
-        self.busNumberUniversityImageView.image = [UIImage imageNamed:@"green.png"];
-        self.busNumberLeamingtonImageView.image = [UIImage imageNamed:@"green.png"];
+        self.busNumberUniversityImageView.image = [UIImage imageNamed:@"purple.png"];
+        self.busNumberLeamingtonImageView.image = [UIImage imageNamed:@"purple.png"];
     }
     
     if ([self.timeTableViewController.nextBusNumber isEqualToString:@"u2"] || [self.timeTableViewController.nextBusNumber isEqualToString:@"u12"]) {
         self.busNumberUniversityImageView.image = [UIImage imageNamed:@"orange.png"];
-        self.busNumberLeamingtonImageView.image = [UIImage imageNamed:@"green.png"];
+        self.busNumberLeamingtonImageView.image = [UIImage imageNamed:@"orange.png"];
     }
     
     if ([self.timeTableViewController.nextBusNumber isEqualToString:@"u17"]) {
-        self.busNumberUniversityImageView.image = [UIImage imageNamed:@"red.png"];
+        self.busNumberUniversityImageView.image = [UIImage imageNamed:@"green.png"];
         self.busNumberLeamingtonImageView.image = [UIImage imageNamed:@"green.png"];
     }
+    
+    if ([self.timeTableViewController.nextBusNumber isEqualToString:@"x17"]) {
+        self.busNumberUniversityImageView.image = [UIImage imageNamed:@"red.png"];
+        self.busNumberLeamingtonImageView.image = [UIImage imageNamed:@"red.png"];
+    }
+    
     
     // Display the bus number for the next bus
     self.nextBusNumberLeamingtonLabel.text = [self.timeTableViewController.nextBusNumber capitalizedString];

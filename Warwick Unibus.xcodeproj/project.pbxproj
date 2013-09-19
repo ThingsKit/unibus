@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		9700A62217E122E7004A9419 /* loadingScreen_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9700A62017E122E7004A9419 /* loadingScreen_4.png */; };
+		9700A62517E123F5004A9419 /* loadingScreen_3.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9700A62417E123F5004A9419 /* loadingScreen_3.5.png */; };
 		970F067017A1A4E700E1AE59 /* GreyFade@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 970F066F17A1A4E700E1AE59 /* GreyFade@2x.png */; };
 		970F067217A1A4EC00E1AE59 /* FadedLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 970F067117A1A4EC00E1AE59 /* FadedLine@2x.png */; };
 		970F067417A1A5D000E1AE59 /* FadedLine.png in Resources */ = {isa = PBXBuildFile; fileRef = 970F067317A1A5D000E1AE59 /* FadedLine.png */; };
@@ -106,7 +108,6 @@
 		9794280A17A9E16A00C8E8D3 /* bussign.png in Resources */ = {isa = PBXBuildFile; fileRef = 9794280817A9E16A00C8E8D3 /* bussign.png */; };
 		9794280E17A9E6B800C8E8D3 /* CHTimetableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9794280C17A9E6B800C8E8D3 /* CHTimetableViewController.m */; };
 		9794280F17A9E6B800C8E8D3 /* CHTimetableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9794280D17A9E6B800C8E8D3 /* CHTimetableViewController.xib */; };
-		9794C17917DE1A5800A8F5F8 /* loadingScreen_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9794C17817DE1A5800A8F5F8 /* loadingScreen_4.png */; };
 		9794C17D17DE1A6300A8F5F8 /* icon016.png in Resources */ = {isa = PBXBuildFile; fileRef = 9794C17C17DE1A6300A8F5F8 /* icon016.png */; };
 		9794C18117DE1A8100A8F5F8 /* CHLoadingViewController_4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9794C17E17DE1A8100A8F5F8 /* CHLoadingViewController_4.xib */; };
 		9794C18217DE1A8100A8F5F8 /* CHLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9794C17F17DE1A8100A8F5F8 /* CHLoadingViewController.m */; };
@@ -165,9 +166,13 @@
 		97D87A0317AEE23B00BAB733 /* Bariol_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 97D879F317AED92800BAB733 /* Bariol_Bold.otf */; };
 		97D996B617E0C22C001C7DE1 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D996B517E0C22C001C7DE1 /* iRate.m */; };
 		97D996B817E0F40F001C7DE1 /* CHLoadingViewController_3.5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D996B717E0F40F001C7DE1 /* CHLoadingViewController_3.5.xib */; };
-		97D996BA17E0F567001C7DE1 /* loadingScreen_3.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 97D996B917E0F567001C7DE1 /* loadingScreen_3.5.png */; };
 		97D996BC17E0F7F9001C7DE1 /* CHMainViewViewController_3.5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D996BB17E0F7F9001C7DE1 /* CHMainViewViewController_3.5.xib */; };
 		97D996BE17E101ED001C7DE1 /* CHMapViewController_3.5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D996BD17E101ED001C7DE1 /* CHMapViewController_3.5.xib */; };
+		97DB177717E1267B00C7C776 /* green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97DB177617E1267B00C7C776 /* green@2x.png */; };
+		97DB177B17E1267F00C7C776 /* orange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97DB177A17E1267F00C7C776 /* orange@2x.png */; };
+		97DB177D17E1268700C7C776 /* purple@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97DB177C17E1268700C7C776 /* purple@2x.png */; };
+		97DB177F17E1268C00C7C776 /* red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97DB177E17E1268C00C7C776 /* red@2x.png */; };
+		97DB178117E12A8100C7C776 /* u1_to_sydenham.json in Resources */ = {isa = PBXBuildFile; fileRef = 97DB178017E12A8100C7C776 /* u1_to_sydenham.json */; };
 		97F7984B17B18F010084A6BA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F7984A17B18F010084A6BA /* CoreMedia.framework */; };
 		97F7984D17B18F060084A6BA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F7984C17B18F060084A6BA /* CoreVideo.framework */; };
 		97F7984F17B18F0E0084A6BA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F7984E17B18F0E0084A6BA /* OpenGLES.framework */; };
@@ -207,6 +212,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9700A62017E122E7004A9419 /* loadingScreen_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingScreen_4.png; sourceTree = "<group>"; };
+		9700A62417E123F5004A9419 /* loadingScreen_3.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingScreen_3.5.png; sourceTree = "<group>"; };
 		970F066F17A1A4E700E1AE59 /* GreyFade@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GreyFade@2x.png"; sourceTree = "<group>"; };
 		970F067117A1A4EC00E1AE59 /* FadedLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FadedLine@2x.png"; sourceTree = "<group>"; };
 		970F067317A1A5D000E1AE59 /* FadedLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FadedLine.png; sourceTree = "<group>"; };
@@ -338,7 +345,6 @@
 		9794280B17A9E6B800C8E8D3 /* CHTimetableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTimetableViewController.h; sourceTree = "<group>"; };
 		9794280C17A9E6B800C8E8D3 /* CHTimetableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTimetableViewController.m; sourceTree = "<group>"; };
 		9794280D17A9E6B800C8E8D3 /* CHTimetableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHTimetableViewController.xib; sourceTree = "<group>"; };
-		9794C17817DE1A5800A8F5F8 /* loadingScreen_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingScreen_4.png; sourceTree = "<group>"; };
 		9794C17C17DE1A6300A8F5F8 /* icon016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon016.png; sourceTree = "<group>"; };
 		9794C17E17DE1A8100A8F5F8 /* CHLoadingViewController_4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CHLoadingViewController_4.xib; path = ADClusterMapView/CHLoadingViewController_4.xib; sourceTree = "<group>"; };
 		9794C17F17DE1A8100A8F5F8 /* CHLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHLoadingViewController.m; path = ADClusterMapView/CHLoadingViewController.m; sourceTree = "<group>"; };
@@ -408,9 +414,13 @@
 		97D996B417E0C22C001C7DE1 /* iRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iRate.h; sourceTree = "<group>"; };
 		97D996B517E0C22C001C7DE1 /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iRate.m; sourceTree = "<group>"; };
 		97D996B717E0F40F001C7DE1 /* CHLoadingViewController_3.5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHLoadingViewController_3.5.xib; sourceTree = "<group>"; };
-		97D996B917E0F567001C7DE1 /* loadingScreen_3.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingScreen_3.5.png; sourceTree = "<group>"; };
 		97D996BB17E0F7F9001C7DE1 /* CHMainViewViewController_3.5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHMainViewViewController_3.5.xib; sourceTree = "<group>"; };
 		97D996BD17E101ED001C7DE1 /* CHMapViewController_3.5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHMapViewController_3.5.xib; sourceTree = "<group>"; };
+		97DB177617E1267B00C7C776 /* green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green@2x.png"; sourceTree = "<group>"; };
+		97DB177A17E1267F00C7C776 /* orange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orange@2x.png"; sourceTree = "<group>"; };
+		97DB177C17E1268700C7C776 /* purple@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "purple@2x.png"; sourceTree = "<group>"; };
+		97DB177E17E1268C00C7C776 /* red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red@2x.png"; sourceTree = "<group>"; };
+		97DB178017E12A8100C7C776 /* u1_to_sydenham.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = u1_to_sydenham.json; sourceTree = "<group>"; };
 		97F7984A17B18F010084A6BA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		97F7984C17B18F060084A6BA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		97F7984E17B18F0E0084A6BA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -464,9 +474,13 @@
 		970F066E17A1A4DC00E1AE59 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				97DB177617E1267B00C7C776 /* green@2x.png */,
+				97DB177A17E1267F00C7C776 /* orange@2x.png */,
+				97DB177C17E1268700C7C776 /* purple@2x.png */,
+				97DB177E17E1268C00C7C776 /* red@2x.png */,
+				9700A62017E122E7004A9419 /* loadingScreen_4.png */,
+				9700A62417E123F5004A9419 /* loadingScreen_3.5.png */,
 				9794C17C17DE1A6300A8F5F8 /* icon016.png */,
-				97D996B917E0F567001C7DE1 /* loadingScreen_3.5.png */,
-				9794C17817DE1A5800A8F5F8 /* loadingScreen_4.png */,
 				9734278317AFE4A300385487 /* close_button@2x.png */,
 				9734278417AFE4A300385487 /* close_button.png */,
 				9734277F17AFE49900385487 /* map_header_bg@2x.png */,
@@ -617,6 +631,7 @@
 		9729B39B17A71F18001F45A2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				97DB178017E12A8100C7C776 /* u1_to_sydenham.json */,
 				974CDE3317D28DC200C34044 /* u1_route.json */,
 				974CDE3417D28DC200C34044 /* u2_route.json */,
 				974CDE3517D28DC200C34044 /* u17_route.json */,
@@ -1012,6 +1027,7 @@
 			files = (
 				97D879F217AED92000BAB733 /* Bariol_Light.otf in Resources */,
 				97C6A3C117A16A1D00504668 /* HelveticaNeue-BoldItalic.otf in Resources */,
+				9700A62217E122E7004A9419 /* loadingScreen_4.png in Resources */,
 				97C6A3C617A16A1D00504668 /* HelveticaNeue-LightItalic.otf in Resources */,
 				9734277617AFE40700385487 /* star.png in Resources */,
 				97CD514617A07A40004FF161 /* CHMainViewViewController_4.xib in Resources */,
@@ -1023,6 +1039,7 @@
 				97C6A3C917A16A1D00504668 /* HelveticaNeue-UltraLightItalic.otf in Resources */,
 				9734277C17AFE43000385487 /* notif_bg.png in Resources */,
 				97C6A3CA17A16A1D00504668 /* HelveticaNeue.otf in Resources */,
+				97DB177D17E1268700C7C776 /* purple@2x.png in Resources */,
 				976ACC1717A426DA0013FA33 /* cell_line.png in Resources */,
 				97D3EE5E17AEB176005AC819 /* separator.png in Resources */,
 				9725F08117A85FA600882B79 /* CHNavigationViewController.xib in Resources */,
@@ -1038,6 +1055,7 @@
 				974ED88917BBDB9B004C9BA5 /* all_times.json in Resources */,
 				9734276C17AFE3F100385487 /* plus.png in Resources */,
 				97D87A0317AEE23B00BAB733 /* Bariol_Bold.otf in Resources */,
+				97DB178117E12A8100C7C776 /* u1_to_sydenham.json in Resources */,
 				9734276B17AFE3F100385487 /* plus@2x.png in Resources */,
 				978077C517DE730F005917D5 /* minus.png in Resources */,
 				97D879F517AED93700BAB733 /* Bariol_Regular.otf in Resources */,
@@ -1045,7 +1063,6 @@
 				97D3EE5F17AEB176005AC819 /* separator@2x.png in Resources */,
 				9734278617AFE4A300385487 /* close_button.png in Resources */,
 				9734278517AFE4A300385487 /* close_button@2x.png in Resources */,
-				97D996BA17E0F567001C7DE1 /* loadingScreen_3.5.png in Resources */,
 				970F067617A1A5D500E1AE59 /* GreyFade.png in Resources */,
 				9734277017AFE3FB00385487 /* segment_selected.png in Resources */,
 				97AD4F7F17A1822100B7A28E /* CHTimetableCell.xib in Resources */,
@@ -1055,7 +1072,6 @@
 				97C6A3C017A16A1D00504668 /* HelveticaNeue-Bold.otf in Resources */,
 				97D996BE17E101ED001C7DE1 /* CHMapViewController_3.5.xib in Resources */,
 				97C6A3C817A16A1D00504668 /* HelveticaNeue-UltraLight.otf in Resources */,
-				9794C17917DE1A5800A8F5F8 /* loadingScreen_4.png in Resources */,
 				9794280A17A9E16A00C8E8D3 /* bussign.png in Resources */,
 				9734277817AFE40700385487 /* star_selected.png in Resources */,
 				974CDE3817D28DC200C34044 /* u17_route.json in Resources */,
@@ -1073,12 +1089,16 @@
 				9734276F17AFE3FB00385487 /* segment_selected@2x.png in Resources */,
 				970F067417A1A5D000E1AE59 /* FadedLine.png in Resources */,
 				976ACC2017A4327F0013FA33 /* u1.png in Resources */,
+				97DB177B17E1267F00C7C776 /* orange@2x.png in Resources */,
 				9734277B17AFE43000385487 /* notif_bg@2x.png in Resources */,
+				9700A62517E123F5004A9419 /* loadingScreen_3.5.png in Resources */,
+				97DB177717E1267B00C7C776 /* green@2x.png in Resources */,
 				974CDE3717D28DC200C34044 /* u2_route.json in Resources */,
 				9734278117AFE49900385487 /* map_header_bg@2x.png in Resources */,
 				97C6A3C317A16A1D00504668 /* HelveticaNeue-CondensedBold.otf in Resources */,
 				9734277717AFE40700385487 /* star_selected@2x.png in Resources */,
 				97CD512517A07976004FF161 /* Images.xcassets in Resources */,
+				97DB177F17E1268C00C7C776 /* red@2x.png in Resources */,
 				97D87A0217AEE23700BAB733 /* Bariol_Thin.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1315,8 +1335,10 @@
 					"\"/Users/ceeK/Documents/rails/Projects/Warwick Unibus\"/**",
 				);
 				INFOPLIST_FILE = "Warwick Unibus/Warwick Unibus-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-weak-lSystem";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "/Source/** /Users/ceeK/Documents/rails/Projects/Warwick/**";
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = "";
 				WRAPPER_EXTENSION = app;
@@ -1341,8 +1363,10 @@
 					"\"/Users/ceeK/Documents/rails/Projects/Warwick Unibus\"/**",
 				);
 				INFOPLIST_FILE = "Warwick Unibus/Warwick Unibus-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-weak-lSystem";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};

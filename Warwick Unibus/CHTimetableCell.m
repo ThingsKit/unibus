@@ -45,7 +45,7 @@
     self.busNumber.text = [time.number capitalizedString];
     
     if ([time.number isEqualToString:@"u1"]) {
-        self.busNumberImageView.image = [UIImage imageNamed:@"green.png"];
+        self.busNumberImageView.image = [UIImage imageNamed:@"purple.png"];
     }
     
     if ([time.number isEqualToString:@"u2"] || [time.number isEqualToString:@"u12"]) {
@@ -53,6 +53,10 @@
     }
     
     if ([time.number isEqualToString:@"u17"]) {
+        self.busNumberImageView.image = [UIImage imageNamed:@"green.png"];
+    }
+    
+    if ([time.number isEqualToString:@"x17"]) {
         self.busNumberImageView.image = [UIImage imageNamed:@"red.png"];
     }
     

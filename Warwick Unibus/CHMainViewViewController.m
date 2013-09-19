@@ -54,7 +54,7 @@ BOOL isScrolling;
 {
     [super viewDidLoad];
     
-    self.mapViewController = [[CHMapViewController alloc] init];
+    //self.mapViewController = [[CHMapViewController alloc] init];
     [self loadData];
     
     [self setupScrollView];
