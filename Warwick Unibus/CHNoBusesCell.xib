@@ -27,6 +27,9 @@
                 </subviews>
                 <color key="backgroundColor" red="0.96747622280000001" green="0.94933535000000002" blue="0.9520644184" alpha="1" colorSpace="calibratedRGB"/>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="cellLabel" destination="N55-j9-c8A" id="ghj-lb-svu"/>
+            </connections>
         </tableViewCell>
     </objects>
     <resources>

@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum {
+    EndOfDayType,
+    WrongPeriodType
+} NoBusesType;
+
 @interface CHNoBusesCell : UITableViewCell
+@property (nonatomic, assign) NoBusesType cellType;
+
+
 
 @end

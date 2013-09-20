@@ -514,8 +514,45 @@ static CHDataLoader *sharedDataLoader = nil;    // static instance variable
         BusStop *firstStop = [[BusStop MR_findByAttribute:@"stop_id" withValue:[firstReferenceStop objectForKey:@"id"]] firstObject];
         BusStop *secondStop = [[BusStop MR_findByAttribute:@"stop_id" withValue:[secondReferenceStop objectForKey:@"id"]] firstObject];
         
-        NSArray *minorStops = [self getMinorStopsBetweenReferenceStop:firstStop andStop:secondStop onRoute:route forDestination:destination];
+        BOOL isFirstBus = NO;
+        BOOL isLastBus = NO;
         
+        
+        NSString *period = @"";
+        NSString *number = @"";
+        switch (route) {
+            case U1Route:
+                period = @"weekday";
+                number = @"u1";
+                break;
+            case U2Route:
+                period = @"saturdays";
+                number = @"u2";
+                break;
+            case U17Route:
+                period = @"sundays";
+                number = @"u17";
+                break;
+                
+            default:
+                break;
+        }
+        
+        NSPredicate *predForFirstStop = [NSPredicate predicateWithFormat:@"stop_id ==[c] %@ AND time LIKE[c] %@ AND destination LIKE[c] %@ AND period LIKE[c] %@ AND number LIKE[c] %@", firstStop.stop_id, time, destination, period, number];
+        BusTime *firstTime = [[BusTime MR_findAllWithPredicate:predForFirstStop inContext:localContext] firstObject];
+        
+        if (firstTime.firstBus) {
+            isFirstBus = YES;
+        } else {
+            NSPredicate *predForSecondStop = [NSPredicate predicateWithFormat:@"stop_id ==[c] %@ AND time LIKE[c] %@ AND destination LIKE[c] %@ AND period LIKE[c] %@ AND number LIKE[c] %@", secondStop.stop_id, time, destination, period, number];
+            BusTime *secondTime = [[BusTime MR_findAllWithPredicate:predForSecondStop inContext:localContext] firstObject];
+            
+            if (secondTime.lastBus) {
+                isLastBus = YES;
+            }
+        }
+        
+        NSArray *minorStops = [self getMinorStopsBetweenReferenceStop:firstStop andStop:secondStop onRoute:route forDestination:destination];
         
         for (NSDictionary *minorStopDictionary in minorStops) {
             BusStop *minorStop = [[BusStop MR_findByAttribute:@"stop_id" withValue:[minorStopDictionary objectForKey:@"id"]] firstObject];;
@@ -527,27 +564,6 @@ static CHDataLoader *sharedDataLoader = nil;    // static instance variable
             NSString *newTimeString = [self getTimeByAddingMinutes:minutesToAdd toDate:[self dateForTimeString:time]];
             if ([newTimeString length] < 4) {
                 //newTimeString = [NSString stringWithFormat:@"0%@", newTimeString];
-            }
-            
-            
-            NSString *period = @"";
-            NSString *number = @"";
-            switch (route) {
-                case U1Route:
-                    period = @"weekday";
-                    number = @"u1";
-                    break;
-                case U2Route:
-                    period = @"saturdays";
-                    number = @"u2";
-                    break;
-                case U17Route:
-                    period = @"sundays";
-                    number = @"u17";
-                    break;
-                    
-                default:
-                    break;
             }
             
             NSPredicate *predicate = [NSPredicate predicateWithFormat:@"stop_id ==[c] %@ AND time LIKE[c] %@ AND destination LIKE[c] %@ AND period LIKE[c] %@ AND number LIKE[c] %@", minorStop.stop_id, newTimeString, destination, period, number];
@@ -563,6 +579,15 @@ static CHDataLoader *sharedDataLoader = nil;    // static instance variable
                 newTime.sequenceNo = [NSNumber numberWithInt:sequence];
                 newTime.period = period;
                 newTime.number = number;
+                
+                if (isFirstBus) {
+                    newTime.firstBus = [NSNumber numberWithBool:YES];
+                }
+                
+                if (isLastBus) {
+                    newTime.lastBus = [NSNumber numberWithBool:YES];
+                }
+                
 
                 [[minorStop timetableSet] addObject:newTime];
             }

@@ -76,6 +76,7 @@
     for (NSNumber *number in stops) {
         if (number.intValue == self.busStop.stop_id.intValue) {
             [self.addStopButton setSelected:YES];
+            break;
         } else {
             [self.addStopButton setSelected:NO];
         }
@@ -170,6 +171,10 @@
     self.busTimesLeftToday = [NSMutableArray arrayWithArray: sortedTimes];
     NSArray *sortedTomorrowTimes = [self.busTimesTomorrow sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
     self.busTimesTomorrow = [NSMutableArray arrayWithArray:sortedTomorrowTimes];
+    
+    //if (self.busTimesLeftToday.count != 0 && self.busTimesTomorrow != 0) {
+        [self reloadTimetable];
+    //}
 }
 
 #pragma mark - NSNotifications
@@ -180,6 +185,11 @@
 }
 
 - (void) timeChanged:(NSNotification *) notification
+{
+    [self reloadTimetable];
+}
+
+- (void) reloadTimetable
 {
     if (self.busTimesLeftToday.count == 0 && self.busTimesTomorrow == 0) {
         [self loadBusStopTimetable];
@@ -193,7 +203,7 @@
     
     NSTimeInterval oneDay = 24 * 60 * 60;
     NSDate *dateOneDayAhead = [now dateByAddingTimeInterval:oneDay];
-
+    
     NSDateComponents *components = [gregorian components:NSUIntegerMax fromDate:now];
     if ([self.lastMinuteOfDayDate earlierDate:now] == now) {
         // If right now is before midnight today
@@ -225,20 +235,20 @@
     // Remove all times that have passed
     NSMutableArray *busStopsToRemove = [NSMutableArray new];
     for (BusTime *time in self.busTimesLeftToday) {
-       
+        
         
         NSNumber *hours = [numberFormatter numberFromString:[time.time substringToIndex:2]];
         NSNumber *minutes = [numberFormatter numberFromString:[time.time substringFromIndex:2]];
-
+        
         [components setHour:hours.intValue];
         [components setMinute:minutes.intValue];
         [components setSecond:0];
-
+        
         newDate = [gregorian dateFromComponents:components];
-
+        
         if ([newDate earlierDate:now] == newDate) {
             [busStopsToRemove addObject:time];
-
+            
         }
     }
     [self.busTimesLeftToday removeObjectsInArray:busStopsToRemove];
@@ -288,11 +298,11 @@
         [components setMinute:minutes.intValue];
         [components setSecond:0];
         
-       newDate = [gregorian dateFromComponents:components];
+        newDate = [gregorian dateFromComponents:components];
         
         NSTimeInterval differenceInSeconds = [newDate timeIntervalSinceDate:now];
         int minutesToDisplay = ceil(differenceInSeconds / 60);
-  
+        
         self.nextBusDue = minutesToDisplay;
         self.nextBusNumber = ((BusTime *)self.busTimesLeftToday.firstObject).number;
         self.nextBusTime = [self timeFormattedForHours:hours minutes:minutes];
@@ -302,7 +312,7 @@
         // Get bus time for tomorrows first bus!
         NSNumber *hours = [numberFormatter numberFromString:[((BusTime *)self.busTimesTomorrow.firstObject).time substringToIndex:2]];
         NSNumber *minutes = [numberFormatter numberFromString:[((BusTime *)self.busTimesTomorrow.firstObject).time substringFromIndex:2]];
-
+        
         self.nextBusDue = 100;
         self.nextBusNumber = ((BusTime *)self.busTimesTomorrow.firstObject).number;
         self.nextBusTime = [self timeFormattedForHours:hours minutes:minutes];
@@ -342,23 +352,34 @@
         
         BusTime *time = [busTimes objectAtIndex:i];
         
-        if ([time.lastBus isEqualToNumber:[NSNumber numberWithBool:YES]]) {
-            [busTimes insertObject:[NSNull null] atIndex:i + 1];
-        }
-        
-        // Edge case: if user loads bus timetable in early morning, we must still show "no more buses"
-        if ([time.firstBus isEqualToNumber:[NSNumber numberWithBool:YES]]) {
-            if (i == 0) {
-                [busTimes insertObject:[NSNull null] atIndex:0];
+        if ([time respondsToSelector:@selector(lastBus)]) {
+            if ([time.lastBus isEqualToNumber:[NSNumber numberWithBool:YES]]) {
+                [busTimes insertObject:@"lastBus" atIndex:i + 1];
+            }
+            // Edge case: if user loads bus timetable in early morning, we must still show "no more buses"
+            if ([time.firstBus isEqualToNumber:[NSNumber numberWithBool:YES]]) {
+                if (i == 0) {
+                    [busTimes insertObject:@"lastBus" atIndex:0];
+                }
             }
         }
+        
+        
     }
     
 //    // Edge case: if user adds bus stop in early hours of the morning, we must make sure it adds the cell "no more buses" at the start
 //    if ([self.busTimesTomorrowUnder24Hours count] == 0 && [self.busTimesLeftToday count] > 0 && [busTimes objectAtIndex:0] == [NSNull null]) {
 //        [busTimes insertObject:[NSNull null] atIndex:0];
 //    }
-        
+    
+    if ([self.busTimesTomorrow count] == 0) {
+        [busTimes addObject:@"noBuses"];
+    }
+    
+    if ([busTimes count] == 0) {
+        [busTimes insertObject:@"noBuses" atIndex:0];
+    }
+    
     return busTimes;
 }
 
@@ -415,18 +436,43 @@
     id cell;
     
     int row = indexPath.row;
-    if ([[self busTimesForNext24Hours] objectAtIndex:indexPath.row] == [NSNull null]) {
-        static NSString *CellIdentifier = @"CHNoBusesCell";
-        cell = (CHTimetableCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-        
-        // Configure the cell...
-        if (cell == nil) {
-            // Load the top-level objects from the custom cell XIB.
-            NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"CHNoBusesCell" owner:self options:nil];
-            // Grab a pointer to the first object (presumably the custom cell, as that's all the XIB should contain).
-            cell = (CHTimetableCell *)[topLevelObjects objectAtIndex:0];
-        }
+    id obj = nil;
+    
+    NSArray *busTimes = [self busTimesForNext24Hours];
+    if ([busTimes count] != 0) {
+        obj = [busTimes objectAtIndex:indexPath.row];
+    } else {
+        return nil;
+    }
 
+    if ([obj isKindOfClass:[NSString class]]) {
+        if ([obj isEqualToString:@"lastBus"]) {
+            static NSString *CellIdentifier = @"CHNoBusesCell";
+            cell = (CHTimetableCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+            
+            // Configure the cell...
+            if (cell == nil) {
+                // Load the top-level objects from the custom cell XIB.
+                NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"CHNoBusesCell" owner:self options:nil];
+                // Grab a pointer to the first object (presumably the custom cell, as that's all the XIB should contain).
+                cell = (CHNoBusesCell *)[topLevelObjects objectAtIndex:0];
+            }
+            [cell setCellType:EndOfDayType];
+        }
+        
+        if ([obj isEqualToString:@"noBuses"]) {
+            static NSString *CellIdentifier = @"CHNoBusesCell";
+            cell = (CHTimetableCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+            
+            // Configure the cell...
+            if (cell == nil) {
+                // Load the top-level objects from the custom cell XIB.
+                NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"CHNoBusesCell" owner:self options:nil];
+                // Grab a pointer to the first object (presumably the custom cell, as that's all the XIB should contain).
+                cell = (CHNoBusesCell *)[topLevelObjects objectAtIndex:0];
+            }
+            [cell setCellType:WrongPeriodType];
+        }
     } else {
         static NSString *CellIdentifier = @"CHTimetableCell";
         cell = (CHTimetableCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -442,7 +488,7 @@
         
         if (timeForCell.time == nil || timeForCell.number == nil || timeForCell.destination == nil)
         {
-            NSLog(@"Error with timeForCell: %@", timeForCell);
+            NSLog(@"Error with timeForCell: %@, %@, %@, %@", timeForCell.stop_id, timeForCell.time, timeForCell.period, timeForCell.destination);
         }
         
         [cell setupWithBusTime:timeForCell];
@@ -453,7 +499,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([[self busTimesForNext24Hours] objectAtIndex:indexPath.row] == [NSNull null]) {
+    if ([[[self busTimesForNext24Hours] objectAtIndex:indexPath.row] isKindOfClass:[NSString class]]) {
         return 90;
     } else {
         return 45;

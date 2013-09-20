@@ -314,38 +314,88 @@ static CHMapViewController *sharedMap;
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view {
     ADClusterAnnotation *stop = view.annotation;
-    NSLog(@"annotation: %@", stop.cluster.annotation.annotation);
     BusStop *busStop = (BusStop *) stop.cluster.annotation.annotation;
-    self.timeTableViewController.busStop = busStop;
     
     self.timeTableViewController.view.hidden = NO;
     
     if (busStop != nil) {
         
-        [UIView animateWithDuration:0.3
-                              delay:0.0
-                            options:UIViewAnimationOptionCurveEaseInOut
-                         animations:^{
-                             if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-                             {
-                                 CGSize result = [[UIScreen mainScreen] bounds].size;
-                                 if(result.height == 480)
-                                 {
-                                     //Load 3.5 inch xib
-                                     self.timeTableViewController.view.frame = CGRectMake(0, 0, self.timeTableViewController.view.frame.size.width, 480);
-                                 }
-                                 if(result.height == 568)
-                                 {
-                                     //Load 4 inch xib
-                                     self.timeTableViewController.view.frame = CGRectMake(0, 0, self.timeTableViewController.view.frame.size.width, 568);
-                                 }
+        // This is messy =(
+        if (self.timeTableViewController.view.frame.origin.y == 0 ) {
+            [UIView animateWithDuration:0.3
+                                  delay:0.0
+                                options:UIViewAnimationOptionCurveEaseInOut
+                             animations:^{
+                                 self.timeTableViewController.view.frame = CGRectMake(0, 200 - self.timeTableViewController.tableView.contentOffset.y, self.timeTableViewController.view.frame.size.width, 568);
                              }
+                             completion:^(BOOL finished){
+                                 self.timeTableViewController.busStop = busStop;
+                                 if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+                                 {
+                                     CGSize result = [[UIScreen mainScreen] bounds].size;
+                                     if(result.height == 480)
+                                     {
+                                         //Load 3.5 inch xib
+                                         [self.timeTableViewController changeContentInsetTo:UIEdgeInsetsMake(326, 0, 0, 0)];
+                                     }
+                                     if(result.height == 568)
+                                     {
+                                         //Load 4 inch xib
+                                         [self.timeTableViewController changeContentInsetTo:UIEdgeInsetsMake(414, 0, 0, 0)];
+                                     }
+                                 }
+                                 
+                                 [UIView animateWithDuration:0.3
+                                                       delay:0.0
+                                                     options:UIViewAnimationOptionCurveEaseInOut
+                                                  animations:^{
+                                                      if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+                                                      {
+                                                          CGSize result = [[UIScreen mainScreen] bounds].size;
+                                                          if(result.height == 480)
+                                                          {
+                                                              //Load 3.5 inch xib
+                                                              self.timeTableViewController.view.frame = CGRectMake(0, 0, self.timeTableViewController.view.frame.size.width, 480);
+                                                          }
+                                                          if(result.height == 568)
+                                                          {
+                                                              //Load 4 inch xib
+                                                              self.timeTableViewController.view.frame = CGRectMake(0, 0, self.timeTableViewController.view.frame.size.width, 568);
+                                                          }
+                                                      }
+                                                      
+                                                  }
+                                                  completion:^(BOOL finished){
+                                                      
+                                                  }];
+                             }];
+        } else {
+            self.timeTableViewController.busStop = busStop;
 
-                         }
-                         completion:^(BOOL finished){
-                             
-                         }];
+            [UIView animateWithDuration:0.3
+                                  delay:0.0
+                                options:UIViewAnimationOptionCurveEaseInOut
+                             animations:^{
+                                 if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+                                 {
+                                     CGSize result = [[UIScreen mainScreen] bounds].size;
+                                     if(result.height == 480)
+                                     {
+                                         //Load 3.5 inch xib
+                                         self.timeTableViewController.view.frame = CGRectMake(0, 0, self.timeTableViewController.view.frame.size.width, 480);
+                                     }
+                                     if(result.height == 568)
+                                     {
+                                         //Load 4 inch xib
+                                         self.timeTableViewController.view.frame = CGRectMake(0, 0, self.timeTableViewController.view.frame.size.width, 568);
+                                     }
+                                 }
 
+                             }
+                             completion:^(BOOL finished){
+                                 
+                             }];
+        }
     }
 }
 
@@ -361,7 +411,7 @@ static CHMapViewController *sharedMap;
                           delay:0.0
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
-                         self.timeTableViewController.view.frame = CGRectMake(0, 200, self.timeTableViewController.view.frame.size.width, 568);
+                        self.timeTableViewController.view.frame = CGRectMake(0, 200 - self.timeTableViewController.tableView.contentOffset.y, self.timeTableViewController.view.frame.size.width, 568);
                      }
                      completion:^(BOOL finished){
                          self.timeTableViewController.view.hidden = YES;

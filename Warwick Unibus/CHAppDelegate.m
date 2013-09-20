@@ -132,7 +132,7 @@
     self.navController.rootViewController = self.mainViewCon;
     self.mainViewCon.navigationController = self.navController;
     
-    self.clockTimer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(timerTick:) userInfo:nil repeats:YES];
+    self.clockTimer = [NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(timerTick:) userInfo:nil repeats:YES];
 
 }
 

@@ -26,6 +26,7 @@
 @property (nonatomic, strong) IBOutlet NSArray *viewControllers;
 
 @property (nonatomic, strong) IBOutlet PFImageView *bgImage;
+@property (nonatomic, weak) IBOutlet UIImageView *blurView;
 
 @property (nonatomic, strong) IBOutlet CHMapViewController *mapViewController;
 @property (nonatomic, strong) IBOutlet UIView *mapView;
@@ -75,10 +76,15 @@ BOOL isScrolling;
     NSString* path = [documentsDirectory stringByAppendingPathComponent:@"main_image.jpeg" ];
     UIImage* image = [UIImage imageWithContentsOfFile:path];
     
+    
+    
+    
     self.bgImage.image = image;
 
     if (self.bgImage.image == nil) {
         self.bgImage.image = [UIImage imageNamed:@"ImgBlur.png"]; // placeholder image
+    } else {
+      
     }
 
     PFQuery *query = [PFQuery queryWithClassName:@"Images"];
@@ -88,17 +94,23 @@ BOOL isScrolling;
             self.bgImage.file = (PFFile *) [object objectForKey:@"picture"];
             [self.bgImage loadInBackground:^( UIImage *image , NSError *error ){
                 
-                
                 NSString *docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
                 NSString *jpegFilePath = [NSString stringWithFormat:@"%@/main_image.jpeg",docDir];
                 NSData *data2 = [NSData dataWithData:UIImageJPEGRepresentation(image, 1.0f)];//1.0f = 100% quality
                 [data2 writeToFile:jpegFilePath atomically:YES];
+                
+                GPUImageGaussianBlurFilter *imgBlur = [[GPUImageGaussianBlurFilter alloc] init];
+                [imgBlur setBlurSize:4];
+                self.blurView.image = [imgBlur imageByFilteringImage:image];
+                self.blurView.alpha = 1;
             }];
             
         } else {
             NSLog(@"Error querying for image: %@", error);
         }
     }];
+    
+    
     
 //    UIInterpolatingMotionEffect *mx3 = [[UIInterpolatingMotionEffect alloc]
 //                                        initWithKeyPath:@"center.x" type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
@@ -129,6 +141,8 @@ BOOL isScrolling;
                 NSString *jpegFilePath = [NSString stringWithFormat:@"%@/main_image.jpeg",docDir];
                 NSData *data2 = [NSData dataWithData:UIImageJPEGRepresentation(image, 1.0f)];//1.0f = 100% quality
                 [data2 writeToFile:jpegFilePath atomically:YES];
+                
+              
             }];
         }
     }];
@@ -231,6 +245,12 @@ BOOL isScrolling;
     
     // Move
     self.bgImage.frame = CGRectMake(self.bgImage.frame.origin.x, newPos / 4, self.bgImage.frame.size.width, self.bgImage.frame.size.height);
+    self.blurView.frame = CGRectMake(self.bgImage.frame.origin.x, newPos / 4, self.bgImage.frame.size.width, self.bgImage.frame.size.height);
+    
+    // Fade
+    float percentage = -newPos / 100;
+    self.bgImage.alpha = 1 - percentage;
+    
 }
 
 -(void)removeBusStopController:(CHBusStopViewController *)controller
